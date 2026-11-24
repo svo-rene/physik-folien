@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simulation — Feder und Kraft</title>
+<link rel="stylesheet" href="kurse.css">
+<style>
+/* Alles inline, keine externen Dateien: Die Seite läuft am Beamer, in OPAL
+   und vom USB-Stick ohne Netz. Gerechnet wird mit g = 10 N/kg. */
+.sim { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; align-items: start; }
+@media (max-width: 860px) { .sim { grid-template-columns: 1fr; } }
+.karte { background: #fff; border: 1px solid #e2e2e2; border-radius: 10px; padding: 1rem 1.1rem; }
+.karte h2 { margin-top: 0; font-size: 1.05rem; }
+.knopf {
+    font: inherit; font-weight: 600; color: #fff; background: #1d4ed8; border: none;
+    border-radius: 6px; padding: .5em 1.1em; cursor: pointer; margin: .2em .3em .2em 0;
+}
+.knopf:hover { background: #1740b0; }
+.knopf.zweit { background: #6b7280; }
+.knopf.zweit:hover { background: #4b5563; }
+.knopf.rot { background: #d64545; }
+.knopf:disabled { background: #c9ced6; cursor: default; }
+.zeile { display: flex; flex-wrap: wrap; align-items: center; gap: .5em 1em; margin: .5em 0; }
+.zeile label { font-weight: 600; }
+input[type="range"] { width: 12em; }
+.wert { font-variant-numeric: tabular-nums; font-weight: 700; color: #1d4ed8; }
+table.mess { border-collapse: collapse; width: 100%; margin-top: .6em; }
+table.mess th, table.mess td { border: 1px solid #d8dde5; padding: .35em .6em; text-align: center; font-variant-numeric: tabular-nums; }
+table.mess th { background: #f3f4f6; }
+table.mess td.leer { color: #9ca3af; }
+.hinweis { background: #f2f7ee; border-left: 5px solid #2f9e57; border-radius: 8px; padding: .7em 1em; margin: .8em 0; }
+.warn { background: #fdeceb; border-left: 5px solid #d64545; border-radius: 8px; padding: .7em 1em; margin: .8em 0; font-weight: 600; }
+svg text { font-family: inherit; }
+.klein { color: #6b7280; font-size: .9rem; }
+</style>
+</head>
+<body>
+
+<p><a href="uebersicht.html">zur Übersicht</a> · <a href="lb1-04-hookesches-gesetz.html">zum Thema: Hooke'sches Gesetz</a></p>
+
+<h1>Simulation — Feder und Kraft</h1>
+
+<blockquote><strong>Forscherfrage:</strong> Wie hängt die Verlängerung einer Feder von der Kraft ab, die an ihr zieht?</blockquote>
+
+<p>Häng Massestücke an die Feder, lies die Verlängerung <em>s</em> ab und trag den Messwert ein. Ab drei Messwerten lohnt sich der Blick aufs Diagramm. Auf den Massestücken steht ihre Gewichtskraft: 50&nbsp;g entsprechen 0,5&nbsp;N, 100&nbsp;g entsprechen 1&nbsp;N.</p>
+
+<div class="sim">
+
+<div class="karte">
+<h2>Die Feder</h2>
+<svg id="feder" viewBox="0 0 360 480" width="100%" role="img" aria-label="Feder am Stativ mit Massestück, Nullmarke und Maßpfeil für die Verlängerung s"></svg>
+<div class="zeile">
+  <button class="knopf" id="plus" type="button">+ 50 g anhängen</button>
+  <button class="knopf zweit" id="minus" type="button">− 50 g abnehmen</button>
+  <button class="knopf zweit" id="neu" type="button">neue Feder</button>
+</div>
+<div class="zeile">
+  <label for="d">Federkonstante <em>D</em>:</label>
+  <input type="range" id="d" min="0.25" max="2" step="0.25" value="0.5">
+  <span class="wert" id="d-wert">0,5 N/cm</span>
+</div>
+<p class="klein">Angehängt: <span class="wert" id="masse">0 g</span> → Kraft <span class="wert" id="kraft">0 N</span> · Verlängerung <span class="wert" id="s">0,0 cm</span></p>
+<div class="warn" id="warnung" hidden>Die Feder ist überdehnt. Sie kehrt nicht mehr in ihre alte Länge zurück — nimm eine neue Feder.</div>
+</div>
+
+<div class="karte">
+<h2>Messwerte und Diagramm</h2>
+<div class="zeile">
+  <button class="knopf" id="eintragen" type="button">Messwert eintragen</button>
+  <button class="knopf zweit" id="leeren" type="button">Tabelle leeren</button>
+</div>
+<table class="mess" id="tabelle">
+  <thead><tr><th><em>F</em> in N</th><th><em>s</em> in cm</th><th class="quot" hidden><em>F</em> : <em>s</em> in N/cm</th></tr></thead>
+  <tbody></tbody>
+</table>
+<div class="zeile">
+  <label><input type="checkbox" id="quotient"> Spalte <em>F</em>&nbsp;:&nbsp;<em>s</em> anzeigen</label>
+  <label><input type="checkbox" id="gerade"> Ausgleichsgerade zeichnen</label>
+</div>
+<svg id="diagramm" viewBox="0 0 360 300" width="100%" role="img" aria-label="F-s-Diagramm mit den eingetragenen Messwerten"></svg>
+<div class="hinweis" id="frage" hidden>Drei Messwerte stehen. Schau auf die Punkte: Liegen sie auf einer Geraden? Geht die Gerade durch den Nullpunkt? Was passiert mit <em>s</em>, wenn du <em>F</em> verdoppelst?</div>
+</div>
+
+</div>
+
+<h2>So arbeitest du damit</h2>
+<ol>
+<li>Häng ein Massestück an und lies <em>s</em> ab — gemessen von der <strong>Nullmarke</strong>, nicht von der Aufhängung.</li>
+<li>Trag den Messwert ein. Wiederhole das mit mehr Masse.</li>
+<li>Ab drei Werten: Vergleiche die Punkte im Diagramm. Erst dann die Spalte <em>F</em>&nbsp;:&nbsp;<em>s</em> einblenden.</li>
+<li>Stell eine andere Federkonstante ein und wiederhole. Was ändert sich am Diagramm?</li>
+<li>Häng so viel an, bis die Feder überdehnt ist. Woran erkennst du das an den Punkten?</li>
+</ol>
+
+<p class="klein">Gymnasium Dresden-Pieschen · Physik Klasse 7 · LB 1 Kräfte · Simulation zum Hooke'schen Gesetz. Gerechnet wird mit <em>g</em>&nbsp;=&nbsp;10&nbsp;N/kg.</p>
+
+<script>
+(function () {
+  "use strict";
+  // ------------------------------------------------------------ Modell
+  var G = 10;              // N/kg
+  var SCHRITT = 50;        // g je Klick
+  var MAX_MASSE = 600;     // g
+  var S_ELASTISCH = 8;     // cm - darueber ist die Feder ueberdehnt
+  var zustand = { masse: 0, D: 0.5, ueberdehnt: false, rest: 0, mess: [] };
+
+  function kraft() { return zustand.masse / 1000 * G; }
+
+  function verlaengerung() {
+    // Bis zur Grenze proportional; darueber dehnt sich die Feder schneller
+    // und behaelt einen Rest, wenn man die Last wieder abnimmt.
+    var s = kraft() / zustand.D;
+    if (s > S_ELASTISCH) {
+      var ueber = s - S_ELASTISCH;
+      s = S_ELASTISCH + ueber * 1.8;
+      zustand.ueberdehnt = true;
+      zustand.rest = Math.max(zustand.rest, ueber * 0.6);
+    }
+    return s + zustand.rest;
+  }
+
+  function komma(x, stellen) {
+    return x.toFixed(stellen).replace(".", ",");
+  }
+
+  // ------------------------------------------------------------ Feder
+  var svgF = document.getElementById("feder");
+  // Massstab so, dass auch eine ueberdehnte Feder (bis rund 19 cm) mit
+  // Massestueck im Bild bleibt: 16 px je cm, Nullmarke bei 140 px.
+  var PX_JE_CM = 16;
+  var X = 150, Y_AUF = 50, L0 = 90;   // Aufhaengung und Laenge ohne Last in px
+
+  function zeichneFeder() {
+    var s = verlaengerung();
+    var yNull = Y_AUF + L0;
+    var yEnde = yNull + Math.min(s, 19) * PX_JE_CM;
+    var t = [];
+    t.push('<line x1="40" y1="30" x2="40" y2="462" stroke="#1f2430" stroke-width="5"/>');
+    t.push('<rect x="12" y="460" width="56" height="8" fill="#6b7280"/>');
+    t.push('<line x1="40" y1="50" x2="' + (X + 30) + '" y2="50" stroke="#1f2430" stroke-width="5"/>');
+    // Feder als Zickzack zwischen Aufhaengung und Ende
+    var n = 14, dy = (yEnde - Y_AUF - 16) / n, breite = 12;
+    var pfad = "M" + X + " " + Y_AUF + " L" + X + " " + (Y_AUF + 8);
+    for (var i = 0; i < n; i++) {
+      var x = (i % 2 === 0) ? X + breite : X - breite;
+      pfad += " L" + x + " " + (Y_AUF + 8 + dy * (i + 0.5));
+    }
+    pfad += " L" + X + " " + (yEnde - 4) + " L" + X + " " + yEnde;
+    t.push('<path d="' + pfad + '" fill="none" stroke="' + (zustand.ueberdehnt ? "#d64545" : "#1f2430") + '" stroke-width="2.2"/>');
+    // Nullmarke: Federende ohne Last - hier wird s gemessen
+    t.push('<line x1="' + (X + 22) + '" y1="' + yNull + '" x2="' + (X + 120) + '" y2="' + yNull + '" stroke="#6b7280" stroke-dasharray="5 4" stroke-width="1.4"/>');
+    t.push('<text x="' + (X + 124) + '" y="' + (yNull + 4) + '" font-size="12" fill="#6b7280">Nullmarke</text>');
+    if (s > 0.05) {
+      t.push('<line x1="' + (X + 22) + '" y1="' + yEnde + '" x2="' + (X + 120) + '" y2="' + yEnde + '" stroke="#6b7280" stroke-width="1.4"/>');
+      var xm = X + 96;
+      t.push('<line x1="' + xm + '" y1="' + (yNull + 5) + '" x2="' + xm + '" y2="' + (yEnde - 5) + '" stroke="#d64545" stroke-width="2"/>');
+      t.push('<polygon points="' + xm + ',' + yNull + ' ' + (xm - 4) + ',' + (yNull + 8) + ' ' + (xm + 4) + ',' + (yNull + 8) + '" fill="#d64545"/>');
+      t.push('<polygon points="' + xm + ',' + yEnde + ' ' + (xm - 4) + ',' + (yEnde - 8) + ' ' + (xm + 4) + ',' + (yEnde - 8) + '" fill="#d64545"/>');
+      t.push('<text x="' + (xm + 8) + '" y="' + ((yNull + yEnde) / 2 + 5) + '" font-size="15" font-style="italic" fill="#d64545">s = ' + komma(s, 1) + ' cm</text>');
+    }
+    // Massestueck mit Haken, beschriftet mit seiner Gewichtskraft
+    if (zustand.masse > 0) {
+      var h = 26 + zustand.masse / 25;
+      t.push('<line x1="' + X + '" y1="' + yEnde + '" x2="' + X + '" y2="' + (yEnde + 8) + '" stroke="#1f2430" stroke-width="2"/>');
+      t.push('<rect x="' + (X - 22) + '" y="' + (yEnde + 8) + '" width="44" height="' + h + '" rx="3" fill="#aeb4bd" stroke="#1f2430" stroke-width="1.5"/>');
+      t.push('<text x="' + X + '" y="' + (yEnde + 8 + h / 2 + 5) + '" font-size="13" font-weight="700" text-anchor="middle" fill="#1f2430">' + komma(kraft(), 1) + ' N</text>');
+    }
+    svgF.innerHTML = t.join("");
+    document.getElementById("masse").textContent = zustand.masse + " g";
+    document.getElementById("kraft").textContent = komma(kraft(), 1) + " N";
+    document.getElementById("s").textContent = komma(s, 1) + " cm";
+    document.getElementById("warnung").hidden = !zustand.ueberdehnt;
+    document.getElementById("plus").disabled = zustand.masse >= MAX_MASSE;
+    document.getElementById("minus").disabled = zustand.masse <= 0;
+  }
+
+  // ------------------------------------------------------------ Diagramm
+  var svgD = document.getElementById("diagramm");
+  // Achsen so weit, dass alle erreichbaren Werte hineinpassen: 600 g sind
+  // 6 N, und eine ueberdehnte Feder kommt auf knapp 20 cm.
+  var S_MAX = 20, F_MAX = 6, X0 = 46, Y0 = 250, B = 290, HOE = 220;
+  function px(s) { return X0 + s / S_MAX * B; }
+  function py(f) { return Y0 - f / F_MAX * HOE; }
+
+  function zeichneDiagramm() {
+    var t = [];
+    for (var i = 2; i <= S_MAX; i += 2) {
+      t.push('<line x1="' + px(i) + '" y1="' + Y0 + '" x2="' + px(i) + '" y2="' + (Y0 - HOE) + '" stroke="#eef0f3"/>');
+      if (i % 4 === 0) t.push('<text x="' + px(i) + '" y="' + (Y0 + 16) + '" font-size="11" text-anchor="middle" fill="#6b7280">' + i + '</text>');
+    }
+    for (var f = 1; f <= F_MAX; f += 1) {
+      t.push('<line x1="' + X0 + '" y1="' + py(f) + '" x2="' + (X0 + B) + '" y2="' + py(f) + '" stroke="#eef0f3"/>');
+      t.push('<text x="' + (X0 - 6) + '" y="' + (py(f) + 4) + '" font-size="11" text-anchor="end" fill="#6b7280">' + f + '</text>');
+    }
+    t.push('<line x1="' + X0 + '" y1="' + Y0 + '" x2="' + (X0 + B + 8) + '" y2="' + Y0 + '" stroke="#1f2430" stroke-width="1.5"/>');
+    t.push('<line x1="' + X0 + '" y1="' + Y0 + '" x2="' + X0 + '" y2="' + (Y0 - HOE - 8) + '" stroke="#1f2430" stroke-width="1.5"/>');
+    t.push('<text x="' + (X0 + B + 4) + '" y="' + (Y0 + 30) + '" font-size="12" text-anchor="end" fill="#1f2430"><tspan font-style="italic">s</tspan> in cm</text>');
+    t.push('<text x="' + (X0 + 6) + '" y="' + (Y0 - HOE - 12) + '" font-size="12" fill="#1f2430"><tspan font-style="italic">F</tspan> in N</text>');
+    // Ausgleichsgerade durch den Ursprung, nur aus den Punkten im elastischen Bereich
+    if (document.getElementById("gerade").checked && zustand.mess.length >= 2) {
+      var zs = 0, zn = 0;
+      zustand.mess.forEach(function (m) { if (!m.ueber) { zs += m.F * m.s; zn += m.s * m.s; } });
+      if (zn > 0) {
+        var k = zs / zn, sEnd = Math.min(S_MAX, F_MAX / k);
+        t.push('<line x1="' + px(0) + '" y1="' + py(0) + '" x2="' + px(sEnd) + '" y2="' + py(k * sEnd) + '" stroke="#1d4ed8" stroke-width="2"/>');
+      }
+    }
+    zustand.mess.forEach(function (m) {
+      var x = px(Math.min(m.s, S_MAX)), y = py(Math.min(m.F, F_MAX)), farbe = m.ueber ? "#d64545" : "#1d4ed8";
+      t.push('<line x1="' + (x - 5) + '" y1="' + (y - 5) + '" x2="' + (x + 5) + '" y2="' + (y + 5) + '" stroke="' + farbe + '" stroke-width="2"/>');
+      t.push('<line x1="' + (x - 5) + '" y1="' + (y + 5) + '" x2="' + (x + 5) + '" y2="' + (y - 5) + '" stroke="' + farbe + '" stroke-width="2"/>');
+    });
+    svgD.innerHTML = t.join("");
+  }
+
+  // ------------------------------------------------------------ Tabelle
+  function zeichneTabelle() {
+    var tb = document.querySelector("#tabelle tbody");
+    var quot = document.getElementById("quotient").checked;
+    document.querySelectorAll("#tabelle .quot").forEach(function (el) { el.hidden = !quot; });
+    var zeilen = zustand.mess.map(function (m) {
+      var q = m.s > 0 ? komma(m.F / m.s, 2) : "–";
+      return "<tr><td>" + komma(m.F, 1) + "</td><td>" + komma(m.s, 1) + "</td><td class=\"quot\"" + (quot ? "" : " hidden") + ">" + q + "</td></tr>";
+    });
+    for (var i = zeilen.length; i < 5; i++) {
+      zeilen.push("<tr><td class=\"leer\">&nbsp;</td><td class=\"leer\"></td><td class=\"quot\"" + (quot ? "" : " hidden") + "></td></tr>");
+    }
+    tb.innerHTML = zeilen.join("");
+    document.getElementById("frage").hidden = zustand.mess.length < 3;
+  }
+
+  function alles() { zeichneFeder(); zeichneTabelle(); zeichneDiagramm(); }
+
+  // ------------------------------------------------------------ Bedienung
+  document.getElementById("plus").addEventListener("click", function () {
+    zustand.masse = Math.min(MAX_MASSE, zustand.masse + SCHRITT); alles();
+  });
+  document.getElementById("minus").addEventListener("click", function () {
+    zustand.masse = Math.max(0, zustand.masse - SCHRITT); alles();
+  });
+  document.getElementById("neu").addEventListener("click", function () {
+    zustand.masse = 0; zustand.ueberdehnt = false; zustand.rest = 0; alles();
+  });
+  document.getElementById("d").addEventListener("input", function (e) {
+    zustand.D = parseFloat(e.target.value);
+    document.getElementById("d-wert").textContent = komma(zustand.D, 2).replace(/,?0+$/, "") + " N/cm";
+    zustand.masse = 0; zustand.ueberdehnt = false; zustand.rest = 0; alles();
+  });
+  document.getElementById("eintragen").addEventListener("click", function () {
+    if (zustand.mess.length >= 8) return;
+    var s = verlaengerung();
+    zustand.mess.push({ F: kraft(), s: s, ueber: zustand.ueberdehnt });
+    alles();
+  });
+  document.getElementById("leeren").addEventListener("click", function () { zustand.mess = []; alles(); });
+  document.getElementById("quotient").addEventListener("change", zeichneTabelle);
+  document.getElementById("gerade").addEventListener("change", zeichneDiagramm);
+
+  alles();
+})();
+</script>
+</body>
+</html>

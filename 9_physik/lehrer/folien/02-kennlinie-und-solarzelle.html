@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kennlinie und Solarzelle</title>
+<link rel="stylesheet" href="folien.css">
+</head>
+<body>
+<a id="overview-link" href="#">☰ Übersicht</a>
+<div id="uebersicht-overlay">
+<div class="ue-kopf"><h2>Kennlinie und Solarzelle</h2><a href="index.html">Alle Foliensätze</a></div>
+<p class="ue-hilfe">Klick springt direkt hinein · <kbd>O</kbd> oder <kbd>Esc</kbd> blendet die Übersicht ein und aus · <kbd>F</kbd> Vollbild</p>
+<div class="gitter"><div class="karte" style="--akzent:#e07b39"><div class="n">Doppelstunde 1 · Experiment</div><a class="t" href="#s2">Die Kennlinie der Diode</a><div class="chips"><a href="#s3">Einstieg</a><a href="#s5">Motivation</a><a href="#s7">Experiment</a><a href="#s10">Auswertung</a><a href="#s15">Abschlussübung</a><a href="#s17">Übung</a><a href="#s18">Ausblick</a><a href="#s19">Zusammenfassung</a><a href="#s20">Check-out</a></div></div><div class="karte" style="--akzent:#e07b39"><div class="n">Doppelstunde 2 · Experiment</div><a class="t" href="#s21">Die Solarzelle</a><div class="chips"><a href="#s22">Einstieg</a><a href="#s24">Motivation</a><a href="#s26">Experiment</a><a href="#s29">Auswertung</a><a href="#s34">Abschlussübung</a><a href="#s36">Übung</a><a href="#s37">Ausblick</a><a href="#s38">Zusammenfassung</a><a href="#s39">Check-out</a></div></div></div>
+</div>
+<div id="deck">
+
+<section class="slide active" data-type="uebersicht">
+    <p class="sub">Physik Klasse 9 · LB 1: Elektronik</p>
+    <h1>Kennlinie und Solarzelle</h1>
+    <div class="gitter"><div class="karte" style="--akzent:#e07b39"><div class="n">Doppelstunde 1 · Experiment</div><a class="t" href="#s2">Die Kennlinie der Diode</a><div class="chips"><a href="#s3">Einstieg</a><a href="#s5">Motivation</a><a href="#s7">Experiment</a><a href="#s10">Auswertung</a><a href="#s15">Abschlussübung</a><a href="#s17">Übung</a><a href="#s18">Ausblick</a><a href="#s19">Zusammenfassung</a><a href="#s20">Check-out</a></div></div><div class="karte" style="--akzent:#e07b39"><div class="n">Doppelstunde 2 · Experiment</div><a class="t" href="#s21">Die Solarzelle</a><div class="chips"><a href="#s22">Einstieg</a><a href="#s24">Motivation</a><a href="#s26">Experiment</a><a href="#s29">Auswertung</a><a href="#s34">Abschlussübung</a><a href="#s36">Übung</a><a href="#s37">Ausblick</a><a href="#s38">Zusammenfassung</a><a href="#s39">Check-out</a></div></div></div>
+    <p class="ue-hilfe">Klick springt direkt hinein · O oder Esc: Übersicht jederzeit</p>
+</section>
+
+<section class="slide" data-type="titel">
+    <p class="sub">LB 1: Elektronik · Kennlinie und Solarzelle</p>
+    <h1>Die Kennlinie der Diode</h1>
+    <ul class="ablauf"><li><a href="#s3">Einstieg</a></li><li><a href="#s5">Motivation</a></li><li><a href="#s7">Experiment</a></li><li><a href="#s10">Auswertung</a></li><li><a href="#s15">Abschlussübung</a></li><li><a href="#s17">Übung</a></li><li><a href="#s18">Ausblick</a></li><li><a href="#s19">Zusammenfassung</a></li><li><a href="#s20">Check-out</a></li></ul>
+</section>
+
+<section class="slide dense" data-type="einstieg">
+    <div class="tag">Einstieg · TOP 10</div><div class="topic-badge">Die Kennlinie der Diode</div>
+    <h1>TOP 10 #2 — Was weißt du noch?</h1>
+    <div class="box uebung"><ol><li>Entscheide, ob Silizium mit Bor (III. Hauptgruppe) n-leitend oder p-leitend wird, und begründe.</li><li>Beschreibe, wie man an einem Schaltzeichen die Durchlassrichtung einer Diode erkennt.</li><li>Begründe, warum eine Lampe in Reihe mit einer Diode nach dem Umpolen ausgeht.</li></ol></div><p class="timer">⏱ 10 min — ohne Hefter, ohne Note</p>
+</section>
+
+<section class="slide dense" data-type="einstieg">
+    <div class="tag">Einstieg · Vergleich</div><div class="topic-badge">Die Kennlinie der Diode</div>
+    <h1>Vergleiche</h1>
+    <div class="box beispiel"><ol><li>p-leitend: Bor hat drei Außenelektronen, in einer Bindung fehlt ein Elektron (Loch).</li><li>Das Dreieck zeigt in Durchlassrichtung (technische Stromrichtung, von + nach −).</li><li>Die Diode liegt dann in Sperrrichtung und lässt keinen Strom durch.</li></ol></div>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Motivation · in echt</div><div class="topic-badge">Die Kennlinie der Diode</div>
+    <h1>Leuchtdioden</h1>
+    <div class="cols"><div class="bild"><img src="../../bilder/foto-leds.jpg" alt=""></div><div><ul><li>LEDs in verschiedenen Farben und Gehäusen.</li><li>Jede hat zwei Anschlüsse.</li></ul><div class="box uebung"><p>Stelle eine Vermutung auf, warum eine LED an 9 V sofort kaputtgeht, an 1,5 V aber gar nicht leuchtet.</p></div><p class="nachweis">Foto: Afrank99 · CC BY-SA 2.0 · Wikimedia Commons</p></div></div>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Motivation</div><div class="topic-badge">Die Kennlinie der Diode</div>
+    <h1>Frage der Stunde</h1>
+    <div class="box frage"><p>Warum fließt durch eine Diode erst lange gar kein Strom — und dann auf einmal viel?</p></div><p>Schreib deine <strong>Vermutung</strong> ins Heft.</p><p class="small"><strong>Kennst du das?</strong></p><ul><li>Eine Leuchtdiode direkt an einer 9-V-Batterie ist nach einem Blitz kaputt.</li><li>Auf Verpackungen von Leuchtdioden steht immer ein passender Widerstand.</li><li>Messgeräte im Fachraum speichern Messwerte direkt im Computer.</li></ul>
+</section>
+
+<section class="slide dense" data-type="experiment">
+    <div class="tag">Experiment · Planung</div><div class="topic-badge">Die Kennlinie der Diode</div>
+    <h1>Forscherfrage</h1>
+    <div class="box frage"><p>Wie hängt die Stromstärke durch eine Diode von der angelegten Spannung ab?</p></div><div class="box auftrag"><p><strong>Material gibt es, wenn euer Plan diese vier Fragen beantwortet:</strong></p><ol><li>Wo schaltet ihr den Spannungsmesser und wo den Strommesser ein? Zeichnet den Schaltplan.</li><li>In welchen Schritten erhöht ihr die Spannung — überall gleich groß?</li><li>Wie messt ihr in Sperrrichtung?</li><li>Wie stellt ihr die Messwerte so dar, dass man den Zusammenhang sieht?</li></ol></div><div class="box merke"><p class="small"><strong>Sicherheit:</strong> Nie ohne den 100-Ω-Widerstand einschalten — sonst wird die Diode heiß und zerstört. Stromstärke höchstens 100 mA. Netzgerät vor jedem Umbau auf 0 V drehen.</p></div>
+</section>
+
+<section class="slide dense" data-type="experiment">
+    <div class="tag">Experiment · Durchführung</div><div class="topic-badge">Die Kennlinie der Diode</div>
+    <h1>SE: Die Kennlinie einer Diode</h1>
+    <div class="cols"><div><table class="mini"><tr><th>Art</th><td>Schülerexperiment in Dreiergruppen, 25 min</td></tr><tr><th>Material</th><td>je Gruppe: Netzgerät (0 bis 6 V), Siliziumdiode (z. B. 1N4007), Widerstand 100 Ω, zwei Vielfachmessgeräte oder Messwerterfassung mit Spannungs- und Stromsensor, Laptop oder Tablet mit Tabellenkalkulation, Kabel, Steckbrett</td></tr><tr><th>Sicherheit</th><td>Nie ohne den 100-Ω-Widerstand einschalten — sonst wird die Diode heiß und zerstört. Stromstärke höchstens 100 mA. Netzgerät vor jedem Umbau auf 0 V drehen.</td></tr></table></div><div><div class="box hinweis"><p><strong>Prüft euch selbst</strong></p><ul><li>Liegt der Spannungsmesser direkt an der Diode und nicht am ganzen Aufbau?</li><li>Habt ihr in der Nähe von 0,6 V besonders kleine Schritte gemacht?</li><li>Habt ihr auch in Sperrrichtung gemessen?</li></ul></div></div></div>
+</section>
+
+<section class="slide dense" data-type="experiment">
+    <div class="tag">Experiment · Protokoll</div><div class="topic-badge">Die Kennlinie der Diode</div>
+    <h1>Euer Protokoll</h1>
+    <div class="box auftrag"><ul class="plain"><li>Forscherfrage</li><li>Vermutung</li><li>Schaltplan</li><li>Messwerte in einer Tabelle</li><li>Diagramm: Stromstärke über Spannung</li><li>Ergebnis: Antwort auf die Forscherfrage</li></ul></div>
+</section>
+
+<section class="slide" data-type="erarbeitung">
+    <div class="tag">Auswertung · Skizze</div><div class="topic-badge">Die Kennlinie der Diode</div>
+    <h1>Die Kennlinie auswerten</h1>
+    <div class="tafel"><img src="../../bilder/skizze-w04-kennlinie.png" alt="Die Kennlinie auswerten"></div>
+</section>
+
+<section class="slide" data-type="merke">
+    <div class="tag">Auswertung · Merksatz</div><div class="topic-badge">Die Kennlinie der Diode</div>
+    <h1>Merksatz</h1>
+    <div class="box merke"><p>In <strong>Sperrrichtung</strong> fließt durch eine Siliziumdiode fast kein Strom. In <strong>Durchlassrichtung</strong> fließt erst ab der <strong>Schwellspannung</strong> von rund 0,7 V ein merklicher Strom; danach steigt die Stromstärke schon bei kleiner Spannungserhöhung stark an. Die Diode ist <strong>kein Ohm'sches Bauelement</strong>.</p></div>
+</section>
+
+<section class="slide" data-type="erarbeitung">
+    <div class="tag">Auswertung · Skizze</div><div class="topic-badge">Die Kennlinie der Diode</div>
+    <h1>Der Vorwiderstand</h1>
+    <div class="tafel"><img src="../../bilder/skizze-w04-schaltung.png" alt="Der Vorwiderstand"></div>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Auswertung · Beispiel</div><div class="topic-badge">Die Kennlinie der Diode</div>
+    <h1>Beispiel</h1>
+    <div class="box beispiel"><ul class="plain"><li>Batterie 4,5 V; an der Diode 0,7 V; gewünschte Stromstärke 20 mA</li><li>am Vorwiderstand: <em>U</em> = 4,5 V − 0,7 V = 3,8 V</li><li><em>R</em> = <em>U</em> : <em>I</em> = 3,8 V : 0,020 A = 190 Ω</li></ul></div>
+</section>
+
+<section class="slide" data-type="merke">
+    <div class="tag">Auswertung · Merksatz</div><div class="topic-badge">Die Kennlinie der Diode</div>
+    <h1>Merksatz</h1>
+    <div class="box merke"><p>Eine Diode in Durchlassrichtung braucht immer einen <strong>Vorwiderstand</strong>. Er begrenzt die Stromstärke. An ihm liegt der Teil der Spannung an, den die Diode nicht braucht.</p></div>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Abschlussübung · falls Zeit</div><div class="topic-badge">Die Kennlinie der Diode</div>
+    <h1>Abschlussübung</h1>
+    <div class="box uebung"><ol><li><strong>Kein Ohm'sches Bauelement</strong><p>An einer Diode wurden gemessen: 0,6 V → 5 mA · 0,7 V → 20 mA · 0,8 V → 80 mA. Berechne für alle drei Punkte den Widerstand der Diode. Formuliere einen Je-desto-Satz und begründe damit, dass die Diode kein Ohm'sches Bauelement ist.</p></li></ol></div><p class="small schema-zeile"><strong>So schreibst du auf:</strong> Gegeben → Gesucht → Gleichung → Umstellen → Einsetzen mit Einheiten → Ergebnis → Antwortsatz</p>
+</section>
+
+<section class="slide dense" data-type="auswertung">
+    <div class="tag">Abschlussübung · Lösung</div><div class="topic-badge">Die Kennlinie der Diode</div>
+    <h1>Lösungen</h1>
+    <div class="box beispiel"><ol><li><strong>Kein Ohm'sches Bauelement</strong><ul class="plain"><li>0,6 V: <em>R</em> = 0,6 V : 0,005 A = 120 Ω</li><li>0,7 V: <em>R</em> = 0,7 V : 0,020 A = 35 Ω</li><li>0,8 V: <em>R</em> = 0,8 V : 0,080 A = 10 Ω</li><li>Je größer die Spannung, desto kleiner der Widerstand der Diode. Bei einem Ohm'schen Bauelement bliebe er gleich.</li></ul></li></ol></div>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Übung · OPAL</div><div class="topic-badge">Die Kennlinie der Diode</div>
+    <h1>Weiter üben im OPAL-Kurs</h1>
+    <div class="box auftrag"><ul><li>Seite <strong>Die Kennlinie der Diode</strong>: Aufgaben 1, 3, 4, 5, 6 und 7</li><li>Dieselbe Seite, <strong>Üben mit Selbstkontrolle</strong>: 5 Übungen mit Tipps — die Lösungen besprechen wir in der Stunde</li></ul></div><p class="small">Für alle, die schneller fertig sind — und zum Wiederholen zu Hause.</p>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Ausblick</div><div class="topic-badge">Die Kennlinie der Diode</div>
+    <h1>Leuchtdioden</h1>
+    <div class="box hinweis"><ul><li>Eine Leuchtdiode (LED) ist eine Diode, die in Durchlassrichtung leuchtet.</li><li>Ihre Schwellspannung ist größer: rot rund 2 V, blau und weiß rund 3 V.</li><li>Auch eine LED braucht immer einen Vorwiderstand.</li><li>LEDs wandeln mehr elektrische Energie in Licht um als Glühlampen — deshalb sind diese fast verschwunden.</li></ul></div>
+</section>
+
+<section class="slide dense" data-type="zusammenfassung">
+    <div class="tag">Zusammenfassung</div><div class="topic-badge">Die Kennlinie der Diode</div>
+    <h1>Das Wichtigste der Stunde</h1>
+    <div class="box merke"><ul><li>In <strong>Sperrrichtung</strong> fließt durch eine Siliziumdiode fast kein Strom. In <strong>Durchlassrichtung</strong> fließt erst ab der <strong>Schwellspannung</strong> von rund 0,7 V ein merklicher Strom; danach steigt die Stromstärke schon bei kleiner Spannungserhöhung stark an. Die Diode ist <strong>kein Ohm'sches Bauelement</strong>.</li><li>Eine Diode in Durchlassrichtung braucht immer einen <strong>Vorwiderstand</strong>. Er begrenzt die Stromstärke. An ihm liegt der Teil der Spannung an, den die Diode nicht braucht.</li></ul></div>
+</section>
+
+<section class="slide dense" data-type="zusammenfassung">
+    <div class="tag">Check-out</div><div class="topic-badge">Die Kennlinie der Diode</div>
+    <h1>Check-out</h1>
+    <p class="small">Unsere Frage war:</p><div class="box frage"><p>Warum fließt durch eine Diode erst lange gar kein Strom — und dann auf einmal viel?</p></div><div class="box auftrag"><p>Erkläre, warum man eine Diode nie ohne Vorwiderstand an eine Batterie anschließt.</p></div><p class="center">Wie sicher bist du?</p><div class="daumen"><span>👍 sicher</span><span>👌 mit Hilfe</span><span>👎 noch nicht</span></div>
+</section>
+
+<section class="slide" data-type="titel">
+    <p class="sub">LB 1: Elektronik · Kennlinie und Solarzelle</p>
+    <h1>Die Solarzelle</h1>
+    <ul class="ablauf"><li><a href="#s22">Einstieg</a></li><li><a href="#s24">Motivation</a></li><li><a href="#s26">Experiment</a></li><li><a href="#s29">Auswertung</a></li><li><a href="#s34">Abschlussübung</a></li><li><a href="#s36">Übung</a></li><li><a href="#s37">Ausblick</a></li><li><a href="#s38">Zusammenfassung</a></li><li><a href="#s39">Check-out</a></li></ul>
+</section>
+
+<section class="slide dense" data-type="einstieg">
+    <div class="tag">Einstieg · TOP 10</div><div class="topic-badge">Die Solarzelle</div>
+    <h1>TOP 10 #3 — Was weißt du noch?</h1>
+    <div class="box uebung"><ol><li>Nenne die Schwellspannung einer Siliziumdiode.</li><li>Begründe, warum eine Diode einen Vorwiderstand braucht.</li><li>Berechne den Vorwiderstand für eine Diode (0,7 V) an 4,5 V bei 38 mA.</li></ol></div><p class="timer">⏱ 10 min — ohne Hefter, ohne Note</p>
+</section>
+
+<section class="slide dense" data-type="einstieg">
+    <div class="tag">Einstieg · Vergleich</div><div class="topic-badge">Die Solarzelle</div>
+    <h1>Vergleiche</h1>
+    <div class="box beispiel"><ol><li>rund 0,7 V</li><li>Oberhalb der Schwellspannung steigt die Stromstärke sehr stark an. Der Vorwiderstand begrenzt sie.</li><li><em>U</em> = 4,5 V − 0,7 V = 3,8 V; <em>R</em> = 3,8 V : 0,038 A = 100 Ω</li></ol></div>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Motivation · in echt</div><div class="topic-badge">Die Solarzelle</div>
+    <h1>Eine Solarzelle</h1>
+    <div class="cols"><div class="bild"><img src="../../bilder/foto-solarzelle.jpg" alt=""></div><div><ul><li>Eine Scheibe Silizium, 12,5 cm breit.</li><li>Die feinen Streifen sind Kontakte aus Metall.</li></ul><div class="box uebung"><p>Stelle eine Vermutung auf, wie dieses Stück Silizium ohne Batterie einen Motor antreiben kann.</p></div><p class="nachweis">Foto: Stephan Kambor · CC BY-SA 2.5 · Wikimedia Commons</p></div></div>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Motivation</div><div class="topic-badge">Die Solarzelle</div>
+    <h1>Frage der Stunde</h1>
+    <div class="box frage"><p>Wie kann ein Stück Silizium ohne Batterie einen Motor antreiben?</p></div><p>Schreib deine <strong>Vermutung</strong> ins Heft.</p><p class="small"><strong>Kennst du das?</strong></p><ul><li>Ein Taschenrechner läuft jahrelang ohne Batterie.</li><li>Solar-Gartenlampen gehen abends von selbst an.</li><li>Parkscheinautomaten am Straßenrand haben ein kleines Solarmodul.</li></ul>
+</section>
+
+<section class="slide dense" data-type="experiment">
+    <div class="tag">Experiment · Planung</div><div class="topic-badge">Die Solarzelle</div>
+    <h1>Forscherfrage</h1>
+    <div class="box frage"><p>Wovon hängen die Spannung und die Stromstärke einer Solarzelle ab?</p></div><div class="box auftrag"><p><strong>Material gibt es, wenn euer Plan diese vier Fragen beantwortet:</strong></p><ol><li>Welche Größe verändert ihr — und was lasst ihr gleich?</li><li>Wie messt ihr die Spannung, wenn nichts angeschlossen ist?</li><li>Wie messt ihr die größte Stromstärke, die die Zelle liefern kann?</li><li>Wie viele Einstellungen messt ihr, damit man einen Zusammenhang erkennt?</li></ol></div><div class="box merke"><p class="small"><strong>Sicherheit:</strong> Halogenlampen werden heiß — nicht anfassen, nichts darauf legen. Nicht in die Lampe schauen.</p></div>
+</section>
+
+<section class="slide dense" data-type="experiment">
+    <div class="tag">Experiment · Durchführung</div><div class="topic-badge">Die Solarzelle</div>
+    <h1>SE: Was eine Solarzelle kann</h1>
+    <div class="cols"><div><table class="mini"><tr><th>Art</th><td>Schülerexperiment in Dreiergruppen, 22 min</td></tr><tr><th>Material</th><td>je Gruppe: Solarzelle (Silizium, ca. 0,5 V), Lampe mit Reflektor (60 W Halogen oder helle LED-Leuchte), Lineal oder Maßband, zwei Vielfachmessgeräte, Pappe zum Abdecken, Kabel</td></tr><tr><th>Sicherheit</th><td>Halogenlampen werden heiß — nicht anfassen, nichts darauf legen. Nicht in die Lampe schauen.</td></tr></table></div><div><div class="box hinweis"><p><strong>Prüft euch selbst</strong></p><ul><li>Habt ihr jedes Mal nur eine Größe verändert?</li><li>Fiel kein anderes Licht (Fenster, Nachbargruppe) auf eure Zelle?</li><li>Habt ihr Spannung und Stromstärke getrennt gemessen?</li></ul></div></div></div>
+</section>
+
+<section class="slide dense" data-type="experiment">
+    <div class="tag">Experiment · Protokoll</div><div class="topic-badge">Die Solarzelle</div>
+    <h1>Euer Protokoll</h1>
+    <div class="box auftrag"><ul class="plain"><li>Forscherfrage</li><li>Vermutung</li><li>Plan (was ihr verändert, wie ihr messt)</li><li>Messwerte in einer Tabelle</li><li>Ergebnis: Antwort auf die Forscherfrage</li></ul></div>
+</section>
+
+<section class="slide" data-type="erarbeitung">
+    <div class="tag">Auswertung · Skizze</div><div class="topic-badge">Die Solarzelle</div>
+    <h1>Die Solarzelle als Spannungsquelle</h1>
+    <div class="tafel"><img src="../../bilder/skizze-w05-solarzelle.png" alt="Die Solarzelle als Spannungsquelle"></div>
+</section>
+
+<section class="slide" data-type="merke">
+    <div class="tag">Auswertung · Merksatz</div><div class="topic-badge">Die Solarzelle</div>
+    <h1>Merksatz</h1>
+    <div class="box merke"><p>Eine <strong>Solarzelle</strong> ist eine großflächige Halbleiterdiode. Licht erzeugt in ihr freie Elektronen und Löcher; an der Grenzschicht werden sie getrennt. So wird die Solarzelle zur <strong>Spannungsquelle</strong>: Eine Siliziumzelle liefert rund 0,5 V. Die Stromstärke wächst mit der Helligkeit und mit der beleuchteten Fläche.</p></div>
+</section>
+
+<section class="slide" data-type="erarbeitung">
+    <div class="tag">Auswertung · Skizze</div><div class="topic-badge">Die Solarzelle</div>
+    <h1>Solarzellen in Schaltungen</h1>
+    <div class="tafel"><img src="../../bilder/skizze-w05-garten.png" alt="Solarzellen in Schaltungen"></div>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Auswertung · Beispiel</div><div class="topic-badge">Die Solarzelle</div>
+    <h1>Beispiel</h1>
+    <div class="box beispiel"><ul class="plain"><li>Gartenlampe: Akku 1,2 V; an der Diode 0,7 V; Zellen je 0,5 V</li><li>nötig: 1,2 V + 0,7 V = 1,9 V</li><li>1,9 V : 0,5 V = 3,8 → 4 Zellen in Reihe (2,0 V)</li></ul></div>
+</section>
+
+<section class="slide" data-type="merke">
+    <div class="tag">Auswertung · Merksatz</div><div class="topic-badge">Die Solarzelle</div>
+    <h1>Merksatz</h1>
+    <div class="box merke"><p>Schaltet man Solarzellen <strong>in Reihe</strong>, addieren sich ihre Spannungen. Schaltet man sie <strong>parallel</strong>, addieren sich ihre Stromstärken. Eine <strong>Diode</strong> zwischen Solarzelle und Akku verhindert, dass sich der Akku im Dunkeln über die Solarzelle entlädt.</p></div>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Abschlussübung · falls Zeit</div><div class="topic-badge">Die Solarzelle</div>
+    <h1>Abschlussübung</h1>
+    <div class="box uebung"><ol><li><strong>Der Punkt der höchsten Leistung</strong><p>Ein kleines Solarmodul wurde in voller Sonne an verschiedene Widerstände angeschlossen:</p><ul class="plain"><li>Spannung in V: 0 · 2,0 · 4,0 · 5,0 · 5,5 · 6,0</li><li>Stromstärke in A: 0,50 · 0,49 · 0,46 · 0,40 · 0,30 · 0</li><li>a) Berechne zu jedem Messpunkt die elektrische Leistung.</li><li>b) Gib an, bei welcher Spannung das Modul die größte Leistung abgibt.</li><li>c) Berechne den Widerstand, an dem das Modul seine größte Leistung abgibt.</li><li>d) Ein kleiner Ventilator braucht 2,5 W. Beurteile, ob das Modul ihn betreiben kann.</li></ul></li></ol></div><p class="small schema-zeile"><strong>So schreibst du auf:</strong> Gegeben → Gesucht → Gleichung → Umstellen → Einsetzen mit Einheiten → Ergebnis → Antwortsatz</p>
+</section>
+
+<section class="slide dense" data-type="auswertung">
+    <div class="tag">Abschlussübung · Lösung</div><div class="topic-badge">Die Solarzelle</div>
+    <h1>Lösungen</h1>
+    <div class="box beispiel"><ol><li><strong>Der Punkt der höchsten Leistung</strong><ul class="plain"><li>a) <em>P</em> = <em>U</em> · <em>I</em>: 0 W · 0,98 W · 1,84 W · 2,00 W · 1,65 W · 0 W</li><li>b) bei 5,0 V (2,00 W)</li><li>c) <em>R</em> = 5,0 V : 0,40 A = 12,5 Ω</li><li>d) Nein: Selbst im günstigsten Punkt gibt das Modul nur 2,0 W ab, weniger als 2,5 W. Man braucht ein größeres Modul oder ein zweites.</li><li>Der erste Messpunkt ist der Kurzschluss, der letzte der Leerlauf — dort ist die Leistung null.</li></ul></li></ol></div>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Übung · OPAL</div><div class="topic-badge">Die Solarzelle</div>
+    <h1>Weiter üben im OPAL-Kurs</h1>
+    <div class="box auftrag"><ul><li>Seite <strong>Die Solarzelle</strong>: Aufgaben 1, 2, 3, 5, 6, 7 und 8</li><li>Dieselbe Seite, <strong>Üben mit Selbstkontrolle</strong>: 7 Übungen mit Tipps — die Lösungen besprechen wir in der Stunde</li></ul></div><p class="small">Für alle, die schneller fertig sind — und zum Wiederholen zu Hause.</p>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Ausblick</div><div class="topic-badge">Die Solarzelle</div>
+    <h1>Strom aus dem Weltall</h1>
+    <div class="box hinweis"><ul><li>Satelliten und die Raumstation ISS werden seit Jahrzehnten mit Solarzellen versorgt.</li><li>Im Weltall gibt es keine Wolken und keine Nacht hinter Bergen — nur den Erdschatten.</li><li>Jeder der großen Solarflügel der ISS ist über 30 m lang.</li></ul></div>
+</section>
+
+<section class="slide dense" data-type="zusammenfassung">
+    <div class="tag">Zusammenfassung</div><div class="topic-badge">Die Solarzelle</div>
+    <h1>Das Wichtigste der Stunde</h1>
+    <div class="box merke"><ul><li>Eine <strong>Solarzelle</strong> ist eine großflächige Halbleiterdiode. Licht erzeugt in ihr freie Elektronen und Löcher; an der Grenzschicht werden sie getrennt. So wird die Solarzelle zur <strong>Spannungsquelle</strong>: Eine Siliziumzelle liefert rund 0,5 V. Die Stromstärke wächst mit der Helligkeit und mit der beleuchteten Fläche.</li><li>Schaltet man Solarzellen <strong>in Reihe</strong>, addieren sich ihre Spannungen. Schaltet man sie <strong>parallel</strong>, addieren sich ihre Stromstärken. Eine <strong>Diode</strong> zwischen Solarzelle und Akku verhindert, dass sich der Akku im Dunkeln über die Solarzelle entlädt.</li></ul></div>
+</section>
+
+<section class="slide dense" data-type="zusammenfassung">
+    <div class="tag">Check-out</div><div class="topic-badge">Die Solarzelle</div>
+    <h1>Check-out</h1>
+    <p class="small">Unsere Frage war:</p><div class="box frage"><p>Wie kann ein Stück Silizium ohne Batterie einen Motor antreiben?</p></div><div class="box auftrag"><p>Nenne einen Unterschied und eine Gemeinsamkeit von Solarzelle und Batterie.</p></div><p class="center">Wie sicher bist du?</p><div class="daumen"><span>👍 sicher</span><span>👌 mit Hilfe</span><span>👎 noch nicht</span></div>
+</section>
+
+</div>
+<div class="clickzone" id="zone-prev"></div>
+<div class="clickzone" id="zone-next"></div>
+<div id="navbar"><div id="progress"></div></div>
+<div id="navbtns"><button id="btn-prev">◀ zurück</button><button id="btn-next">weiter ▶</button></div>
+<div id="counter"></div>
+<script src="folien.js"></script>
+</body>
+</html>

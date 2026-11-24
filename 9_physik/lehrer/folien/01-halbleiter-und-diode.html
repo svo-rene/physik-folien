@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Halbleiter und Diode</title>
+<link rel="stylesheet" href="folien.css">
+</head>
+<body>
+<a id="overview-link" href="#">☰ Übersicht</a>
+<div id="uebersicht-overlay">
+<div class="ue-kopf"><h2>Halbleiter und Diode</h2><a href="index.html">Alle Foliensätze</a></div>
+<p class="ue-hilfe">Klick springt direkt hinein · <kbd>O</kbd> oder <kbd>Esc</kbd> blendet die Übersicht ein und aus · <kbd>F</kbd> Vollbild</p>
+<div class="gitter"><div class="karte" style="--akzent:var(--dodger)"><div class="n">Doppelstunde 1 · Erarbeitung</div><a class="t" href="#s2">Elektronische Bauelemente und Halbleiter</a><div class="chips"><a href="#s3">Problemstellung</a><a href="#s5">Diskussion</a><a href="#s6">Erarbeitung</a><a href="#s7">Notieren</a><a href="#s10">Übung</a><a href="#s14">Ausblick</a><a href="#s15">Zusammenfassung</a><a href="#s16">Check-out</a></div></div><div class="karte" style="--akzent:var(--dodger)"><div class="n">Doppelstunde 2 · Erarbeitung</div><a class="t" href="#s17">Dotierte Halbleiter und die Diode</a><div class="chips"><a href="#s18">Einstieg</a><a href="#s20">Problemstellung</a><a href="#s22">Diskussion</a><a href="#s23">Erarbeitung</a><a href="#s24">Notieren</a><a href="#s28">Übung</a><a href="#s32">Zusammenfassung</a><a href="#s33">Check-out</a></div></div></div>
+</div>
+<div id="deck">
+
+<section class="slide active" data-type="uebersicht">
+    <p class="sub">Physik Klasse 9 · LB 1: Elektronik</p>
+    <h1>Halbleiter und Diode</h1>
+    <div class="gitter"><div class="karte" style="--akzent:var(--dodger)"><div class="n">Doppelstunde 1 · Erarbeitung</div><a class="t" href="#s2">Elektronische Bauelemente und Halbleiter</a><div class="chips"><a href="#s3">Problemstellung</a><a href="#s5">Diskussion</a><a href="#s6">Erarbeitung</a><a href="#s7">Notieren</a><a href="#s10">Übung</a><a href="#s14">Ausblick</a><a href="#s15">Zusammenfassung</a><a href="#s16">Check-out</a></div></div><div class="karte" style="--akzent:var(--dodger)"><div class="n">Doppelstunde 2 · Erarbeitung</div><a class="t" href="#s17">Dotierte Halbleiter und die Diode</a><div class="chips"><a href="#s18">Einstieg</a><a href="#s20">Problemstellung</a><a href="#s22">Diskussion</a><a href="#s23">Erarbeitung</a><a href="#s24">Notieren</a><a href="#s28">Übung</a><a href="#s32">Zusammenfassung</a><a href="#s33">Check-out</a></div></div></div>
+    <p class="ue-hilfe">Klick springt direkt hinein · O oder Esc: Übersicht jederzeit</p>
+</section>
+
+<section class="slide" data-type="titel">
+    <p class="sub">LB 1: Elektronik · Halbleiter und Diode</p>
+    <h1>Elektronische Bauelemente und Halbleiter</h1>
+    <ul class="ablauf"><li><a href="#s3">Problemstellung</a></li><li><a href="#s5">Diskussion</a></li><li><a href="#s6">Erarbeitung</a></li><li><a href="#s7">Notieren</a></li><li><a href="#s10">Übung</a></li><li><a href="#s14">Ausblick</a></li><li><a href="#s15">Zusammenfassung</a></li><li><a href="#s16">Check-out</a></li></ul>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Problemstellung · in echt</div><div class="topic-badge">Elektronische Bauelemente und Halbleiter</div>
+    <h1>Ein Siliziumwafer</h1>
+    <div class="cols"><div class="bild"><img src="../../bilder/foto-wafer.jpg" alt=""></div><div><ul><li>Eine dünne Scheibe aus reinem Silizium.</li><li>Darauf entstehen Hunderte Computerchips.</li></ul><div class="box uebung"><p>Stelle eine Vermutung auf, warum Chips gerade aus Silizium gebaut werden — und nicht aus Kupfer.</p></div><p class="nachweis">Foto: Rob Bulmahn · CC BY 2.0 · Wikimedia Commons</p></div></div>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Problemstellung</div><div class="topic-badge">Elektronische Bauelemente und Halbleiter</div>
+    <h1>Frage der Stunde</h1>
+    <div class="box frage"><p>Warum leitet ein Heißleiter umso besser, je wärmer er wird — ein Metalldraht aber schlechter?</p></div><p>Schreib deine <strong>Vermutung</strong> ins Heft.</p><p class="small"><strong>Kennst du das?</strong></p><ul><li>Im Handy stecken Milliarden winziger Halbleiterbauelemente.</li><li>Ein digitales Fieberthermometer misst mit einem Halbleiter.</li><li>Die Lichterkette am Weihnachtsbaum leuchtet mit Leuchtdioden.</li></ul>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Diskussion</div><div class="topic-badge">Elektronische Bauelemente und Halbleiter</div>
+    <h1>Was meint ihr?</h1>
+    <div class="box frage"><p>„Beim Erwärmen entstehen im Halbleiter neue Elektronen“ — stimmt das?</p></div><div class="box auftrag"><ul><li>Überlegt zu zweit: Was vermutet ihr — und <strong>warum</strong>?</li><li>Sammelt kurz in der Klasse: Wer ist anderer Meinung?</li><li>Schreib deine <strong>Vermutung</strong> ins Heft.</li></ul></div><p class="timer">⏱ 3 min — zu zweit, dann in der Klasse</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Versuch</div><div class="topic-badge">Elektronische Bauelemente und Halbleiter</div>
+    <h1>Eine Platine von innen</h1>
+    <div class="cols"><div><table class="mini"><tr><th>Art</th><td>Partnerarbeit, 10 min</td></tr><tr><th>Material</th><td>je Tisch eine alte Platine (Radio, Fernbedienung, Spielzeug), Lupe, Bildkarte mit Bauelementen und Namen</td></tr><tr><th>Sicherheit</th><td>Platinen nicht unter Spannung setzen. Vorsicht an scharfen Lötstellen.</td></tr></table></div><div><div class="box hinweis"><p><strong>So geht es</strong></p><ul><li>Sucht auf der Platine möglichst viele verschiedene Bauelemente.</li><li>Ordnet sie mit der Bildkarte zu: Widerstand, Kondensator, Diode, Leuchtdiode, Transistor, integrierter Schaltkreis (Chip).</li><li>Zählt, wie oft jedes Bauelement vorkommt.</li></ul></div></div></div>
+</section>
+
+<section class="slide" data-type="merke">
+    <div class="tag">Notieren · Merksatz</div><div class="topic-badge">Elektronische Bauelemente und Halbleiter</div>
+    <h1>Merksatz</h1>
+    <div class="box merke"><p>Elektronische Geräte enthalten viele verschiedene <strong>Bauelemente</strong>: Widerstände, Dioden, Leuchtdioden, Transistoren, Chips. Die meisten davon bestehen aus <strong>Halbleitern</strong>, vor allem aus Silizium.</p></div>
+</section>
+
+<section class="slide" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Skizze</div><div class="topic-badge">Elektronische Bauelemente und Halbleiter</div>
+    <h1>Leitung in reinen Halbleitern</h1>
+    <div class="tafel"><img src="../../bilder/skizze-w02-gitter.png" alt="Leitung in reinen Halbleitern"></div>
+</section>
+
+<section class="slide" data-type="merke">
+    <div class="tag">Notieren · Merksatz</div><div class="topic-badge">Elektronische Bauelemente und Halbleiter</div>
+    <h1>Merksatz</h1>
+    <div class="box merke"><p>Im <strong>Siliziumkristall</strong> ist jedes Atom über seine vier Außenelektronen fest mit vier Nachbarn verbunden. Durch Wärme oder Licht werden einzelne Elektronen frei, an ihrer Stelle bleibt ein <strong>Loch</strong> (<strong>Paarbildung</strong>). Freie Elektronen und Löcher leiten den Strom. Füllt ein Elektron ein Loch wieder, heißt das <strong>Rekombination</strong>. Je wärmer der Halbleiter, desto mehr freie Ladungsträger, desto besser leitet er.</p></div>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Übung · mündlich</div><div class="topic-badge">Elektronische Bauelemente und Halbleiter</div>
+    <h1>Erkläre das Bild</h1>
+    <div class="cols"><div class="bild"><img src="../../bilder/skizze-w02-gitter.png" alt=""></div><div><div class="box uebung"><p>Erkläre deinem Nachbarn, was hier passiert. Benutze dabei diese Fachbegriffe:</p><ul><li>Bauelemente</li><li>Halbleitern</li><li>Siliziumkristall</li><li>Loch</li><li>Paarbildung</li><li>Rekombination</li></ul></div><p class="timer">⏱ 3 min — zu zweit, dann zwei Paare vor der Klasse</p></div></div>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Übung · schriftlich</div><div class="topic-badge">Elektronische Bauelemente und Halbleiter</div>
+    <h1>Übung — schriftlich ins Heft</h1>
+    <div class="box uebung"><ol><li><strong>Eine Messreihe am Heißleiter</strong><p>Ein Heißleiter liegt im Wasserbad an einer Spannung von 6,0 V. Gemessen wird die Stromstärke bei verschiedenen Temperaturen:</p><ul class="plain"><li>Temperatur in °C: 20 · 40 · 60 · 80</li><li>Stromstärke in mA: 12 · 24 · 48 · 80</li><li>a) Berechne den Widerstand für jede Temperatur.</li><li>b) Zeichne ein Diagramm: Widerstand über der Temperatur.</li><li>c) Beschreibe den Zusammenhang zwischen Temperatur und Widerstand.</li><li>d) Bestimme mit deinem Diagramm den Widerstand bei 50 °C.</li></ul></li></ol></div><p class="timer">⏱ 13 min — allein oder zu zweit ins Heft</p><p class="small schema-zeile"><strong>So schreibst du auf:</strong> Gegeben → Gesucht → Gleichung → Umstellen → Einsetzen mit Einheiten → Ergebnis → Antwortsatz</p>
+</section>
+
+<section class="slide dense" data-type="auswertung">
+    <div class="tag">Übung · Lösung</div><div class="topic-badge">Elektronische Bauelemente und Halbleiter</div>
+    <h1>Lösungen</h1>
+    <div class="box beispiel"><ol><li><strong>Eine Messreihe am Heißleiter</strong><ul class="plain"><li>a) <em>R</em> = <em>U</em> : <em>I</em>: 20 °C: 6,0 V : 0,012 A = 500 Ω · 40 °C: 250 Ω · 60 °C: 125 Ω · 80 °C: 75 Ω</li><li>b) Punkte (20 °C | 500 Ω), (40 °C | 250 Ω), (60 °C | 125 Ω), (80 °C | 75 Ω), verbunden mit einer glatten Kurve, die immer flacher wird.</li><li>c) Je höher die Temperatur, desto kleiner der Widerstand. Er sinkt nicht gleichmäßig: Bis 60 °C halbiert er sich etwa alle 20 °C.</li><li>d) rund 180 Ω (Werte von 160 Ω bis 190 Ω gelten)</li></ul></li></ol></div>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Übung · OPAL</div><div class="topic-badge">Elektronische Bauelemente und Halbleiter</div>
+    <h1>Weiter üben im OPAL-Kurs</h1>
+    <div class="box auftrag"><ul><li>Seite <strong>Elektronische Bauelemente und Halbleiter</strong>: Aufgaben 1, 2, 3, 5, 6 und 7</li><li>Dieselbe Seite, <strong>Üben mit Selbstkontrolle</strong>: 6 Übungen mit Tipps — die Lösungen besprechen wir in der Stunde</li></ul></div><p class="small">Für alle, die schneller fertig sind — und zum Wiederholen zu Hause.</p>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Ausblick</div><div class="topic-badge">Elektronische Bauelemente und Halbleiter</div>
+    <h1>Vom Sand zum Chip</h1>
+    <div class="box hinweis"><ul><li>Silizium ist nach Sauerstoff das häufigste Element der Erdkruste — Quarzsand ist Siliziumdioxid.</li><li>Für Chips muss es extrem rein sein: Auf eine Milliarde Siliziumatome kommt höchstens ein fremdes.</li><li>Aus der Schmelze werden große Einkristalle gezogen und in hauchdünne Scheiben gesägt.</li><li>In Dresden stehen einige der größten Chipfabriken Europas.</li></ul></div>
+</section>
+
+<section class="slide dense" data-type="zusammenfassung">
+    <div class="tag">Zusammenfassung</div><div class="topic-badge">Elektronische Bauelemente und Halbleiter</div>
+    <h1>Das Wichtigste der Stunde</h1>
+    <div class="box merke"><ul><li>Elektronische Geräte enthalten viele verschiedene <strong>Bauelemente</strong>: Widerstände, Dioden, Leuchtdioden, Transistoren, Chips. Die meisten davon bestehen aus <strong>Halbleitern</strong>, vor allem aus Silizium.</li><li>Im <strong>Siliziumkristall</strong> ist jedes Atom über seine vier Außenelektronen fest mit vier Nachbarn verbunden. Durch Wärme oder Licht werden einzelne Elektronen frei, an ihrer Stelle bleibt ein <strong>Loch</strong> (<strong>Paarbildung</strong>). Freie Elektronen und Löcher leiten den Strom. Füllt ein Elektron ein Loch wieder, heißt das <strong>Rekombination</strong>. Je wärmer der Halbleiter, desto mehr freie Ladungsträger, desto besser leitet er.</li></ul></div>
+</section>
+
+<section class="slide dense" data-type="zusammenfassung">
+    <div class="tag">Check-out</div><div class="topic-badge">Elektronische Bauelemente und Halbleiter</div>
+    <h1>Check-out</h1>
+    <div class="box auftrag"><p>Erkläre deinem Nachbarn in zwei Sätzen, warum ein warmer Halbleiter besser leitet als ein kalter.</p></div><p class="center">Wie sicher bist du?</p><div class="daumen"><span>👍 sicher</span><span>👌 mit Hilfe</span><span>👎 noch nicht</span></div>
+</section>
+
+<section class="slide" data-type="titel">
+    <p class="sub">LB 1: Elektronik · Halbleiter und Diode</p>
+    <h1>Dotierte Halbleiter und die Diode</h1>
+    <ul class="ablauf"><li><a href="#s18">Einstieg</a></li><li><a href="#s20">Problemstellung</a></li><li><a href="#s22">Diskussion</a></li><li><a href="#s23">Erarbeitung</a></li><li><a href="#s24">Notieren</a></li><li><a href="#s28">Übung</a></li><li><a href="#s32">Zusammenfassung</a></li><li><a href="#s33">Check-out</a></li></ul>
+</section>
+
+<section class="slide dense" data-type="einstieg">
+    <div class="tag">Einstieg · TOP 10</div><div class="topic-badge">Dotierte Halbleiter und die Diode</div>
+    <h1>TOP 10 #1 — Was weißt du noch?</h1>
+    <div class="box uebung"><ol><li>Nenne zwei Bauelemente, die aus Halbleitern bestehen.</li><li>Beschreibe, was bei der Rekombination geschieht.</li><li>Ein Heißleiter hat bei 20 °C einen Widerstand von 600 Ω, bei 50 °C von 200 Ω. Berechne für beide Temperaturen die Stromstärke bei 6,0 V.</li></ol></div><p class="timer">⏱ 10 min — ohne Hefter, ohne Note</p>
+</section>
+
+<section class="slide dense" data-type="einstieg">
+    <div class="tag">Einstieg · Vergleich</div><div class="topic-badge">Dotierte Halbleiter und die Diode</div>
+    <h1>Vergleiche</h1>
+    <div class="box beispiel"><ol><li>z. B. Diode, Leuchtdiode, Transistor, Chip, Solarzelle</li><li>Ein freies Elektron füllt ein Loch; danach sind beide keine freien Ladungsträger mehr.</li><li><em>I</em> = <em>U</em> : <em>R</em>: 6,0 V : 600 Ω = 0,010 A = 10 mA · 6,0 V : 200 Ω = 0,030 A = 30 mA</li></ol></div>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Problemstellung · in echt</div><div class="topic-badge">Dotierte Halbleiter und die Diode</div>
+    <h1>Eine Diode, ganz nah</h1>
+    <div class="cols"><div class="bild"><img src="../../bilder/foto-diode.jpg" alt=""></div><div><ul><li>Im Glas sitzt ein kleiner Siliziumkristall zwischen zwei Drähten.</li><li>Eine Seite trägt einen Ring.</li></ul><div class="box uebung"><p>Beschreibe den Aufbau des Bauelements und stelle eine Vermutung auf, wozu der Ring dient.</p></div><p class="nachweis">Foto: John Maushammer · CC BY-SA 2.5 · Wikimedia Commons</p></div></div>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Problemstellung</div><div class="topic-badge">Dotierte Halbleiter und die Diode</div>
+    <h1>Frage der Stunde</h1>
+    <div class="box frage"><p>Wie kann ein Bauelement den Strom nur in eine Richtung durchlassen?</p></div><p>Schreib deine <strong>Vermutung</strong> ins Heft.</p><p class="small"><strong>Kennst du das?</strong></p><ul><li>Legt man Batterien falsch herum ein, bleibt manches Spielzeug einfach aus — und geht nicht kaputt.</li><li>Im Ladegerät für das Handy stecken mehrere Dioden.</li><li>Eine Lichterkette mit Leuchtdioden leuchtet nur, wenn sie richtig herum angeschlossen ist.</li></ul>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Diskussion</div><div class="topic-badge">Dotierte Halbleiter und die Diode</div>
+    <h1>Was meint ihr?</h1>
+    <div class="box frage"><p>„Ein n-Halbleiter ist negativ geladen, ein p-Halbleiter positiv“ — stimmt das?</p></div><div class="box auftrag"><ul><li>Überlegt zu zweit: Was vermutet ihr — und <strong>warum</strong>?</li><li>Sammelt kurz in der Klasse: Wer ist anderer Meinung?</li><li>Schreib deine <strong>Vermutung</strong> ins Heft.</li></ul></div><p class="timer">⏱ 3 min — zu zweit, dann in der Klasse</p>
+</section>
+
+<section class="slide" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Skizze</div><div class="topic-badge">Dotierte Halbleiter und die Diode</div>
+    <h1>n-Leitung und p-Leitung</h1>
+    <div class="tafel"><img src="../../bilder/skizze-w03-dotiert.png" alt="n-Leitung und p-Leitung"></div>
+</section>
+
+<section class="slide" data-type="merke">
+    <div class="tag">Notieren · Merksatz</div><div class="topic-badge">Dotierte Halbleiter und die Diode</div>
+    <h1>Merksatz</h1>
+    <div class="box merke"><p>Beim <strong>Dotieren</strong> baut man in den Siliziumkristall wenige Fremdatome ein. Atome mit <strong>fünf</strong> Außenelektronen (z. B. Phosphor) liefern freie Elektronen: <strong>n-Leitung</strong>. Atome mit <strong>drei</strong> Außenelektronen (z. B. Bor) liefern Löcher: <strong>p-Leitung</strong>. Ein dotierter Halbleiter leitet viel besser als ein reiner.</p></div>
+</section>
+
+<section class="slide" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Skizze</div><div class="topic-badge">Dotierte Halbleiter und die Diode</div>
+    <h1>Die Halbleiterdiode</h1>
+    <div class="tafel"><img src="../../bilder/skizze-w03-diode.png" alt="Die Halbleiterdiode"></div>
+</section>
+
+<section class="slide" data-type="merke">
+    <div class="tag">Notieren · Merksatz</div><div class="topic-badge">Dotierte Halbleiter und die Diode</div>
+    <h1>Merksatz</h1>
+    <div class="box merke"><p>Eine <strong>Halbleiterdiode</strong> besteht aus einer p-leitenden und einer n-leitenden Schicht. Sie lässt den Strom nur in einer Richtung durch. In <strong>Durchlassrichtung</strong> leitet sie, in <strong>Sperrrichtung</strong> sperrt sie. Im Schaltzeichen zeigt das Dreieck in Durchlassrichtung (technische Stromrichtung).</p></div>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Bemerkung</div><div class="topic-badge">Dotierte Halbleiter und die Diode</div>
+    <h1>Was an der Grenzschicht passiert</h1>
+    <div class="box hinweis"><ul><li>Wo p- und n-Schicht aneinanderstoßen, füllen freie Elektronen die Löcher auf.</li><li>Es entsteht eine dünne <strong>Grenzschicht</strong> fast ohne freie Ladungsträger — sie leitet nicht.</li><li>Durchlassrichtung: Die Batterie drückt Elektronen und Löcher in die Grenzschicht hinein, sie verschwindet.</li><li>Sperrrichtung: Die Batterie zieht beide von der Grenze weg, die Grenzschicht wird breiter.</li></ul></div>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Übung · mündlich</div><div class="topic-badge">Dotierte Halbleiter und die Diode</div>
+    <h1>Erkläre das Bild</h1>
+    <div class="cols"><div class="bild"><img src="../../bilder/skizze-w03-diode.png" alt=""></div><div><div class="box uebung"><p>Erkläre deinem Nachbarn, was hier passiert. Benutze dabei diese Fachbegriffe:</p><ul><li>Dotieren</li><li>Halbleiterdiode</li><li>Durchlassrichtung</li><li>Sperrrichtung</li></ul></div><p class="timer">⏱ 3 min — zu zweit, dann zwei Paare vor der Klasse</p></div></div>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Übung · mündlich</div><div class="topic-badge">Dotierte Halbleiter und die Diode</div>
+    <h1>Kurz mündlich</h1>
+    <div class="box uebung"><ol><li><strong>n oder p?</strong><p>Silizium steht in der IV. Hauptgruppe. Entscheide, ob Silizium mit diesen Fremdatomen n-leitend oder p-leitend wird, und begründe:</p><ul class="plain"><li>a) Arsen (V. Hauptgruppe)</li><li>b) Gallium (III. Hauptgruppe)</li><li>c) Antimon (V. Hauptgruppe)</li><li>d) Germanium (IV. Hauptgruppe)</li></ul></li><li><strong>Geladen oder neutral?</strong><p>Ein n-dotierter Kristall enthält viele freie Elektronen. Erkläre, warum er trotzdem elektrisch neutral ist.</p></li></ol></div><p class="timer">⏱ 5 min — zu zweit, dann in der Klasse</p>
+</section>
+
+<section class="slide dense" data-type="auswertung">
+    <div class="tag">Übung · Lösung</div><div class="topic-badge">Dotierte Halbleiter und die Diode</div>
+    <h1>Lösungen</h1>
+    <div class="box beispiel"><ol><li><strong>n oder p?</strong><ul class="plain"><li>Die Nummer der Hauptgruppe gibt die Zahl der Außenelektronen an.</li><li>a) Arsen: fünf Außenelektronen, eines wird nicht gebraucht und ist frei: n-leitend</li><li>b) Gallium: drei Außenelektronen, in einer Bindung fehlt ein Elektron: p-leitend</li><li>c) Antimon: fünf Außenelektronen: n-leitend</li><li>d) Germanium: vier Außenelektronen wie Silizium. Kein Elektron bleibt übrig, keines fehlt: weder n- noch p-leitend.</li></ul></li><li><strong>Geladen oder neutral?</strong><ul class="plain"><li>Jedes Phosphoratom bringt ein Elektron mehr mit als ein Siliziumatom, aber auch ein Proton mehr im Kern.</li><li>Im ganzen Kristall gibt es deshalb gleich viele Protonen und Elektronen. Für den p-dotierten Kristall gilt dasselbe.</li></ul></li></ol></div>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Übung · OPAL</div><div class="topic-badge">Dotierte Halbleiter und die Diode</div>
+    <h1>Weiter üben im OPAL-Kurs</h1>
+    <div class="box auftrag"><ul><li>Seite <strong>Dotierte Halbleiter und die Diode</strong>: Aufgaben 3, 4, 5, 6, 7 und 8</li><li>Dieselbe Seite, <strong>Üben mit Selbstkontrolle</strong>: 13 Übungen mit Tipps — die Lösungen besprechen wir in der Stunde</li></ul></div><p class="small">Für alle, die schneller fertig sind — und zum Wiederholen zu Hause.</p>
+</section>
+
+<section class="slide dense" data-type="zusammenfassung">
+    <div class="tag">Zusammenfassung</div><div class="topic-badge">Dotierte Halbleiter und die Diode</div>
+    <h1>Das Wichtigste der Stunde</h1>
+    <div class="box merke"><ul><li>Beim <strong>Dotieren</strong> baut man in den Siliziumkristall wenige Fremdatome ein. Atome mit <strong>fünf</strong> Außenelektronen (z. B. Phosphor) liefern freie Elektronen: <strong>n-Leitung</strong>. Atome mit <strong>drei</strong> Außenelektronen (z. B. Bor) liefern Löcher: <strong>p-Leitung</strong>. Ein dotierter Halbleiter leitet viel besser als ein reiner.</li><li>Eine <strong>Halbleiterdiode</strong> besteht aus einer p-leitenden und einer n-leitenden Schicht. Sie lässt den Strom nur in einer Richtung durch. In <strong>Durchlassrichtung</strong> leitet sie, in <strong>Sperrrichtung</strong> sperrt sie. Im Schaltzeichen zeigt das Dreieck in Durchlassrichtung (technische Stromrichtung).</li></ul></div>
+</section>
+
+<section class="slide dense" data-type="zusammenfassung">
+    <div class="tag">Check-out</div><div class="topic-badge">Dotierte Halbleiter und die Diode</div>
+    <h1>Check-out</h1>
+    <div class="box auftrag"><p>Zeichne das Schaltzeichen einer Diode und markiere mit einem Pfeil die Durchlassrichtung.</p></div><p class="center">Wie sicher bist du?</p><div class="daumen"><span>👍 sicher</span><span>👌 mit Hilfe</span><span>👎 noch nicht</span></div>
+</section>
+
+</div>
+<div class="clickzone" id="zone-prev"></div>
+<div class="clickzone" id="zone-next"></div>
+<div id="navbar"><div id="progress"></div></div>
+<div id="navbtns"><button id="btn-prev">◀ zurück</button><button id="btn-next">weiter ▶</button></div>
+<div id="counter"></div>
+<script src="folien.js"></script>
+</body>
+</html>

@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Magnetismus und Elektrostatik</title>
+<link rel="stylesheet" href="folien.css">
+</head>
+<body>
+<a id="index-link" href="index.html" title="Taste H">⌂ Alle Foliensätze</a>
+<a id="overview-link" href="#" title="Taste O">☰ Übersicht</a>
+<div id="uebersicht-overlay">
+<div class="ue-kopf"><h2>Magnetismus und Elektrostatik</h2><a href="index.html">Alle Foliensätze</a></div>
+<p class="ue-hilfe">Klick springt direkt hinein | <kbd>O</kbd> oder <kbd>Esc</kbd> blendet die Übersicht ein und aus | <kbd>M</kbd> oder Klick auf den Merksatz zeigt ihn groß | <kbd>F</kbd> Vollbild</p>
+<div class="gitter"><div class="karte" style="--akzent:var(--dodger)"><div class="n">Doppelstunde 1 · Erarbeitung</div><a class="t" href="#s2">Magnetische Kraftwirkungen</a><div class="chips"><a href="#s3">Einstieg</a><a href="#s5">Problemstellung</a><a href="#s6">Diskussion</a><a href="#s7">Erarbeitung</a><a href="#s13">Notieren</a><a href="#s17">Übung</a><a href="#s19">Check-out</a><a href="#s20">Puffer</a></div></div><div class="karte" style="--akzent:var(--dodger)"><div class="n">Doppelstunde 2 · Erarbeitung</div><a class="t" href="#s29">Dauermagnete und Elektromagnete</a><div class="chips"><a href="#s30">Einstieg</a><a href="#s32">Diskussion</a><a href="#s33">Problemstellung</a><a href="#s34">Erarbeitung</a><a href="#s41">Notieren</a><a href="#s45">Übung</a><a href="#s47">Check-out</a><a href="#s48">Puffer</a></div></div><div class="karte" style="--akzent:var(--dodger)"><div class="n">Doppelstunde 3 · Erarbeitung</div><a class="t" href="#s59">Magnetisches und elektrisches Feld</a><div class="chips"><a href="#s60">Einstieg</a><a href="#s62">Problemstellung</a><a href="#s63">Diskussion</a><a href="#s64">Erarbeitung</a><a href="#s71">Notieren</a><a href="#s83">Übung</a><a href="#s87">Ausblick</a><a href="#s88">Check-out</a><a href="#s89">Puffer</a></div></div><div class="karte" style="--akzent:#2e9e5b"><div class="n">Doppelstunde 4 · Übung</div><a class="t" href="#s100">Übungsstunde: Lerntheke Hebel bis Elektrostatik</a><div class="chips"><a href="#s101">Einstieg</a><a href="#s102">Problemstellung</a><a href="#s103">Diskussion</a><a href="#s104">Erarbeitung</a><a href="#s109">Notieren</a><a href="#s110">Übung</a><a href="#s112">Check-out</a><a href="#s113">Puffer</a></div></div></div>
+</div>
+<div id="deck">
+
+<section class="slide active" data-type="uebersicht">
+    <p class="sub">LB 1 Kräfte</p>
+    <h1>Magnetismus und Elektrostatik</h1>
+    <div class="gitter"><div class="karte" style="--akzent:var(--dodger)"><div class="n">Doppelstunde 1 · Erarbeitung</div><a class="t" href="#s2">Magnetische Kraftwirkungen</a><div class="chips"><a href="#s3">Einstieg</a><a href="#s5">Problemstellung</a><a href="#s6">Diskussion</a><a href="#s7">Erarbeitung</a><a href="#s13">Notieren</a><a href="#s17">Übung</a><a href="#s19">Check-out</a><a href="#s20">Puffer</a></div></div><div class="karte" style="--akzent:var(--dodger)"><div class="n">Doppelstunde 2 · Erarbeitung</div><a class="t" href="#s29">Dauermagnete und Elektromagnete</a><div class="chips"><a href="#s30">Einstieg</a><a href="#s32">Diskussion</a><a href="#s33">Problemstellung</a><a href="#s34">Erarbeitung</a><a href="#s41">Notieren</a><a href="#s45">Übung</a><a href="#s47">Check-out</a><a href="#s48">Puffer</a></div></div><div class="karte" style="--akzent:var(--dodger)"><div class="n">Doppelstunde 3 · Erarbeitung</div><a class="t" href="#s59">Magnetisches und elektrisches Feld</a><div class="chips"><a href="#s60">Einstieg</a><a href="#s62">Problemstellung</a><a href="#s63">Diskussion</a><a href="#s64">Erarbeitung</a><a href="#s71">Notieren</a><a href="#s83">Übung</a><a href="#s87">Ausblick</a><a href="#s88">Check-out</a><a href="#s89">Puffer</a></div></div><div class="karte" style="--akzent:#2e9e5b"><div class="n">Doppelstunde 4 · Übung</div><a class="t" href="#s100">Übungsstunde: Lerntheke Hebel bis Elektrostatik</a><div class="chips"><a href="#s101">Einstieg</a><a href="#s102">Problemstellung</a><a href="#s103">Diskussion</a><a href="#s104">Erarbeitung</a><a href="#s109">Notieren</a><a href="#s110">Übung</a><a href="#s112">Check-out</a><a href="#s113">Puffer</a></div></div></div>
+    <p class="ue-hilfe">Klick springt direkt hinein · O oder Esc: Übersicht jederzeit</p>
+</section>
+
+<section class="slide" data-type="titel">
+    <p class="sub">LB 1 Kräfte · Magnetismus und Elektrostatik</p>
+    <h1>Magnetische Kraftwirkungen</h1>
+    <ul class="ablauf"><li><a href="#s3">Einstieg</a></li><li><a href="#s5">Problemstellung</a></li><li><a href="#s6">Diskussion</a></li><li><a href="#s7">Erarbeitung</a></li><li><a href="#s13">Notieren</a></li><li><a href="#s17">Übung</a></li><li><a href="#s19">Check-out</a></li><li><a href="#s20">Puffer</a></li></ul>
+</section>
+
+<section class="slide dense" data-type="einstieg">
+    <div class="tag">Einstieg · Wiederholung</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>Was weißt du noch?</h1>
+    <div class="box uebung"><ol><li><strong>Haft oder Gleit</strong><p>Beschreibe den Unterschied zwischen Haftreibung und Gleitreibung.</p></li><li><strong>Doppelte Gewichtskraft</strong><p>Ein Klotz mit der Gewichtskraft 4 N wird gleitend mit 1,2 N gezogen. Bestimme die Zugkraft, die du bei doppelter Gewichtskraft erwartest.</p></li><li><strong>Flach oder hochkant</strong><p>Begründe, warum sich die Reibungskraft kaum ändert, wenn du denselben Klotz hochkant statt flach ziehst.</p></li></ol></div><p class="timer">⏱ 8 min — allein ins Heft</p>
+</section>
+
+<section class="slide dense" data-type="einstieg">
+    <div class="tag">Einstieg · Vergleich</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>Vergleiche</h1>
+    <div class="box beispiel"><ul class="plain"><li><strong>1)</strong> Haftreibung: Der Körper ruht noch. Gleitreibung: Der Körper rutscht. Die Haftreibungskraft ist größer.</li><li><strong>2)</strong> etwa 2,4 N — doppelte Gewichtskraft, doppelte Reibungskraft.</li><li><strong>3)</strong> Gewichtskraft und Oberflächen bleiben gleich; von der Größe der Auflagefläche hängt die Reibungskraft nicht merklich ab.</li></ul></div>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Problemstellung</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>Schon gelesen?</h1>
+    <div class="schlagzeile"><p class="quelle">WEB.DE Magazine (dpa) · 16.04.2024</p><p class="kopf"><a href="https://web.de/magazine/ratgeber/kind-familie/aktuellem-anlass-kinderchirurgen-warnen-magnetspielzeug-39552122" target="_blank" rel="noopener">Aus aktuellem Anlass: Kinderchirurgen warnen vor Magnetspielzeug</a></p><ul><li>Ärzte warnen davor, dass kleine Kinder starke Magnetkugeln aus Spielzeug verschlucken.</li><li>Besonders gefährlich ist es, wenn zwei Magnete oder ein Magnet und ein Metallteil im Bauch landen.</li></ul></div><div class="box frage"><p>Warum ist ein einzelner Magnet weniger gefährlich als zwei – was machen zwei Magnete miteinander?</p></div>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Diskussion</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>Frage der Stunde — was meint ihr?</h1>
+    <div class="box frage"><p>Am Anfang des Schuljahres haben wir gesagt: Eine Kraft tritt immer zwischen zwei Körpern auf. Was liegt hier eigentlich zwischen den beiden Magneten?</p></div><p>Jemand sagt: <strong>„Alle Metalle sind magnetisch.“</strong> — stimmt das?</p><div class="box auftrag"><ul><li>Überlegt zu zweit: Was vermutet ihr — und <strong>warum</strong>?</li><li>Schreib deine <strong>Vermutung</strong> ins Heft.</li></ul></div><p class="timer">⏱ 3 min — zu zweit, dann in der Klasse</p>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Erarbeitung · Bild</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>Der Wanderkompass</h1>
+    <div class="cols"><div class="bild"><img src="../../bilder/impuls-magnet.jpg" alt=""></div><div><ul><li>Ein Kompass zum Wandern; die Nadel ist an einer Seite rot gefärbt.</li></ul><div class="box frage"><p>Warum zeigt die rote Nadelspitze immer nach Norden, auch wenn gar kein Magnet in der Nähe liegt?</p></div><details class="aufloesung"><summary>Auflösung</summary><p>Die Nadel ist selbst ein kleiner Magnet mit Nord- und Südpol. Die Erde wirkt wie ein riesiger Magnet; der Nordpol der Nadel wird vom Südpol des Erdmagneten angezogen, der im geografischen Norden liegt.</p></details><p class="nachweis">Foto: Arpingstone · Public domain · Wikimedia Commons</p></div></div>
+</section>
+
+<section class="slide dense" data-type="experiment">
+    <div class="tag">Erarbeitung · Demo</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>Wir schauen zu: Pole und Stoffe</h1>
+    <p class="small"><strong>Material:</strong> Zwei Stabmagnete (Pole beschriftet), Eisennagel, Kupferdraht, Aluminiumstück, Holzstab, Münzen, Bleistift, Radiergummi</p><div class="box frage"><p>Am Anfang des Schuljahres haben wir gesagt: Eine Kraft tritt immer zwischen zwei Körpern auf. Was liegt hier eigentlich zwischen den beiden Magneten?</p></div><div class="box auftrag"><ul><li>Beobachtet genau, was passiert.</li><li>Beschreibt es danach in einem Satz.</li></ul></div><p class="small">Film dazu: <a href="https://www.wdrmaus.de/filme/sachgeschichten/supratranst.php5" target="_blank" rel="noopener">Supratrans — ein Fahrzeug, das auf Magneten schwebt</a> (Die Sendung mit der Maus (WDR))</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>Magnetische Kraftwirkungen</h1>
+    <div class="tafel-kopf"><span>Stundenfrage:</span> Wie wirken zwei Magnete aufeinander?</div><div class="tafel-gitter"><div class="tafel-leer">Zwei Magnete gegenüber</div><div class="tafel-leer">Versuche</div><div class="tafel-leer">Welche Stoffe sind magnetisch?</div></div>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>Zwei Magnete gegenüber</h1>
+    <div class="tafel-block"><span class="wie">aus dem Versuch</span><div class="skizzen"><svg class="skizze" viewBox="0 0 600 250"><text x="40" y="24" font-size="20" fill="#1a1a1a">Anziehung</text><line x1="60" y1="44" x2="172" y2="44" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="182,44 169,38 169,50" fill="#1a1a1a"/><line x1="480" y1="44" x2="368" y2="44" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="358,44 371,38 371,50" fill="#1a1a1a"/><rect x="40" y="56" width="160" height="48" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="120" y1="56" x2="120" y2="104" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><text x="80.0" y="88.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">N</text><text x="160.0" y="88.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">S</text><rect x="340" y="56" width="160" height="48" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="420" y1="56" x2="420" y2="104" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><text x="380.0" y="88.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">N</text><text x="460.0" y="88.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">S</text><text x="40" y="150" font-size="20" fill="#1a1a1a">Abstoßung</text><line x1="180" y1="170" x2="68" y2="170" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="58,170 71,164 71,176" fill="#1a1a1a"/><line x1="360" y1="170" x2="472" y2="170" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="482,170 469,164 469,176" fill="#1a1a1a"/><rect x="40" y="182" width="160" height="48" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="120" y1="182" x2="120" y2="230" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><text x="80.0" y="214.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">N</text><text x="160.0" y="214.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">S</text><rect x="340" y="182" width="160" height="48" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="420" y1="182" x2="420" y2="230" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><text x="380.0" y="214.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">S</text><text x="460.0" y="214.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">N</text></svg></div><ul class="tafel-text"><li><span class="luecke" title="Klick deckt auf"><span>Ungleichnamige</span></span> Pole ziehen sich an.</li><li><span class="luecke" title="Klick deckt auf"><span>Gleichnamige</span></span> Pole stoßen sich ab.</li></ul></div><p class="ue-hilfe">Klick auf eine Lücke deckt sie auf.</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>Versuche</h1>
+    <div class="tafel-block"><span class="wie">aus dem Versuch</span><span class="heft-hinweis">ins Heft: die ersten 4 Zeilen</span><table class="mini tafel-tab"><tr><th>Versuch</th><th>Beobachtung</th></tr><tr><td>N gegen S</td><td><span class="luecke" title="Klick deckt auf"><span>anziehen</span></span></td></tr><tr><td>N gegen N</td><td><span class="luecke" title="Klick deckt auf"><span>abstoßen</span></span></td></tr><tr><td>Magnet und Eisennagel</td><td><span class="luecke" title="Klick deckt auf"><span>Nagel wird angezogen</span></span></td></tr><tr><td>Magnet und Kupferdraht</td><td><span class="luecke" title="Klick deckt auf"><span>keine Wirkung</span></span></td></tr><tr><td>S gegen S</td><td><span class="luecke" title="Klick deckt auf"><span>abstoßen</span></span></td></tr><tr><td>Magnet und Holz</td><td><span class="luecke" title="Klick deckt auf"><span>keine Wirkung</span></span></td></tr></table></div><p class="ue-hilfe">Klick auf eine Lücke deckt sie auf.</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>Welche Stoffe sind magnetisch?</h1>
+    <div class="tafel-block"><span class="wie">gemeinsam</span><span class="heft-hinweis">nur besprechen</span><ul class="tafel-text"><li>magnetisch: <span class="luecke" title="Klick deckt auf"><span>Eisen, Nickel, Cobalt</span></span> und <span class="luecke" title="Klick deckt auf"><span>Stahl</span></span></li><li>nicht magnetisch: <span class="luecke" title="Klick deckt auf"><span>Kupfer, Aluminium</span></span>, <span class="luecke" title="Klick deckt auf"><span>Holz, Kunststoff, Glas</span></span></li></ul></div><p class="ue-hilfe">Klick auf eine Lücke deckt sie auf.</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Notieren · Tafelbild · so steht es im Heft (1/2)</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>So steht es im Heft (1/2)</h1>
+    <div class="heftseite"><div class="heft-kopf"><span class="heft-titel">Magnetische Kraftwirkungen</span><span class="heft-datum">Datum: </span></div><p class="heft-frage"><span>Stundenfrage:</span> Wie wirken zwei Magnete aufeinander?</p><div class="heft-block"><h3>Zwei Magnete gegenüber</h3><div class="cols tafel-cols"><div><div class="skizzen"><svg class="skizze" viewBox="0 0 600 250"><text x="40" y="24" font-size="20" fill="#1a1a1a">Anziehung</text><line x1="60" y1="44" x2="172" y2="44" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="182,44 169,38 169,50" fill="#1a1a1a"/><line x1="480" y1="44" x2="368" y2="44" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="358,44 371,38 371,50" fill="#1a1a1a"/><rect x="40" y="56" width="160" height="48" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="120" y1="56" x2="120" y2="104" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><text x="80.0" y="88.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">N</text><text x="160.0" y="88.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">S</text><rect x="340" y="56" width="160" height="48" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="420" y1="56" x2="420" y2="104" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><text x="380.0" y="88.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">N</text><text x="460.0" y="88.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">S</text><text x="40" y="150" font-size="20" fill="#1a1a1a">Abstoßung</text><line x1="180" y1="170" x2="68" y2="170" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="58,170 71,164 71,176" fill="#1a1a1a"/><line x1="360" y1="170" x2="472" y2="170" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="482,170 469,164 469,176" fill="#1a1a1a"/><rect x="40" y="182" width="160" height="48" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="120" y1="182" x2="120" y2="230" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><text x="80.0" y="214.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">N</text><text x="160.0" y="214.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">S</text><rect x="340" y="182" width="160" height="48" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="420" y1="182" x2="420" y2="230" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><text x="380.0" y="214.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">S</text><text x="460.0" y="214.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">N</text></svg></div></div><div><ul class="tafel-text"><li><span class="gefuellt">Ungleichnamige</span> Pole ziehen sich an.</li><li><span class="gefuellt">Gleichnamige</span> Pole stoßen sich ab.</li></ul></div></div></div><div class="heft-block"><h3>Versuche</h3><table class="mini tafel-tab"><tr><th>Versuch</th><th>Beobachtung</th></tr><tr><td>N gegen S</td><td><span class="gefuellt">anziehen</span></td></tr><tr><td>N gegen N</td><td><span class="gefuellt">abstoßen</span></td></tr><tr><td>Magnet und Eisennagel</td><td><span class="gefuellt">Nagel wird angezogen</span></td></tr><tr><td>Magnet und Kupferdraht</td><td><span class="gefuellt">keine Wirkung</span></td></tr></table></div><div class="heft-block"><h3>Merksatz</h3><div class="box merke heft-merksatz leer"><div class="schreiblinie"></div><div class="schreiblinie"></div><div class="schreiblinie"></div></div></div></div>
+</section>
+
+<section class="slide dense" data-type="merke">
+    <div class="tag">Notieren · Merksatz · so steht es im Heft (1/2)</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>So steht es im Heft (1/2)</h1>
+    <div class="heftseite"><div class="heft-kopf"><span class="heft-titel">Magnetische Kraftwirkungen</span><span class="heft-datum">Datum: </span></div><p class="heft-frage"><span>Stundenfrage:</span> Wie wirken zwei Magnete aufeinander?</p><div class="heft-block"><h3>Zwei Magnete gegenüber</h3><div class="cols tafel-cols"><div><div class="skizzen"><svg class="skizze" viewBox="0 0 600 250"><text x="40" y="24" font-size="20" fill="#1a1a1a">Anziehung</text><line x1="60" y1="44" x2="172" y2="44" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="182,44 169,38 169,50" fill="#1a1a1a"/><line x1="480" y1="44" x2="368" y2="44" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="358,44 371,38 371,50" fill="#1a1a1a"/><rect x="40" y="56" width="160" height="48" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="120" y1="56" x2="120" y2="104" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><text x="80.0" y="88.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">N</text><text x="160.0" y="88.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">S</text><rect x="340" y="56" width="160" height="48" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="420" y1="56" x2="420" y2="104" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><text x="380.0" y="88.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">N</text><text x="460.0" y="88.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">S</text><text x="40" y="150" font-size="20" fill="#1a1a1a">Abstoßung</text><line x1="180" y1="170" x2="68" y2="170" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="58,170 71,164 71,176" fill="#1a1a1a"/><line x1="360" y1="170" x2="472" y2="170" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="482,170 469,164 469,176" fill="#1a1a1a"/><rect x="40" y="182" width="160" height="48" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="120" y1="182" x2="120" y2="230" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><text x="80.0" y="214.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">N</text><text x="160.0" y="214.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">S</text><rect x="340" y="182" width="160" height="48" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="420" y1="182" x2="420" y2="230" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><text x="380.0" y="214.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">S</text><text x="460.0" y="214.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">N</text></svg></div></div><div><ul class="tafel-text"><li><span class="gefuellt">Ungleichnamige</span> Pole ziehen sich an.</li><li><span class="gefuellt">Gleichnamige</span> Pole stoßen sich ab.</li></ul></div></div></div><div class="heft-block"><h3>Versuche</h3><table class="mini tafel-tab"><tr><th>Versuch</th><th>Beobachtung</th></tr><tr><td>N gegen S</td><td><span class="gefuellt">anziehen</span></td></tr><tr><td>N gegen N</td><td><span class="gefuellt">abstoßen</span></td></tr><tr><td>Magnet und Eisennagel</td><td><span class="gefuellt">Nagel wird angezogen</span></td></tr><tr><td>Magnet und Kupferdraht</td><td><span class="gefuellt">keine Wirkung</span></td></tr></table></div><div class="heft-block"><h3>Merksatz</h3><div class="box merke heft-merksatz"><p>Jeder Magnet hat einen <strong>Nordpol</strong> und einen <strong>Südpol</strong>. <strong>Ungleichnamige</strong> Pole ziehen sich an, <strong>gleichnamige</strong> Pole stoßen sich ab. Die magnetische Kraft wirkt <strong>ohne Berührung</strong>.</p></div></div></div>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Notieren · Tafelbild · so steht es im Heft (2/2)</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>So steht es im Heft (2/2)</h1>
+    <div class="heftseite fortsetzung"><div class="heft-kopf"><span class="heft-titel">Magnetische Kraftwirkungen <small>(Fortsetzung)</small></span></div><div class="heft-block"><h3>Merksatz</h3><div class="box merke heft-merksatz leer"><div class="schreiblinie"></div><div class="schreiblinie"></div><div class="schreiblinie"></div></div></div></div>
+</section>
+
+<section class="slide dense" data-type="merke">
+    <div class="tag">Notieren · Merksatz · so steht es im Heft (2/2)</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>So steht es im Heft (2/2)</h1>
+    <div class="heftseite fortsetzung"><div class="heft-kopf"><span class="heft-titel">Magnetische Kraftwirkungen <small>(Fortsetzung)</small></span></div><div class="heft-block"><h3>Merksatz</h3><div class="box merke heft-merksatz"><p>Magnetisch anziehbar sind nur <strong>Eisen, Nickel und Cobalt</strong> sowie ihre Legierungen. Andere Metalle wie Kupfer und Aluminium sind es nicht — „magnetisch“ und „Metall“ sind also nicht dasselbe.</p></div></div></div>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Übung · mündlich</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>welcher Pol ist verdeckt?</h1>
+    <div class="cols"><div class="bild"><img src="../../bilder/fb-w10-aufgabe-pol-bestimmen.png" alt=""></div><div><div class="box uebung"><p>Nenne den Pol bei 1 und begründe deine Antwort.</p></div></div></div>
+</section>
+
+<section class="slide" data-type="auswertung">
+    <div class="tag">Übung · Lösung</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>Lösung: welcher Pol ist verdeckt?</h1>
+    <div class="cols"><div class="bild"><img src="../../bilder/fb-w10-aufgabe-pol-bestimmen.png" alt=""></div><div><div class="box beispiel"><ul class="plain"><li>Bei 1 liegt ein <strong>Südpol</strong>.</li><li>Die beiden Magnete ziehen sich an, und anziehen tun sich nur ungleichnamige Pole. Links zeigt ein Nordpol nach rechts, also muss rechts ein Südpol gegenüberstehen.</li></ul></div></div></div>
+</section>
+
+<section class="slide dense" data-type="zusammenfassung">
+    <div class="tag">Check-out</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>Check-out</h1>
+    <div class="box auftrag"><ol><li>Erkläre in eigenen Worten, wann sich zwei Magnete anziehen und wann sie sich abstoßen.</li><li>Was vermutest du inzwischen, was zwischen zwei Magneten liegt?</li></ol></div><p class="center">Wie sicher bist du?</p><div class="daumen"><span>👍 sicher</span><span>👌 mit Hilfe</span><span>👎 noch nicht</span></div>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Puffer · falls Zeit bleibt</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>Bankrücken: 8 Fragen</h1>
+    <div class="box auftrag"><ol><li>Ein Kind steht neben seiner Nachbarin oder seinem Nachbarn.</li><li>Die Frage wird vorgelesen. Wer <strong>zuerst richtig</strong> antwortet, rückt eine Bank weiter.</li><li>Dort geht es gegen das nächste Kind.</li><li>Wer kommt am weitesten?</li></ol></div>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Puffer · Bankrücken · 1 von 8</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>Frage 1</h1>
+    <div class="box frage"><p>Wie heißen die beiden Pole eines Magneten?</p></div><p class="center gross-antwort">Antwort: <span class="luecke"><span>Nordpol und Südpol</span></span></p>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Puffer · Bankrücken · 2 von 8</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>Frage 2</h1>
+    <div class="box frage"><p>Nordpol und Nordpol: anziehen oder abstoßen?</p></div><p class="center gross-antwort">Antwort: <span class="luecke"><span>abstoßen</span></span></p>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Puffer · Bankrücken · 3 von 8</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>Frage 3</h1>
+    <div class="box frage"><p>Nordpol und Südpol: anziehen oder abstoßen?</p></div><p class="center gross-antwort">Antwort: <span class="luecke"><span>anziehen</span></span></p>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Puffer · Bankrücken · 4 von 8</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>Frage 4</h1>
+    <div class="box frage"><p>Nenne ein Metall, das ein Magnet anzieht.</p></div><p class="center gross-antwort">Antwort: <span class="luecke"><span>Eisen, Nickel oder Cobalt</span></span></p>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Puffer · Bankrücken · 5 von 8</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>Frage 5</h1>
+    <div class="box frage"><p>Zieht ein Magnet Kupfer an?</p></div><p class="center gross-antwort">Antwort: <span class="luecke"><span>nein</span></span></p>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Puffer · Bankrücken · 6 von 8</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>Frage 6</h1>
+    <div class="box frage"><p>Braucht die magnetische Kraft eine Berührung?</p></div><p class="center gross-antwort">Antwort: <span class="luecke"><span>nein</span></span></p>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Puffer · Bankrücken · 7 von 8</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>Frage 7</h1>
+    <div class="box frage"><p>Wiederholung: Reibung, solange der Körper ruht?</p></div><p class="center gross-antwort">Antwort: <span class="luecke"><span>Haftreibung</span></span></p>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Puffer · Bankrücken · 8 von 8</div><div class="topic-badge">Magnetische Kraftwirkungen</div>
+    <h1>Frage 8</h1>
+    <div class="box frage"><p>Wiederholung: Wie macht man Reibung kleiner?</p></div><p class="center gross-antwort">Antwort: <span class="luecke"><span>z. B. schmieren, Öl</span></span></p>
+</section>
+
+<section class="slide" data-type="titel">
+    <p class="sub">LB 1 Kräfte · Magnetismus und Elektrostatik</p>
+    <h1>Dauermagnete und Elektromagnete</h1>
+    <ul class="ablauf"><li><a href="#s30">Einstieg</a></li><li><a href="#s32">Diskussion</a></li><li><a href="#s33">Problemstellung</a></li><li><a href="#s34">Erarbeitung</a></li><li><a href="#s41">Notieren</a></li><li><a href="#s45">Übung</a></li><li><a href="#s47">Check-out</a></li><li><a href="#s48">Puffer</a></li></ul>
+</section>
+
+<section class="slide dense" data-type="einstieg">
+    <div class="tag">Einstieg · Wiederholung</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Was weißt du noch?</h1>
+    <div class="box uebung"><ol><li><strong>Pole und Kraftwirkung</strong><p>Nenne, welche Magnetpole sich anziehen und welche sich abstoßen.</p></li><li><strong>Magnetisch oder nicht</strong><p>Nenne zwei Stoffe, die von einem Magneten angezogen werden, und zwei Metalle, die nicht angezogen werden.</p></li><li><strong>Wechselwirkung benennen</strong><p>Ein Magnet zieht einen Eisennagel an. Nenne die beiden Körper, zwischen denen die Kraft wirkt.</p></li></ol></div><p class="timer">⏱ 8 min — allein ins Heft</p>
+</section>
+
+<section class="slide dense" data-type="einstieg">
+    <div class="tag">Einstieg · Vergleich</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Vergleiche</h1>
+    <div class="box beispiel"><ul class="plain"><li><strong>1)</strong> Ungleichnamige Pole (Nord und Süd) ziehen sich an, gleichnamige Pole (Nord und Nord bzw. Süd und Süd) stoßen sich ab.</li><li><strong>2)</strong> Angezogen werden z. B. Eisen und Nickel (auch Cobalt). Nicht angezogen werden z. B. Kupfer und Aluminium.</li><li><strong>3)</strong> Zwischen dem Magneten und dem Eisennagel — beide Körper müssen genannt werden, die Kraft wirkt auf beide.</li></ul></div>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Diskussion</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Frage der Stunde — was meint ihr?</h1>
+    <div class="box frage"><p>Ein Magnet, den man ausschalten kann — wozu wäre das gut, und wo würde ein normaler Magnet daran scheitern?</p></div><div class="box auftrag"><ul><li>Überlegt zu zweit: Was vermutet ihr — und <strong>warum</strong>?</li><li>Schreib deine <strong>Vermutung</strong> ins Heft.</li></ul></div><p class="timer">⏱ 3 min — zu zweit, dann in der Klasse</p>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Problemstellung</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Ein Lasthebemagnet</h1>
+    <div class="cols"><div class="bild"><img src="../../bilder/foto-lasthebemagnet.jpg" alt=""></div><div><ul><li>In einer Stahlhalle hängt ein Magnet am Kran.</li><li>Er hebt schwere Stahlplatten — ohne Haken und ohne Kette an der Platte.</li><li>Zum Absetzen wird er einfach ausgeschaltet.</li></ul><p class="small"><strong>Was siehst du? Was vermutest du?</strong></p><p class="nachweis">Foto: Magnetexperte · CC BY-SA 4.0 · Wikimedia Commons</p></div></div>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Dauermagnete und Elektromagnete</h1>
+    <div class="tafel-kopf"><span>Stundenfrage:</span> Kann man einen Magneten ein- und ausschalten?</div><div class="tafel-gitter"><div class="tafel-leer">Aufbau eines Elektromagneten</div><div class="tafel-leer">Wovon hängt die Stärke ab?</div><div class="tafel-leer">Dauermagnet oder Elektromagnet?</div><div class="tafel-leer">Weitere Anwendungen</div></div>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Aufbau eines Elektromagneten</h1>
+    <div class="tafel-block"><span class="wie">am Aufbau zeigen</span><div class="skizzen"><svg class="skizze" viewBox="0 0 600 280"><rect x="104" y="90" width="280" height="40" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="142" y1="145" x2="154" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="166" y1="145" x2="178" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="190" y1="145" x2="202" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="214" y1="145" x2="226" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="238" y1="145" x2="250" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="262" y1="145" x2="274" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="286" y1="145" x2="298" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="310" y1="145" x2="322" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="334" y1="145" x2="346" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="130" y1="75" x2="142" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="154" y1="75" x2="166" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="178" y1="75" x2="190" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="202" y1="75" x2="214" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="226" y1="75" x2="238" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="250" y1="75" x2="262" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="274" y1="75" x2="286" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="298" y1="75" x2="310" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="322" y1="75" x2="334" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="346" y1="75" x2="358" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polyline points="130,75 130,40 70,40 70,220 290,220" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polyline points="358,145 358,220 306,220" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="292" y1="196" x2="292" y2="244" stroke="#1a1a1a" stroke-width="2.5"/><line x1="304" y1="208" x2="304" y2="232" stroke="#1a1a1a" stroke-width="6"/><text x="210" y="60" font-size="20" fill="#1a1a1a">Spule</text><text x="396" y="117" font-size="20" fill="#1a1a1a">Eisenkern</text><text x="298" y="270" font-size="20" fill="#1a1a1a" text-anchor="middle">Spannungsquelle</text></svg></div><ul class="tafel-text"><li>Der <span class="luecke" title="Klick deckt auf"><span>Strom</span></span> erzeugt die magnetische Wirkung – ohne Strom wirkt <span class="luecke" title="Klick deckt auf"><span>nichts</span></span>.</li></ul></div><p class="ue-hilfe">Klick auf eine Lücke deckt sie auf.</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Wovon hängt die Stärke ab? — Vermutung</h1>
+    <div class="tafel-block"><span class="wie">erst vermuten, dann Demo</span><span class="heft-hinweis">nur besprechen</span><table class="mini tafel-tab"><tr><th>Änderung</th><th>Vermutung</th><th>Beobachtung</th></tr><tr><td>mehr Windungen</td><td><span class="luecke" title="Klick deckt auf"><span>wird stärker</span></span></td><td></td></tr><tr><td>größere Stromstärke</td><td><span class="luecke" title="Klick deckt auf"><span>wird stärker</span></span></td><td></td></tr><tr><td>mit Eisenkern</td><td><span class="luecke" title="Klick deckt auf"><span>wird stärker</span></span></td><td></td></tr><tr><td>ohne Eisenkern</td><td><span class="luecke" title="Klick deckt auf"><span>wird schwächer</span></span></td><td></td></tr></table></div><p class="ue-hilfe">Erst vermuten und eintragen — dann schauen wir nach.</p>
+</section>
+
+<section class="slide dense" data-type="experiment">
+    <div class="tag">Erarbeitung · Demo</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Wir schauen zu: Elektromagnet</h1>
+    <p class="small"><strong>Material:</strong> <strong>Zwei Fertigspulen</strong> mit verschiedener Windungszahl (z. B. 200 und 400), Eisenkern zum Einschieben, Netzgerät mit Kleinspannung oder Flachbatterie 4,5 V, Schalter, Krokodilklemmen, Schale mit vielen Büroklammern</p><div class="box frage"><p>Ein Magnet, den man ausschalten kann — wozu wäre das gut, und wo würde ein normaler Magnet daran scheitern?</p></div><div class="box auftrag"><ul><li>Beobachtet genau, was passiert.</li><li>Beschreibt es danach in einem Satz.</li></ul></div><p class="small">Film dazu: <a href="https://www.planet-schule.de/schwerpunkt/achtung-experiment/der-magnetische-ninja-film-100.html" target="_blank" rel="noopener">Der magnetische Ninja</a> (planet schule (SWR/WDR), Reihe „Achtung! Experiment“)</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Wovon hängt die Stärke ab? — Beobachtung</h1>
+    <div class="tafel-block"><span class="wie">erst vermuten, dann Demo</span><span class="heft-hinweis">nur besprechen</span><table class="mini tafel-tab"><tr><th>Änderung</th><th>Vermutung</th><th>Beobachtung</th></tr><tr><td>mehr Windungen</td><td>wird stärker</td><td><span class="luecke" title="Klick deckt auf"><span>mehr Klammern</span></span></td></tr><tr><td>größere Stromstärke</td><td>wird stärker</td><td><span class="luecke" title="Klick deckt auf"><span>mehr Klammern</span></span></td></tr><tr><td>mit Eisenkern</td><td>wird stärker</td><td><span class="luecke" title="Klick deckt auf"><span>deutlich mehr</span></span></td></tr><tr><td>ohne Eisenkern</td><td>wird schwächer</td><td><span class="luecke" title="Klick deckt auf"><span>deutlich weniger</span></span></td></tr></table></div><p class="ue-hilfe">Klick auf eine Lücke deckt sie auf.</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Dauermagnet oder Elektromagnet?</h1>
+    <div class="tafel-block"><span class="wie">gemeinsam</span><span class="heft-hinweis">ins Heft: die ersten 2 Zeilen</span><table class="mini tafel-tab"><tr><th>Anwendung</th><th>welcher Magnet</th><th>warum</th></tr><tr><td>Klingel</td><td><span class="luecke" title="Klick deckt auf"><span>Elektromagnet</span></span></td><td><span class="luecke" title="Klick deckt auf"><span>nur auf Knopfdruck</span></span></td></tr><tr><td>Kühlschranktür</td><td><span class="luecke" title="Klick deckt auf"><span>Dauermagnet</span></span></td><td><span class="luecke" title="Klick deckt auf"><span>soll dauerhaft halten</span></span></td></tr><tr><td>Lasthebemagnet</td><td><span class="luecke" title="Klick deckt auf"><span>Elektromagnet</span></span></td><td><span class="luecke" title="Klick deckt auf"><span>muss loslassen können</span></span></td></tr></table></div><p class="ue-hilfe">Klick auf eine Lücke deckt sie auf.</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Weitere Anwendungen</h1>
+    <div class="tafel-block"><span class="wie">mündlich</span><span class="heft-hinweis">nur besprechen</span><ul class="tafel-text"><li><span class="luecke" title="Klick deckt auf"><span>Lautsprecher</span></span> · <span class="luecke" title="Klick deckt auf"><span>Elektromotor</span></span> · <span class="luecke" title="Klick deckt auf"><span>Türsummer</span></span></li><li><span class="luecke" title="Klick deckt auf"><span>Magnetschloss an Brandschutztüren</span></span> · <span class="luecke" title="Klick deckt auf"><span>Festplatte</span></span> · <span class="luecke" title="Klick deckt auf"><span>Kernspintomograf</span></span></li></ul></div><p class="ue-hilfe">Klick auf eine Lücke deckt sie auf.</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Notieren · Tafelbild · so steht es im Heft (1/2)</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>So steht es im Heft (1/2)</h1>
+    <div class="heftseite"><div class="heft-kopf"><span class="heft-titel">Dauermagnete und Elektromagnete</span><span class="heft-datum">Datum: </span></div><p class="heft-frage"><span>Stundenfrage:</span> Kann man einen Magneten ein- und ausschalten?</p><div class="heft-block"><h3>Aufbau eines Elektromagneten</h3><div class="cols tafel-cols"><div><div class="skizzen"><svg class="skizze" viewBox="0 0 600 280"><rect x="104" y="90" width="280" height="40" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="142" y1="145" x2="154" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="166" y1="145" x2="178" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="190" y1="145" x2="202" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="214" y1="145" x2="226" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="238" y1="145" x2="250" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="262" y1="145" x2="274" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="286" y1="145" x2="298" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="310" y1="145" x2="322" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="334" y1="145" x2="346" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="130" y1="75" x2="142" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="154" y1="75" x2="166" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="178" y1="75" x2="190" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="202" y1="75" x2="214" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="226" y1="75" x2="238" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="250" y1="75" x2="262" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="274" y1="75" x2="286" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="298" y1="75" x2="310" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="322" y1="75" x2="334" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="346" y1="75" x2="358" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polyline points="130,75 130,40 70,40 70,220 290,220" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polyline points="358,145 358,220 306,220" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="292" y1="196" x2="292" y2="244" stroke="#1a1a1a" stroke-width="2.5"/><line x1="304" y1="208" x2="304" y2="232" stroke="#1a1a1a" stroke-width="6"/><text x="210" y="60" font-size="20" fill="#1a1a1a">Spule</text><text x="396" y="117" font-size="20" fill="#1a1a1a">Eisenkern</text><text x="298" y="270" font-size="20" fill="#1a1a1a" text-anchor="middle">Spannungsquelle</text></svg></div></div><div><ul class="tafel-text"><li>Der <span class="gefuellt">Strom</span> erzeugt die magnetische Wirkung – ohne Strom wirkt <span class="gefuellt">nichts</span>.</li></ul></div></div></div><div class="heft-block"><h3>Dauermagnet oder Elektromagnet?</h3><table class="mini tafel-tab"><tr><th>Anwendung</th><th>welcher Magnet</th><th>warum</th></tr><tr><td>Klingel</td><td><span class="gefuellt">Elektromagnet</span></td><td><span class="gefuellt">nur auf Knopfdruck</span></td></tr><tr><td>Kühlschranktür</td><td><span class="gefuellt">Dauermagnet</span></td><td><span class="gefuellt">soll dauerhaft halten</span></td></tr></table></div><div class="heft-block"><h3>Merksatz</h3><div class="box merke heft-merksatz leer"><div class="schreiblinie"></div><div class="schreiblinie"></div><div class="schreiblinie"></div><div class="schreiblinie"></div></div></div></div>
+</section>
+
+<section class="slide dense" data-type="merke">
+    <div class="tag">Notieren · Merksatz · so steht es im Heft (1/2)</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>So steht es im Heft (1/2)</h1>
+    <div class="heftseite"><div class="heft-kopf"><span class="heft-titel">Dauermagnete und Elektromagnete</span><span class="heft-datum">Datum: </span></div><p class="heft-frage"><span>Stundenfrage:</span> Kann man einen Magneten ein- und ausschalten?</p><div class="heft-block"><h3>Aufbau eines Elektromagneten</h3><div class="cols tafel-cols"><div><div class="skizzen"><svg class="skizze" viewBox="0 0 600 280"><rect x="104" y="90" width="280" height="40" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="142" y1="145" x2="154" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="166" y1="145" x2="178" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="190" y1="145" x2="202" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="214" y1="145" x2="226" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="238" y1="145" x2="250" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="262" y1="145" x2="274" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="286" y1="145" x2="298" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="310" y1="145" x2="322" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="334" y1="145" x2="346" y2="75" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 4"/><line x1="130" y1="75" x2="142" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="154" y1="75" x2="166" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="178" y1="75" x2="190" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="202" y1="75" x2="214" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="226" y1="75" x2="238" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="250" y1="75" x2="262" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="274" y1="75" x2="286" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="298" y1="75" x2="310" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="322" y1="75" x2="334" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="346" y1="75" x2="358" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polyline points="130,75 130,40 70,40 70,220 290,220" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polyline points="358,145 358,220 306,220" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="292" y1="196" x2="292" y2="244" stroke="#1a1a1a" stroke-width="2.5"/><line x1="304" y1="208" x2="304" y2="232" stroke="#1a1a1a" stroke-width="6"/><text x="210" y="60" font-size="20" fill="#1a1a1a">Spule</text><text x="396" y="117" font-size="20" fill="#1a1a1a">Eisenkern</text><text x="298" y="270" font-size="20" fill="#1a1a1a" text-anchor="middle">Spannungsquelle</text></svg></div></div><div><ul class="tafel-text"><li>Der <span class="gefuellt">Strom</span> erzeugt die magnetische Wirkung – ohne Strom wirkt <span class="gefuellt">nichts</span>.</li></ul></div></div></div><div class="heft-block"><h3>Dauermagnet oder Elektromagnet?</h3><table class="mini tafel-tab"><tr><th>Anwendung</th><th>welcher Magnet</th><th>warum</th></tr><tr><td>Klingel</td><td><span class="gefuellt">Elektromagnet</span></td><td><span class="gefuellt">nur auf Knopfdruck</span></td></tr><tr><td>Kühlschranktür</td><td><span class="gefuellt">Dauermagnet</span></td><td><span class="gefuellt">soll dauerhaft halten</span></td></tr></table></div><div class="heft-block"><h3>Merksatz</h3><div class="box merke heft-merksatz"><p>Ein <strong>Elektromagnet</strong> besteht aus einer <strong>Spule</strong> mit einem <strong>Eisenkern</strong>. Er wirkt nur, solange Strom fließt — er lässt sich also <strong>ein- und ausschalten</strong>. Je größer die <strong>Windungszahl</strong> und je größer die <strong>Stromstärke</strong>, desto stärker der Elektromagnet. Der <strong>Eisenkern</strong> verstärkt die Wirkung zusätzlich.</p></div></div></div>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Notieren · Tafelbild · so steht es im Heft (2/2)</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>So steht es im Heft (2/2)</h1>
+    <div class="heftseite fortsetzung"><div class="heft-kopf"><span class="heft-titel">Dauermagnete und Elektromagnete <small>(Fortsetzung)</small></span></div><div class="heft-block"><h3>Merksatz</h3><div class="box merke heft-merksatz leer"><div class="schreiblinie"></div><div class="schreiblinie"></div><div class="schreiblinie"></div></div></div></div>
+</section>
+
+<section class="slide dense" data-type="merke">
+    <div class="tag">Notieren · Merksatz · so steht es im Heft (2/2)</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>So steht es im Heft (2/2)</h1>
+    <div class="heftseite fortsetzung"><div class="heft-kopf"><span class="heft-titel">Dauermagnete und Elektromagnete <small>(Fortsetzung)</small></span></div><div class="heft-block"><h3>Merksatz</h3><div class="box merke heft-merksatz"><p>Ein <strong>Dauermagnet</strong> ist immer magnetisch und braucht keinen Strom. Man verwendet ihn, wenn die Wirkung dauerhaft sein soll. Einen <strong>Elektromagneten</strong> verwendet man, wenn die Wirkung schaltbar sein muss.</p></div></div></div>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Übung · mündlich</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>drei Elektromagnete vergleichen</h1>
+    <div class="cols"><div class="bild"><img src="../../bilder/fb-w11-aufgabe-drei-elektromagnete.png" alt=""></div><div><div class="box uebung"><p>Ordne die drei Elektromagnete nach ihrer Stärke und begründe die Reihenfolge.</p></div></div></div>
+</section>
+
+<section class="slide" data-type="auswertung">
+    <div class="tag">Übung · Lösung</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Lösung: drei Elektromagnete vergleichen</h1>
+    <div class="cols"><div class="bild"><img src="../../bilder/fb-w11-aufgabe-drei-elektromagnete.png" alt=""></div><div><div class="box beispiel"><ul class="plain"><li>Am stärksten <strong>2</strong> (400 Windungen mit Eisenkern), dann <strong>1</strong> (200 Windungen mit Kern), am schwächsten <strong>3</strong> (400 Windungen ohne Kern).</li><li>Mehr Windungen machen den Elektromagneten stärker — der Eisenkern aber ebenfalls, und zwar deutlich.</li><li>Zwischen 1 und 3 lohnt die Diskussion: Ohne Kern hilft die höhere Windungszahl nur wenig.</li></ul></div></div></div>
+</section>
+
+<section class="slide dense" data-type="zusammenfassung">
+    <div class="tag">Check-out</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Check-out</h1>
+    <div class="box auftrag"><ol><li>Erkläre in eigenen Worten, wovon die Stärke eines Elektromagneten abhängt und worin sein Vorteil gegenüber einem Dauermagneten liegt.</li><li>Welche Frage ist bei dir noch offen?</li></ol></div><p class="center">Wie sicher bist du?</p><div class="daumen"><span>👍 sicher</span><span>👌 mit Hilfe</span><span>👎 noch nicht</span></div>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Puffer · falls Zeit bleibt</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Reihen-Duell: Fenster, Mitte, Tür</h1>
+    <div class="box auftrag"><ol><li>Jede Reihe ist ein Team. Bei jeder Frage steht aus jeder Reihe ein <strong>anderes</strong> Kind auf.</li><li>Die Reihe darf 20 Sekunden flüstern.</li><li>Bei „3, 2, 1“ antworten die drei mit dem Körper.</li><li>Jede richtige Antwort: ein Strich an der Tafel.</li></ol></div><div class="quiz-optionen n3"><div class="quiz-opt"><span class="z">1</span><span>Arme hoch</span></div><div class="quiz-opt"><span class="z">2</span><span>Hände auf den Kopf</span></div><div class="quiz-opt"><span class="z">3</span><span>Arme verschränkt</span></div></div><p class="center">richtig oder falsch: <strong>richtig</strong> = aufstehen, <strong>falsch</strong> = sitzen bleiben</p>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Puffer · Duell · Elektromagnet · 1 von 5</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Frage 1</h1>
+    <div class="box frage"><p>Woraus besteht ein Elektromagnet?</p></div><div class="quiz-optionen n3"><div class="quiz-opt"><span class="z">1</span><span>aus einem Stabmagneten mit Kabel<span class="koerper">Arme hoch</span></span></div><div class="quiz-opt"><span class="z">2</span><span>aus einer Spule mit Eisenkern<span class="koerper">Hände auf den Kopf</span></span></div><div class="quiz-opt"><span class="z">3</span><span>aus einer Batterie mit Kupferplatte<span class="koerper">Arme verschränkt</span></span></div></div>
+</section>
+
+<section class="slide dense" data-type="auswertung">
+    <div class="tag">Puffer · Duell · Elektromagnet · 1 von 5</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Frage 1: Auflösung</h1>
+    <div class="box frage"><p>Woraus besteht ein Elektromagnet?</p></div><div class="quiz-optionen n3"><div class="quiz-opt daneben"><span class="z">1</span><span>aus einem Stabmagneten mit Kabel<span class="koerper">Arme hoch</span></span></div><div class="quiz-opt richtig"><span class="z">2</span><span>aus einer Spule mit Eisenkern<span class="koerper">Hände auf den Kopf</span></span></div><div class="quiz-opt daneben"><span class="z">3</span><span>aus einer Batterie mit Kupferplatte<span class="koerper">Arme verschränkt</span></span></div></div><div class="box beispiel"><p>Ein <strong>Elektromagnet</strong> ist eine <strong>Spule</strong>, meist mit <strong>Eisenkern</strong>, durch die Strom fließt.</p></div>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Puffer · Duell · Elektromagnet · 2 von 5</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Frage 2</h1>
+    <div class="box frage"><p>Ein Elektromagnet zieht auch dann noch Büroklammern an, wenn der Strom ausgeschaltet ist.</p></div><div class="quiz-optionen n2"><div class="quiz-opt"><span><strong>richtig</strong>: aufstehen</span></div><div class="quiz-opt"><span><strong>falsch</strong>: sitzen bleiben</span></div></div>
+</section>
+
+<section class="slide dense" data-type="auswertung">
+    <div class="tag">Puffer · Duell · Elektromagnet · 2 von 5</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Frage 2: Auflösung</h1>
+    <div class="box frage"><p>Ein Elektromagnet zieht auch dann noch Büroklammern an, wenn der Strom ausgeschaltet ist.</p></div><div class="quiz-optionen n2"><div class="quiz-opt daneben"><span><strong>richtig</strong>: aufstehen</span></div><div class="quiz-opt richtig"><span><strong>falsch</strong>: sitzen bleiben</span></div></div><div class="box beispiel"><p>Er wirkt nur, <strong>solange Strom fließt</strong>. Genau deshalb lässt er sich ein- und ausschalten.</p></div>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Puffer · Duell · Elektromagnet · 3 von 5</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Frage 3</h1>
+    <div class="box frage"><p>Wie wird ein Elektromagnet stärker?</p></div><div class="quiz-optionen n3"><div class="quiz-opt"><span class="z">1</span><span>mit weniger Windungen<span class="koerper">Arme hoch</span></span></div><div class="quiz-opt"><span class="z">2</span><span>mit einem Kern aus Kupfer<span class="koerper">Hände auf den Kopf</span></span></div><div class="quiz-opt"><span class="z">3</span><span>mit mehr Windungen und größerer Stromstärke<span class="koerper">Arme verschränkt</span></span></div></div>
+</section>
+
+<section class="slide dense" data-type="auswertung">
+    <div class="tag">Puffer · Duell · Elektromagnet · 3 von 5</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Frage 3: Auflösung</h1>
+    <div class="box frage"><p>Wie wird ein Elektromagnet stärker?</p></div><div class="quiz-optionen n3"><div class="quiz-opt daneben"><span class="z">1</span><span>mit weniger Windungen<span class="koerper">Arme hoch</span></span></div><div class="quiz-opt daneben"><span class="z">2</span><span>mit einem Kern aus Kupfer<span class="koerper">Hände auf den Kopf</span></span></div><div class="quiz-opt richtig"><span class="z">3</span><span>mit mehr Windungen und größerer Stromstärke<span class="koerper">Arme verschränkt</span></span></div></div><div class="box beispiel"><p>Je größer die <strong>Windungszahl</strong> und die <strong>Stromstärke</strong>, desto stärker. Ein <strong>Eisenkern</strong> verstärkt zusätzlich.</p></div>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Puffer · Duell · Elektromagnet · 4 von 5</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Frage 4</h1>
+    <div class="box frage"><p>Ein Kran auf dem Schrottplatz soll Autos hochheben und wieder absetzen. Welcher Magnet?</p></div><div class="quiz-optionen n3"><div class="quiz-opt"><span class="z">1</span><span>ein Elektromagnet<span class="koerper">Arme hoch</span></span></div><div class="quiz-opt"><span class="z">2</span><span>ein großer Dauermagnet<span class="koerper">Hände auf den Kopf</span></span></div><div class="quiz-opt"><span class="z">3</span><span>egal, beide gehen gleich gut<span class="koerper">Arme verschränkt</span></span></div></div>
+</section>
+
+<section class="slide dense" data-type="auswertung">
+    <div class="tag">Puffer · Duell · Elektromagnet · 4 von 5</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Frage 4: Auflösung</h1>
+    <div class="box frage"><p>Ein Kran auf dem Schrottplatz soll Autos hochheben und wieder absetzen. Welcher Magnet?</p></div><div class="quiz-optionen n3"><div class="quiz-opt richtig"><span class="z">1</span><span>ein Elektromagnet<span class="koerper">Arme hoch</span></span></div><div class="quiz-opt daneben"><span class="z">2</span><span>ein großer Dauermagnet<span class="koerper">Hände auf den Kopf</span></span></div><div class="quiz-opt daneben"><span class="z">3</span><span>egal, beide gehen gleich gut<span class="koerper">Arme verschränkt</span></span></div></div><div class="box beispiel"><p>Absetzen heißt <strong>ausschalten</strong>. Ein Dauermagnet würde das Auto nicht mehr loslassen.</p></div>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Puffer · Duell · Wiederholung · 5 von 5</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Frage 5</h1>
+    <div class="box frage"><p>Welcher Gegenstand wird von einem Magneten angezogen?</p></div><div class="quiz-optionen n3"><div class="quiz-opt"><span class="z">1</span><span>eine Münze aus Kupfer<span class="koerper">Arme hoch</span></span></div><div class="quiz-opt"><span class="z">2</span><span>ein Nagel aus Eisen<span class="koerper">Hände auf den Kopf</span></span></div><div class="quiz-opt"><span class="z">3</span><span>eine Getränkedose aus Aluminium<span class="koerper">Arme verschränkt</span></span></div></div>
+</section>
+
+<section class="slide dense" data-type="auswertung">
+    <div class="tag">Puffer · Duell · Wiederholung · 5 von 5</div><div class="topic-badge">Dauermagnete und Elektromagnete</div>
+    <h1>Frage 5: Auflösung</h1>
+    <div class="box frage"><p>Welcher Gegenstand wird von einem Magneten angezogen?</p></div><div class="quiz-optionen n3"><div class="quiz-opt daneben"><span class="z">1</span><span>eine Münze aus Kupfer<span class="koerper">Arme hoch</span></span></div><div class="quiz-opt richtig"><span class="z">2</span><span>ein Nagel aus Eisen<span class="koerper">Hände auf den Kopf</span></span></div><div class="quiz-opt daneben"><span class="z">3</span><span>eine Getränkedose aus Aluminium<span class="koerper">Arme verschränkt</span></span></div></div><div class="box beispiel"><p>Nur <strong>Eisen, Nickel und Cobalt</strong> werden angezogen. „Metall“ allein reicht nicht.</p></div>
+</section>
+
+<section class="slide" data-type="titel">
+    <p class="sub">LB 1 Kräfte · Magnetismus und Elektrostatik</p>
+    <h1>Magnetisches und elektrisches Feld</h1>
+    <ul class="ablauf"><li><a href="#s60">Einstieg</a></li><li><a href="#s62">Problemstellung</a></li><li><a href="#s63">Diskussion</a></li><li><a href="#s64">Erarbeitung</a></li><li><a href="#s71">Notieren</a></li><li><a href="#s83">Übung</a></li><li><a href="#s87">Ausblick</a></li><li><a href="#s88">Check-out</a></li><li><a href="#s89">Puffer</a></li></ul>
+</section>
+
+<section class="slide dense" data-type="einstieg">
+    <div class="tag">Einstieg · Wiederholung</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Was weißt du noch?</h1>
+    <div class="box uebung"><ol><li><strong>Aufbau benennen</strong><p>Nenne die drei Bestandteile, die ein Elektromagnet braucht.</p></li><li><strong>Stärke beeinflussen</strong><p>Nenne zwei Möglichkeiten, einen Elektromagneten stärker zu machen.</p></li><li><strong>Anwendung begründen</strong><p>Begründe, warum am Schrottplatz ein Elektromagnet und kein Dauermagnet verwendet wird.</p></li></ol></div><p class="timer">⏱ 6 min — allein ins Heft</p>
+</section>
+
+<section class="slide dense" data-type="einstieg">
+    <div class="tag">Einstieg · Vergleich</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Vergleiche</h1>
+    <div class="box beispiel"><ul class="plain"><li><strong>1)</strong> Spule (Draht in Windungen), Eisenkern und Spannungsquelle bzw. Stromkreis</li><li><strong>2)</strong> Windungszahl erhöhen oder Stromstärke erhöhen (auch: Eisenkern einsetzen)</li><li><strong>3)</strong> Weil der Magnet die Last auch wieder loslassen muss. Ein Dauermagnet wirkt dauernd und könnte den Schrott nicht abgeben.</li></ul></div>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Problemstellung</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Schon gelesen?</h1>
+    <div class="schlagzeile"><p class="quelle">Kindersache (Deutsches Kinderhilfswerk) · 24.04.2023</p><p class="kopf"><a href="https://www.kindersache.de/bereiche/nachrichten/deutschland-polarlichter-gesichtet" target="_blank" rel="noopener">Deutschland: Polarlichter gesichtet</a></p><ul><li>Nach einem Sonnensturm leuchtete der Nachthimmel über Teilen Ostdeutschlands, auch über Sachsen-Anhalt.</li><li>Geladene Teilchen von der Sonne brauchen etwa anderthalb bis zwei Tage bis zur Erde.</li></ul></div><div class="box frage"><p>Warum sieht man Polarlichter meist nur ganz im Norden – und nur selten bei uns?</p></div>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Diskussion</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Frage der Stunde — was meint ihr?</h1>
+    <div class="box frage"><p>Bei den Magneten habt ihr vermutet, was zwischen ihnen liegt. Sieht man es hier?</p></div><p>Jemand sagt: <strong>„Die Feldlinien sind echte Fäden, die man sehen kann.“</strong> — stimmt das?</p><div class="box auftrag"><ul><li>Überlegt zu zweit: Was vermutet ihr — und <strong>warum</strong>?</li><li>Schreib deine <strong>Vermutung</strong> ins Heft.</li></ul></div><p class="timer">⏱ 3 min — zu zweit, dann in der Klasse</p>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Erarbeitung · Bild</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Eisenfeilspäne am Stabmagneten</h1>
+    <div class="cols"><div class="bild"><img src="../../bilder/impuls-feldlinien.jpg" alt=""></div><div><ul><li>Nahaufnahme: Eisenspäne auf Papier um einen rot-blauen Stabmagneten; am Pol stehen sie wie Borsten ab.</li></ul><div class="box frage"><p>Wo sammeln sich die meisten Späne, und welches Muster bilden sie um den Magneten?</p></div><details class="aufloesung"><summary>Auflösung</summary><p>Die meisten Späne hängen an den Polen – dort ist die Kraft am größten. Die Späne ordnen sich zu Linien, die von Pol zu Pol laufen: den Feldlinien. Wo sie dicht liegen, ist das Feld stark.</p></details><p class="nachweis">Foto: Maciej J. Mrowinski · CC BY-SA 4.0 · Wikimedia Commons</p></div></div>
+</section>
+
+<section class="slide dense" data-type="experiment">
+    <div class="tag">Erarbeitung · Demo</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Wir schauen zu: Experiment — Feldlinien und Ladung</h1>
+    <p class="small"><strong>Material:</strong> Stabmagnet, Eisenfeilspäne, Blatt Papier oder flache Kunststoffschale, Kompass; Luftballons, Wolltuch, Papierschnipsel</p><div class="box frage"><p>Bei den Magneten habt ihr vermutet, was zwischen ihnen liegt. Sieht man es hier?</p></div><div class="box auftrag"><ul><li>Beobachtet genau, was passiert.</li><li>Beschreibt es danach in einem Satz.</li></ul></div><p class="small">Film dazu: <a href="https://www.esa.int/media/alexander-gerst-s-earth-timelapses" target="_blank" rel="noopener">Alexander Gerst’s Earth timelapses — Polarlichter von der ISS</a> (ESA, Alexander Gerst)</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Magnetisches Feld und Feldlinien</h1>
+    <div class="tafel-kopf"><span>Stundenfrage:</span> Was liegt zwischen zwei Magneten?</div><div class="tafel-gitter"><div class="tafel-leer">Feldlinienbild eines Stabmagneten</div><div class="tafel-leer">Regeln für Feldlinienbilder</div><div class="tafel-leer">Feld als Vermittler der Kraft</div><div class="tafel-leer">Erdmagnetfeld</div></div>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Feldlinienbild eines Stabmagneten</h1>
+    <div class="tafel-block"><span class="wie">aus dem Versuch</span><div class="skizzen"><svg class="skizze" viewBox="0 0 600 280"><path d="M 220 114 C 150 64 450 64 380 114" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><path d="M 220 166 C 150 216 450 216 380 166" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="306,76.5 294,70.5 294,82.5" fill="#1a1a1a"/><polygon points="306,203.5 294,197.5 294,209.5" fill="#1a1a1a"/><path d="M 220 124 C 90 29 510 29 380 124" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><path d="M 220 156 C 90 251 510 251 380 156" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="306,52.8 294,46.8 294,58.8" fill="#1a1a1a"/><polygon points="306,227.2 294,221.2 294,233.2" fill="#1a1a1a"/><path d="M 220 134 C 30 -6 570 -6 380 134" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><path d="M 220 146 C 30 286 570 286 380 146" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="306,29.0 294,23.0 294,35.0" fill="#1a1a1a"/><polygon points="306,251.0 294,245.0 294,257.0" fill="#1a1a1a"/><line x1="60" y1="140" x2="220" y2="140" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="128,140 140,134 140,146" fill="#1a1a1a"/><line x1="380" y1="140" x2="540" y2="140" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="462,140 474,134 474,146" fill="#1a1a1a"/><rect x="220" y="110" width="160" height="60" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="300" y1="110" x2="300" y2="170" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><text x="260.0" y="148.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">N</text><text x="340.0" y="148.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">S</text></svg></div><ul class="tafel-text"><li>Feldlinien laufen außerhalb von <span class="luecke" title="Klick deckt auf"><span>N</span></span> nach <span class="luecke" title="Klick deckt auf"><span>S</span></span>.</li></ul></div><p class="ue-hilfe">Klick auf eine Lücke deckt sie auf.</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Regeln für Feldlinienbilder</h1>
+    <div class="tafel-block"><span class="wie">gemeinsam</span><span class="heft-hinweis">nur besprechen</span><table class="mini tafel-tab"><tr><th>Regel</th></tr><tr><td>Feldlinien verlaufen außerhalb von N nach S</td></tr><tr><td>Feldlinien schneiden sich nie</td></tr><tr><td>Wo sie <span class="luecke" title="Klick deckt auf"><span>dichter</span></span> liegen, ist das Feld <span class="luecke" title="Klick deckt auf"><span>stärker</span></span>.</td></tr><tr><td>Feldlinien sind ein <span class="luecke" title="Klick deckt auf"><span>Modell</span></span>, keine echten <span class="luecke" title="Klick deckt auf"><span>Fäden</span></span>.</td></tr></table></div><p class="ue-hilfe">Klick auf eine Lücke deckt sie auf.</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Feld als Vermittler der Kraft</h1>
+    <div class="tafel-block"><span class="wie">mündlich</span><ul class="tafel-text"><li>Das Feld überträgt die <span class="luecke" title="Klick deckt auf"><span>Kraft</span></span>, auch ohne <span class="luecke" title="Klick deckt auf"><span>Berührung</span></span>.</li><li>Wo ist das Feld am stärksten? <span class="luecke" title="Klick deckt auf"><span>An den Polen</span></span> – dort liegen die Feldlinien am <span class="luecke" title="Klick deckt auf"><span>dichtesten</span></span>.</li></ul></div><p class="ue-hilfe">Klick auf eine Lücke deckt sie auf.</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Erdmagnetfeld</h1>
+    <div class="tafel-block"><span class="wie">mündlich</span><span class="heft-hinweis">nur besprechen</span><div class="skizzen"><svg class="skizze" viewBox="0 0 600 260"><circle cx="300" cy="140" r="90" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="300" y1="35" x2="300" y2="250" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="7 6"/><text x="312" y="30" font-size="20" fill="#1a1a1a">Drehachse</text></svg></div><ul class="tafel-text"><li>Die Erde wirkt wie ein großer <span class="luecke" title="Klick deckt auf"><span>Magnet</span></span>.</li><li>Die <span class="luecke" title="Klick deckt auf"><span>Kompassnadel</span></span> richtet sich danach aus.</li><li>Magnetischer und geografischer Pol fallen <span class="luecke" title="Klick deckt auf"><span>nicht zusammen</span></span>.</li></ul></div><p class="ue-hilfe">Klick auf eine Lücke deckt sie auf.</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Notieren · Tafelbild · so steht es im Heft</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>So steht es im Heft</h1>
+    <div class="heftseite"><div class="heft-kopf"><span class="heft-titel">Magnetisches Feld und Feldlinien</span><span class="heft-datum">Datum: </span></div><p class="heft-frage"><span>Stundenfrage:</span> Was liegt zwischen zwei Magneten?</p><div class="heft-block"><h3>Feldlinienbild eines Stabmagneten</h3><div class="cols tafel-cols"><div><div class="skizzen"><svg class="skizze" viewBox="0 0 600 280"><path d="M 220 114 C 150 64 450 64 380 114" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><path d="M 220 166 C 150 216 450 216 380 166" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="306,76.5 294,70.5 294,82.5" fill="#1a1a1a"/><polygon points="306,203.5 294,197.5 294,209.5" fill="#1a1a1a"/><path d="M 220 124 C 90 29 510 29 380 124" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><path d="M 220 156 C 90 251 510 251 380 156" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="306,52.8 294,46.8 294,58.8" fill="#1a1a1a"/><polygon points="306,227.2 294,221.2 294,233.2" fill="#1a1a1a"/><path d="M 220 134 C 30 -6 570 -6 380 134" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><path d="M 220 146 C 30 286 570 286 380 146" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="306,29.0 294,23.0 294,35.0" fill="#1a1a1a"/><polygon points="306,251.0 294,245.0 294,257.0" fill="#1a1a1a"/><line x1="60" y1="140" x2="220" y2="140" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="128,140 140,134 140,146" fill="#1a1a1a"/><line x1="380" y1="140" x2="540" y2="140" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="462,140 474,134 474,146" fill="#1a1a1a"/><rect x="220" y="110" width="160" height="60" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="300" y1="110" x2="300" y2="170" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><text x="260.0" y="148.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">N</text><text x="340.0" y="148.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">S</text></svg></div></div><div><ul class="tafel-text"><li>Feldlinien laufen außerhalb von <span class="gefuellt">N</span> nach <span class="gefuellt">S</span>.</li></ul></div></div></div><div class="heft-block"><h3>Feld als Vermittler der Kraft</h3><ul class="tafel-text"><li>Das Feld überträgt die <span class="gefuellt">Kraft</span>, auch ohne <span class="gefuellt">Berührung</span>.</li><li>Wo ist das Feld am stärksten? <span class="gefuellt">An den Polen</span> – dort liegen die Feldlinien am <span class="gefuellt">dichtesten</span>.</li></ul></div><div class="heft-block"><h3>Merksatz</h3><div class="box merke heft-merksatz leer"><div class="schreiblinie"></div><div class="schreiblinie"></div><div class="schreiblinie"></div><div class="schreiblinie"></div><div class="schreiblinie"></div><div class="schreiblinie"></div></div></div></div>
+</section>
+
+<section class="slide dense" data-type="merke">
+    <div class="tag">Notieren · Merksatz · so steht es im Heft</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>So steht es im Heft</h1>
+    <div class="heftseite"><div class="heft-kopf"><span class="heft-titel">Magnetisches Feld und Feldlinien</span><span class="heft-datum">Datum: </span></div><p class="heft-frage"><span>Stundenfrage:</span> Was liegt zwischen zwei Magneten?</p><div class="heft-block"><h3>Feldlinienbild eines Stabmagneten</h3><div class="cols tafel-cols"><div><div class="skizzen"><svg class="skizze" viewBox="0 0 600 280"><path d="M 220 114 C 150 64 450 64 380 114" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><path d="M 220 166 C 150 216 450 216 380 166" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="306,76.5 294,70.5 294,82.5" fill="#1a1a1a"/><polygon points="306,203.5 294,197.5 294,209.5" fill="#1a1a1a"/><path d="M 220 124 C 90 29 510 29 380 124" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><path d="M 220 156 C 90 251 510 251 380 156" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="306,52.8 294,46.8 294,58.8" fill="#1a1a1a"/><polygon points="306,227.2 294,221.2 294,233.2" fill="#1a1a1a"/><path d="M 220 134 C 30 -6 570 -6 380 134" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><path d="M 220 146 C 30 286 570 286 380 146" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="306,29.0 294,23.0 294,35.0" fill="#1a1a1a"/><polygon points="306,251.0 294,245.0 294,257.0" fill="#1a1a1a"/><line x1="60" y1="140" x2="220" y2="140" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="128,140 140,134 140,146" fill="#1a1a1a"/><line x1="380" y1="140" x2="540" y2="140" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="462,140 474,134 474,146" fill="#1a1a1a"/><rect x="220" y="110" width="160" height="60" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="300" y1="110" x2="300" y2="170" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><text x="260.0" y="148.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">N</text><text x="340.0" y="148.0" font-size="22" font-weight="700" fill="#1a1a1a" text-anchor="middle">S</text></svg></div></div><div><ul class="tafel-text"><li>Feldlinien laufen außerhalb von <span class="gefuellt">N</span> nach <span class="gefuellt">S</span>.</li></ul></div></div></div><div class="heft-block"><h3>Feld als Vermittler der Kraft</h3><ul class="tafel-text"><li>Das Feld überträgt die <span class="gefuellt">Kraft</span>, auch ohne <span class="gefuellt">Berührung</span>.</li><li>Wo ist das Feld am stärksten? <span class="gefuellt">An den Polen</span> – dort liegen die Feldlinien am <span class="gefuellt">dichtesten</span>.</li></ul></div><div class="heft-block"><h3>Merksatz</h3><div class="box merke heft-merksatz"><p>Um jeden Magneten befindet sich ein <strong>magnetisches Feld</strong>. Es <strong>vermittelt</strong> die Kraft zwischen Magneten, auch ohne Berührung. Man stellt es durch <strong>Feldlinien</strong> dar: Sie verlaufen außerhalb des Magneten vom <strong>Nordpol zum Südpol</strong>, schneiden sich nie, und wo sie dichter liegen, ist das Feld stärker. Auch die <strong>Erde</strong> besitzt ein magnetisches Feld; deshalb richtet sich eine Kompassnadel nach Norden aus.</p></div></div></div>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Elektrostatische Kräfte und elektrisches Feld</h1>
+    <div class="tafel-kopf"><span>Stundenfrage:</span> Warum zieht ein geriebener Ballon Papier an?</div><div class="tafel-gitter"><div class="tafel-leer">Ballon und Papierschnipsel</div><div class="tafel-leer">Kern-Hülle-Modell des Atoms</div><div class="tafel-leer">Wie wird ein Körper geladen?</div><div class="tafel-leer">Feldlinien zwischen zwei Ladungen</div><div class="tafel-leer">Magnetisches und elektrisches Feld</div></div>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Ballon und Papierschnipsel</h1>
+    <div class="tafel-block"><span class="wie">aus dem Versuch</span><span class="heft-hinweis">nur besprechen</span><div class="skizzen"><svg class="skizze" viewBox="0 0 600 220"><circle cx="110" cy="80" r="55" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="110" y1="135" x2="110" y2="180" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="180" y1="85" x2="294" y2="91" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="306,92 293,85 292,99" fill="#1a1a1a"/><rect x="320" y="82" width="18" height="13" stroke="#1a1a1a" stroke-width="2" fill="none"/><rect x="352" y="96" width="18" height="13" stroke="#1a1a1a" stroke-width="2" fill="none"/><rect x="384" y="76" width="18" height="13" stroke="#1a1a1a" stroke-width="2" fill="none"/><rect x="416" y="98" width="18" height="13" stroke="#1a1a1a" stroke-width="2" fill="none"/><rect x="448" y="84" width="18" height="13" stroke="#1a1a1a" stroke-width="2" fill="none"/><text x="110" y="210" font-size="20" fill="#1a1a1a" text-anchor="middle">geriebener Ballon</text><text x="400" y="210" font-size="20" fill="#1a1a1a" text-anchor="middle">Papierschnipsel</text></svg></div><ul class="tafel-text"><li>Die Schnipsel <span class="luecke" title="Klick deckt auf"><span>springen an den Ballon</span></span>.</li><li>Auch hier wirkt eine <span class="luecke" title="Klick deckt auf"><span>Kraft</span></span> ohne <span class="luecke" title="Klick deckt auf"><span>Berührung</span></span>.</li></ul></div><p class="ue-hilfe">Klick auf eine Lücke deckt sie auf.</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Kern-Hülle-Modell des Atoms</h1>
+    <div class="tafel-block"><span class="wie">gemeinsam</span><div class="skizzen"><svg class="skizze" viewBox="0 0 600 310"><circle cx="170" cy="165" r="125" stroke="#1a1a1a" stroke-width="2" fill="none" stroke-dasharray="6 6"/><circle cx="170" cy="165" r="36" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="150.2" y1="165" x2="189.8" y2="165" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="170" y1="145.2" x2="170" y2="184.8" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="170" cy="40" r="14" fill="#ffffff"/><circle cx="170" cy="40" r="14" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="162.3" y1="40" x2="177.7" y2="40" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="93" cy="66.5" r="14" fill="#ffffff"/><circle cx="93" cy="66.5" r="14" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="85.3" y1="66.5" x2="100.7" y2="66.5" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="247" cy="66.5" r="14" fill="#ffffff"/><circle cx="247" cy="66.5" r="14" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="239.3" y1="66.5" x2="254.7" y2="66.5" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="61.7" cy="227.5" r="14" fill="#ffffff"/><circle cx="61.7" cy="227.5" r="14" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="54.0" y1="227.5" x2="69.4" y2="227.5" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="278.3" cy="227.5" r="14" fill="#ffffff"/><circle cx="278.3" cy="227.5" r="14" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="270.6" y1="227.5" x2="286.0" y2="227.5" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="260" y1="58" x2="322" y2="50" stroke="#1a1a1a" stroke-width="1.5"/><text x="330" y="46" font-size="20" fill="#1a1a1a">Hülle mit …:</text><text x="330" y="74" font-size="20" fill="#1a1a1a">… geladen</text><line x1="208" y1="160" x2="322" y2="164" stroke="#1a1a1a" stroke-width="1.5"/><text x="330" y="171" font-size="20" fill="#1a1a1a">Kern: … geladen</text></svg></div><ul class="tafel-text"><li>Kern <span class="luecke" title="Klick deckt auf"><span>positiv</span></span>, in der Hülle die <span class="luecke" title="Klick deckt auf"><span>Elektronen</span></span>, <span class="luecke" title="Klick deckt auf"><span>negativ</span></span>.</li><li>Gleich viele positive und negative Ladungen: <span class="luecke" title="Klick deckt auf"><span>neutral</span></span>.</li></ul></div><p class="ue-hilfe">Klick auf eine Lücke deckt sie auf.</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Wie wird ein Körper geladen?</h1>
+    <div class="tafel-block"><span class="wie">gemeinsam</span><span class="heft-hinweis">nur besprechen</span><ul class="tafel-text"><li>Beim Reiben können <span class="luecke" title="Klick deckt auf"><span>Elektronen</span></span> aus der Hülle auf die Atome des anderen Körpers übergehen.</li><li>Ladung wird nur <span class="luecke" title="Klick deckt auf"><span>getrennt</span></span>, nicht <span class="luecke" title="Klick deckt auf"><span>erzeugt</span></span> — deshalb werden immer <span class="luecke" title="Klick deckt auf"><span>beide</span></span> Körper geladen.</li></ul></div><p class="ue-hilfe">Klick auf eine Lücke deckt sie auf.</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Feldlinien zwischen zwei Ladungen</h1>
+    <div class="tafel-block"><span class="wie">gemeinsam</span><div class="skizzen"><svg class="skizze" viewBox="0 0 600 220"><circle cx="90" cy="110" r="34" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="71.3" y1="110" x2="108.7" y2="110" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="90" y1="91.3" x2="90" y2="128.7" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="510" cy="110" r="34" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="491.3" y1="110" x2="528.7" y2="110" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="135" y1="75" x2="456" y2="75" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="468,75 454,68 454,82" fill="#1a1a1a"/><line x1="135" y1="110" x2="456" y2="110" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="468,110 454,103 454,117" fill="#1a1a1a"/><line x1="135" y1="145" x2="456" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="468,145 454,138 454,152" fill="#1a1a1a"/></svg></div><ul class="tafel-text"><li>Feldlinien laufen von <span class="luecke" title="Klick deckt auf"><span>plus</span></span> nach <span class="luecke" title="Klick deckt auf"><span>minus</span></span>.</li></ul></div><p class="ue-hilfe">Klick auf eine Lücke deckt sie auf.</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Magnetisches und elektrisches Feld</h1>
+    <div class="tafel-block"><span class="wie">gemeinsam</span><span class="heft-hinweis">nur besprechen</span><table class="mini tafel-tab"><tr><th></th><th>magnetisch</th><th>elektrisch</th></tr><tr><td>Ursache</td><td><span class="luecke" title="Klick deckt auf"><span>Magnetpole</span></span></td><td><span class="luecke" title="Klick deckt auf"><span>elektrische Ladungen</span></span></td></tr><tr><td>zwei Sorten</td><td><span class="luecke" title="Klick deckt auf"><span>Nord und Süd</span></span></td><td><span class="luecke" title="Klick deckt auf"><span>positiv und negativ</span></span></td></tr><tr><td>gleichnamig</td><td><span class="luecke" title="Klick deckt auf"><span>stoßen sich ab</span></span></td><td><span class="luecke" title="Klick deckt auf"><span>stoßen sich ab</span></span></td></tr><tr><td>ungleichnamig</td><td><span class="luecke" title="Klick deckt auf"><span>ziehen sich an</span></span></td><td><span class="luecke" title="Klick deckt auf"><span>ziehen sich an</span></span></td></tr><tr><td>Feldlinien von</td><td><span class="luecke" title="Klick deckt auf"><span>N nach S</span></span></td><td><span class="luecke" title="Klick deckt auf"><span>Plus nach Minus</span></span></td></tr></table></div><p class="ue-hilfe">Klick auf eine Lücke deckt sie auf.</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Notieren · Tafelbild · so steht es im Heft (1/2)</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>So steht es im Heft (1/2)</h1>
+    <div class="heftseite"><div class="heft-kopf"><span class="heft-titel">Elektrostatische Kräfte und elektrisches Feld</span><span class="heft-datum">Datum: </span></div><p class="heft-frage"><span>Stundenfrage:</span> Warum zieht ein geriebener Ballon Papier an?</p><div class="heft-block"><h3>Kern-Hülle-Modell des Atoms</h3><div class="skizzen"><svg class="skizze" viewBox="0 0 600 310"><circle cx="170" cy="165" r="125" stroke="#1a1a1a" stroke-width="2" fill="none" stroke-dasharray="6 6"/><circle cx="170" cy="165" r="36" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="150.2" y1="165" x2="189.8" y2="165" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="170" y1="145.2" x2="170" y2="184.8" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="170" cy="40" r="14" fill="#ffffff"/><circle cx="170" cy="40" r="14" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="162.3" y1="40" x2="177.7" y2="40" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="93" cy="66.5" r="14" fill="#ffffff"/><circle cx="93" cy="66.5" r="14" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="85.3" y1="66.5" x2="100.7" y2="66.5" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="247" cy="66.5" r="14" fill="#ffffff"/><circle cx="247" cy="66.5" r="14" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="239.3" y1="66.5" x2="254.7" y2="66.5" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="61.7" cy="227.5" r="14" fill="#ffffff"/><circle cx="61.7" cy="227.5" r="14" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="54.0" y1="227.5" x2="69.4" y2="227.5" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="278.3" cy="227.5" r="14" fill="#ffffff"/><circle cx="278.3" cy="227.5" r="14" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="270.6" y1="227.5" x2="286.0" y2="227.5" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="260" y1="58" x2="322" y2="50" stroke="#1a1a1a" stroke-width="1.5"/><text x="330" y="46" font-size="20" fill="#1a1a1a">Hülle mit <tspan fill="#0a5aa8" font-weight="700">Elektronen</tspan>:</text><text x="330" y="74" font-size="20" fill="#1a1a1a"><tspan fill="#0a5aa8" font-weight="700">negativ</tspan> geladen</text><line x1="208" y1="160" x2="322" y2="164" stroke="#1a1a1a" stroke-width="1.5"/><text x="330" y="171" font-size="20" fill="#1a1a1a">Kern: <tspan fill="#0a5aa8" font-weight="700">positiv</tspan> geladen</text></svg></div></div><div class="heft-block"><h3>Merksatz</h3><div class="box merke heft-merksatz leer"><div class="schreiblinie"></div><div class="schreiblinie"></div><div class="schreiblinie"></div><div class="schreiblinie"></div><div class="schreiblinie"></div></div></div></div>
+</section>
+
+<section class="slide dense" data-type="merke">
+    <div class="tag">Notieren · Merksatz · so steht es im Heft (1/2)</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>So steht es im Heft (1/2)</h1>
+    <div class="heftseite"><div class="heft-kopf"><span class="heft-titel">Elektrostatische Kräfte und elektrisches Feld</span><span class="heft-datum">Datum: </span></div><p class="heft-frage"><span>Stundenfrage:</span> Warum zieht ein geriebener Ballon Papier an?</p><div class="heft-block"><h3>Kern-Hülle-Modell des Atoms</h3><div class="skizzen"><svg class="skizze" viewBox="0 0 600 310"><circle cx="170" cy="165" r="125" stroke="#1a1a1a" stroke-width="2" fill="none" stroke-dasharray="6 6"/><circle cx="170" cy="165" r="36" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="150.2" y1="165" x2="189.8" y2="165" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="170" y1="145.2" x2="170" y2="184.8" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="170" cy="40" r="14" fill="#ffffff"/><circle cx="170" cy="40" r="14" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="162.3" y1="40" x2="177.7" y2="40" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="93" cy="66.5" r="14" fill="#ffffff"/><circle cx="93" cy="66.5" r="14" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="85.3" y1="66.5" x2="100.7" y2="66.5" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="247" cy="66.5" r="14" fill="#ffffff"/><circle cx="247" cy="66.5" r="14" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="239.3" y1="66.5" x2="254.7" y2="66.5" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="61.7" cy="227.5" r="14" fill="#ffffff"/><circle cx="61.7" cy="227.5" r="14" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="54.0" y1="227.5" x2="69.4" y2="227.5" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="278.3" cy="227.5" r="14" fill="#ffffff"/><circle cx="278.3" cy="227.5" r="14" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="270.6" y1="227.5" x2="286.0" y2="227.5" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="260" y1="58" x2="322" y2="50" stroke="#1a1a1a" stroke-width="1.5"/><text x="330" y="46" font-size="20" fill="#1a1a1a">Hülle mit <tspan fill="#0a5aa8" font-weight="700">Elektronen</tspan>:</text><text x="330" y="74" font-size="20" fill="#1a1a1a"><tspan fill="#0a5aa8" font-weight="700">negativ</tspan> geladen</text><line x1="208" y1="160" x2="322" y2="164" stroke="#1a1a1a" stroke-width="1.5"/><text x="330" y="171" font-size="20" fill="#1a1a1a">Kern: <tspan fill="#0a5aa8" font-weight="700">positiv</tspan> geladen</text></svg></div></div><div class="heft-block"><h3>Merksatz</h3><div class="box merke heft-merksatz"><p>Ein Atom besteht aus einem positiv geladenen <strong>Kern</strong> und einer <strong>Hülle</strong> mit negativ geladenen <strong>Elektronen</strong>. Beim Reiben können Elektronen aus der Hülle auf die Atome des anderen Körpers <strong>übergehen</strong>: Wer Elektronen <strong>aufnimmt</strong>, wird <strong>negativ geladen</strong>, wer welche <strong>abgibt</strong>, wird <strong>positiv geladen</strong>. <strong>Gleichnamig</strong> geladene Körper stoßen sich ab, <strong>ungleichnamig</strong> geladene ziehen sich an.</p></div></div></div>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Notieren · Tafelbild · so steht es im Heft (2/2)</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>So steht es im Heft (2/2)</h1>
+    <div class="heftseite fortsetzung"><div class="heft-kopf"><span class="heft-titel">Elektrostatische Kräfte und elektrisches Feld <small>(Fortsetzung)</small></span></div><div class="heft-block"><h3>Feldlinien zwischen zwei Ladungen</h3><div class="skizzen"><svg class="skizze" viewBox="0 0 600 220"><circle cx="90" cy="110" r="34" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="71.3" y1="110" x2="108.7" y2="110" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="90" y1="91.3" x2="90" y2="128.7" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="510" cy="110" r="34" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="491.3" y1="110" x2="528.7" y2="110" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="135" y1="75" x2="456" y2="75" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="468,75 454,68 454,82" fill="#1a1a1a"/><line x1="135" y1="110" x2="456" y2="110" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="468,110 454,103 454,117" fill="#1a1a1a"/><line x1="135" y1="145" x2="456" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="468,145 454,138 454,152" fill="#1a1a1a"/></svg></div></div><div class="heft-block"><h3>Merksatz</h3><div class="box merke heft-merksatz leer"><div class="schreiblinie"></div><div class="schreiblinie"></div><div class="schreiblinie"></div><div class="schreiblinie"></div></div></div></div>
+</section>
+
+<section class="slide dense" data-type="merke">
+    <div class="tag">Notieren · Merksatz · so steht es im Heft (2/2)</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>So steht es im Heft (2/2)</h1>
+    <div class="heftseite fortsetzung"><div class="heft-kopf"><span class="heft-titel">Elektrostatische Kräfte und elektrisches Feld <small>(Fortsetzung)</small></span></div><div class="heft-block"><h3>Feldlinien zwischen zwei Ladungen</h3><div class="skizzen"><svg class="skizze" viewBox="0 0 600 220"><circle cx="90" cy="110" r="34" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="71.3" y1="110" x2="108.7" y2="110" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="90" y1="91.3" x2="90" y2="128.7" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="510" cy="110" r="34" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="491.3" y1="110" x2="528.7" y2="110" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="135" y1="75" x2="456" y2="75" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="468,75 454,68 454,82" fill="#1a1a1a"/><line x1="135" y1="110" x2="456" y2="110" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="468,110 454,103 454,117" fill="#1a1a1a"/><line x1="135" y1="145" x2="456" y2="145" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><polygon points="468,145 454,138 454,152" fill="#1a1a1a"/></svg></div></div><div class="heft-block"><h3>Merksatz</h3><div class="box merke heft-merksatz"><p>Um jeden geladenen Körper befindet sich ein <strong>elektrisches Feld</strong>. Es vermittelt die Kraft zwischen geladenen Körpern. Man stellt es durch <strong>Feldlinien</strong> dar; sie verlaufen von der <strong>positiven</strong> zur <strong>negativen</strong> Ladung. Für das elektrische Feld gelten dieselben Regeln wie für das magnetische.</p></div></div></div>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Übung · schriftlich</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Übung — schriftlich ins Heft</h1>
+    <div class="box uebung"><ol><li><strong>Laden durch Reiben erklären</strong><p>Ein Glasstab wird an einem Seidentuch gerieben. Dabei gibt der Glasstab Elektronen an das Tuch ab. Erläutere, wie Glasstab und Tuch danach geladen sind.</p></li><li><strong>Feldlinien zeichnen</strong><p>Zeichne die Feldlinien eines Stabmagneten und die Feldlinien zwischen einer positiven und einer negativen Ladung. Kennzeichne jeweils die Richtung.</p></li></ol></div><p class="timer">⏱ 10 min — allein oder zu zweit ins Heft</p>
+</section>
+
+<section class="slide dense" data-type="auswertung">
+    <div class="tag">Übung · Lösung</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Lösungen</h1>
+    <div class="box beispiel"><ol><li><strong>Laden durch Reiben erklären</strong><ul class="plain"><li>Elektronen sind aus der Hülle der Atome des Glasstabs auf das Tuch übergegangen.</li><li>Dem Glasstab fehlen jetzt Elektronen: Er ist positiv geladen.</li><li>Das Tuch hat zu viele Elektronen: Es ist negativ geladen.</li></ul></li><li><strong>Feldlinien zeichnen</strong><ul class="plain"><li>Stabmagnet: außerhalb vom Nordpol zum Südpol, an den Polen am dichtesten.</li><li>Zwei Ladungen: von der positiven zur negativen Ladung.</li><li>In beiden Bildern Pfeilspitzen in Feldrichtung; die Linien schneiden sich nicht.</li></ul></li></ol></div>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Übung · mündlich, falls Zeit</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>fehlerhaftes Feldlinienbild</h1>
+    <div class="cols"><div class="bild"><img src="../../bilder/fb-w12-aufgabe-feldlinien-fehler.png" alt=""></div><div><div class="box uebung"><p>Begründe, warum dieses Feldlinienbild nicht richtig sein kann.</p></div></div></div>
+</section>
+
+<section class="slide" data-type="auswertung">
+    <div class="tag">Übung · Lösung</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Lösung: fehlerhaftes Feldlinienbild</h1>
+    <div class="cols"><div class="bild"><img src="../../bilder/fb-w12-aufgabe-feldlinien-fehler.png" alt=""></div><div><div class="box beispiel"><ul class="plain"><li>Bei 1 <strong>schneiden sich zwei Feldlinien</strong>.</li><li>An einem Schnittpunkt müsste eine Kompassnadel in zwei verschiedene Richtungen zeigen.</li><li>Da sie an jeder Stelle genau eine Richtung anzeigt, können sich Feldlinien nie schneiden.</li></ul></div></div></div>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Ausblick · falls Zeit</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Ein Blitz: Ladungstrennung im Großen</h1>
+    <div class="cols"><div class="bild"><img src="../../bilder/foto-blitze.jpg" alt=""></div><div><ul><li>In der Gewitterwolke reiben Hagelkörner und Tropfen aneinander — wie Ballon und Wolltuch.</li><li>Unten sammelt sich negative Ladung, oben positive.</li><li>Der Blitz ist der Ausgleich: bis zu 30 000 °C heiß.</li></ul><div class="box frage"><p>Woher kommt die Ladung in der Wolke?</p></div><details class="aufloesung"><summary>Auflösung</summary><p>Durch <strong>Reiben</strong>: Elektronen wechseln von den Hagelkörnern auf die Tropfen oder umgekehrt — Ladung wird <strong>getrennt</strong>, genau wie beim Ballon.</p></details><p class="small">Film: <a href="https://www.wdrmaus.de/filme/sachgeschichten/realblitz.php5" target="_blank" rel="noopener">Realblitz</a> (Die Sendung mit der Maus, WDR)</p><p class="nachweis">Foto: Mike Eliason / Santa Barbara County Fire · gemeinfrei · Wikimedia Commons</p></div></div>
+</section>
+
+<section class="slide dense" data-type="zusammenfassung">
+    <div class="tag">Check-out</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Check-out</h1>
+    <div class="box auftrag"><ol><li>Erkläre in eigenen Worten, was ein Feld ist und wozu man Feldlinien zeichnet. Nenne außerdem eine Gemeinsamkeit und einen Unterschied von magnetischem und elektrischem Feld.</li></ol></div><p class="center">Wie sicher bist du?</p><div class="daumen"><span>👍 sicher</span><span>👌 mit Hilfe</span><span>👎 noch nicht</span></div>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Puffer · falls Zeit bleibt</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Bankrücken: 10 Fragen</h1>
+    <div class="box auftrag"><ol><li>Ein Kind steht neben seiner Nachbarin oder seinem Nachbarn.</li><li>Die Frage wird vorgelesen. Wer <strong>zuerst richtig</strong> antwortet, rückt eine Bank weiter.</li><li>Dort geht es gegen das nächste Kind.</li><li>Wer kommt am weitesten?</li></ol></div>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Puffer · Bankrücken · 1 von 10</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Frage 1</h1>
+    <div class="box frage"><p>Was befindet sich um jeden Magneten?</p></div><p class="center gross-antwort">Antwort: <span class="luecke"><span>ein magnetisches Feld</span></span></p>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Puffer · Bankrücken · 2 von 10</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Frage 2</h1>
+    <div class="box frage"><p>Womit stellt man ein Feld dar?</p></div><p class="center gross-antwort">Antwort: <span class="luecke"><span>mit Feldlinien</span></span></p>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Puffer · Bankrücken · 3 von 10</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Frage 3</h1>
+    <div class="box frage"><p>Feldlinien außerhalb des Magneten: von welchem Pol zu welchem?</p></div><p class="center gross-antwort">Antwort: <span class="luecke"><span>vom Nordpol zum Südpol</span></span></p>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Puffer · Bankrücken · 4 von 10</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Frage 4</h1>
+    <div class="box frage"><p>Wo ist das Feld am stärksten?</p></div><p class="center gross-antwort">Antwort: <span class="luecke"><span>wo die Feldlinien dicht liegen</span></span></p>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Puffer · Bankrücken · 5 von 10</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Frage 5</h1>
+    <div class="box frage"><p>Warum zeigt der Kompass nach Norden?</p></div><p class="center gross-antwort">Antwort: <span class="luecke"><span>Magnetfeld der Erde</span></span></p>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Puffer · Bankrücken · 6 von 10</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Frage 6</h1>
+    <div class="box frage"><p>Wie viele Arten elektrischer Ladung gibt es?</p></div><p class="center gross-antwort">Antwort: <span class="luecke"><span>zwei</span></span></p>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Puffer · Bankrücken · 7 von 10</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Frage 7</h1>
+    <div class="box frage"><p>Gleichnamig geladene Körper: anziehen oder abstoßen?</p></div><p class="center gross-antwort">Antwort: <span class="luecke"><span>abstoßen</span></span></p>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Puffer · Bankrücken · 8 von 10</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Frage 8</h1>
+    <div class="box frage"><p>Elektrische Feldlinien: von wo nach wo?</p></div><p class="center gross-antwort">Antwort: <span class="luecke"><span>von plus nach minus</span></span></p>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Puffer · Bankrücken · 9 von 10</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Frage 9</h1>
+    <div class="box frage"><p>Was ist um jeden geladenen Körper?</p></div><p class="center gross-antwort">Antwort: <span class="luecke"><span>ein elektrisches Feld</span></span></p>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Puffer · Bankrücken · 10 von 10</div><div class="topic-badge">Magnetisches und elektrisches Feld</div>
+    <h1>Frage 10</h1>
+    <div class="box frage"><p>Wie sind Elektronen geladen?</p></div><p class="center gross-antwort">Antwort: <span class="luecke"><span>negativ</span></span></p>
+</section>
+
+<section class="slide" data-type="titel">
+    <p class="sub">LB 1 Kräfte · Magnetismus und Elektrostatik</p>
+    <h1>Übungsstunde: Lerntheke Hebel bis Elektrostatik</h1>
+    <ul class="ablauf"><li><a href="#s101">Einstieg</a></li><li><a href="#s102">Problemstellung</a></li><li><a href="#s103">Diskussion</a></li><li><a href="#s104">Erarbeitung</a></li><li><a href="#s109">Notieren</a></li><li><a href="#s110">Übung</a></li><li><a href="#s112">Check-out</a></li><li><a href="#s113">Puffer</a></li></ul>
+</section>
+
+<section class="slide" data-type="einstieg">
+    <div class="tag">Einstieg · Wiederholung</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Was weißt du noch?</h1>
+    <div class="box uebung"><p>Erkläre in eigenen Worten, was ein Feld ist und wozu man Feldlinien zeichnet. Nenne außerdem eine Gemeinsamkeit und einen Unterschied von magnetischem und elektrischem Feld.</p></div><p class="small">Zuerst allein überlegen, dann mit dem Nachbarn vergleichen.</p>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Problemstellung</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Schon gelesen?</h1>
+    <div class="schlagzeile"><p class="quelle">logo! (ZDF) · 07.05.2025</p><p class="kopf"><a href="https://www.logo.de/blitze-deutschland-102.html" target="_blank" rel="noopener">Achtung, es blitzt!: So viele Blitze gab’s 2024 in Deutschland</a></p><ul><li>2024 schlugen in Deutschland mehr als 200.000 Blitze ein, die meisten davon in Bayern.</li><li>Gezählt werden nur Blitze, die den Boden erreichen.</li></ul></div><div class="box frage"><p>Was springt bei einem Blitz eigentlich zwischen Wolke und Boden über?</p></div>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Diskussion</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Frage der Stunde — was meint ihr?</h1>
+    <div class="box frage"><p>Welche Aufgaben von Hebel bis Elektrostatik kannst du schon sicher — und welche noch nicht?</p></div><p>Jemand sagt: <strong>„Positive Ladung wandert.“</strong> — stimmt das?</p><div class="box auftrag"><ul><li>Überlegt zu zweit: Was vermutet ihr — und <strong>warum</strong>?</li><li>Schreib deine <strong>Vermutung</strong> ins Heft.</li></ul></div><p class="timer">⏱ 3 min — zu zweit, dann in der Klasse</p>
+</section>
+
+<section class="slide dense" data-type="motivation">
+    <div class="tag">Erarbeitung · Bild</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Blitz trifft den Fernsehturm</h1>
+    <div class="cols"><div class="bild"><img src="../../bilder/impuls-ladung.jpg" alt=""></div><div><ul><li>Ein Blitz schlägt nachts in die Spitze des Berliner Fernsehturms ein.</li></ul><div class="box frage"><p>Was fließt da vom Himmel zum Turm? Und warum geht der Turm dabei nicht kaputt?</p></div><details class="aufloesung"><summary>Auflösung</summary><p>In der Gewitterwolke sind viele elektrische Ladungen getrennt; beim Blitz gleichen sie sich mit der Erde aus. Der Turm hat einen Blitzableiter: Die Ladung wird über Metallleitungen sicher in den Boden geleitet.</p></details><p class="nachweis">Foto: Matt Biddulph from UK · CC BY-SA 2.0 · Wikimedia Commons</p></div></div>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Wiederholung: Ladung und Felder</h1>
+    <div class="tafel-kopf"><span>Stundenfrage:</span> Magnet und geriebener Ballon: Was ist gleich, was ist anders?</div><div class="tafel-gitter"><div class="tafel-leer">Kern-Hülle-Modell des Atoms</div><div class="tafel-leer">Wiederholung: die beiden Felder</div><div class="tafel-leer">Wie wird ein Körper geladen?</div></div>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Kern-Hülle-Modell des Atoms</h1>
+    <div class="tafel-block"><span class="wie">mündlich</span><span class="heft-hinweis">nur besprechen</span><div class="skizzen"><svg class="skizze" viewBox="0 0 600 310"><circle cx="170" cy="165" r="125" stroke="#1a1a1a" stroke-width="2" fill="none" stroke-dasharray="6 6"/><circle cx="170" cy="165" r="36" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="150.2" y1="165" x2="189.8" y2="165" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="170" y1="145.2" x2="170" y2="184.8" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="170" cy="40" r="14" fill="#ffffff"/><circle cx="170" cy="40" r="14" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="162.3" y1="40" x2="177.7" y2="40" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="93" cy="66.5" r="14" fill="#ffffff"/><circle cx="93" cy="66.5" r="14" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="85.3" y1="66.5" x2="100.7" y2="66.5" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="247" cy="66.5" r="14" fill="#ffffff"/><circle cx="247" cy="66.5" r="14" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="239.3" y1="66.5" x2="254.7" y2="66.5" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="61.7" cy="227.5" r="14" fill="#ffffff"/><circle cx="61.7" cy="227.5" r="14" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="54.0" y1="227.5" x2="69.4" y2="227.5" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><circle cx="278.3" cy="227.5" r="14" fill="#ffffff"/><circle cx="278.3" cy="227.5" r="14" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="270.6" y1="227.5" x2="286.0" y2="227.5" stroke="#1a1a1a" stroke-width="2.5" fill="none"/><line x1="260" y1="58" x2="322" y2="50" stroke="#1a1a1a" stroke-width="1.5"/><text x="330" y="46" font-size="20" fill="#1a1a1a">Hülle mit …:</text><text x="330" y="74" font-size="20" fill="#1a1a1a">… geladen</text><line x1="208" y1="160" x2="322" y2="164" stroke="#1a1a1a" stroke-width="1.5"/><text x="330" y="171" font-size="20" fill="#1a1a1a">Kern: … geladen</text></svg></div><ul class="tafel-text"><li>Gleich viele positive und negative Ladungen: <span class="luecke" title="Klick deckt auf"><span>neutral</span></span>.</li></ul></div><p class="ue-hilfe">Klick auf eine Lücke deckt sie auf.</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Wiederholung: die beiden Felder</h1>
+    <div class="tafel-block"><span class="wie">gemeinsam</span><table class="mini tafel-tab"><tr><th></th><th>magnetisch</th><th>elektrisch</th></tr><tr><td>Ursache</td><td><span class="luecke" title="Klick deckt auf"><span>Magnetpole</span></span></td><td><span class="luecke" title="Klick deckt auf"><span>elektrische Ladungen</span></span></td></tr><tr><td>zwei Sorten</td><td><span class="luecke" title="Klick deckt auf"><span>Nord und Süd</span></span></td><td><span class="luecke" title="Klick deckt auf"><span>positiv und negativ</span></span></td></tr><tr><td>gleichnamig</td><td><span class="luecke" title="Klick deckt auf"><span>stoßen sich ab</span></span></td><td><span class="luecke" title="Klick deckt auf"><span>stoßen sich ab</span></span></td></tr><tr><td>ungleichnamig</td><td><span class="luecke" title="Klick deckt auf"><span>ziehen sich an</span></span></td><td><span class="luecke" title="Klick deckt auf"><span>ziehen sich an</span></span></td></tr><tr><td>Feldlinien von</td><td><span class="luecke" title="Klick deckt auf"><span>N nach S</span></span></td><td><span class="luecke" title="Klick deckt auf"><span>Plus nach Minus</span></span></td></tr></table></div><p class="ue-hilfe">Klick auf eine Lücke deckt sie auf.</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Erarbeitung · Tafelbild</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Wie wird ein Körper geladen?</h1>
+    <div class="tafel-block"><span class="wie">mündlich</span><span class="heft-hinweis">nur besprechen</span><ul class="tafel-text"><li>Beim Reiben wechseln <span class="luecke" title="Klick deckt auf"><span>Elektronen</span></span> von einem Körper auf den anderen.</li><li>Ladung wird nur <span class="luecke" title="Klick deckt auf"><span>getrennt</span></span>, nicht <span class="luecke" title="Klick deckt auf"><span>erzeugt</span></span>.</li><li>Deshalb werden immer <span class="luecke" title="Klick deckt auf"><span>beide</span></span> Körper geladen.</li></ul></div><p class="ue-hilfe">Klick auf eine Lücke deckt sie auf.</p>
+</section>
+
+<section class="slide dense" data-type="erarbeitung">
+    <div class="tag">Notieren · Tafelbild · so steht es im Heft</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>So steht es im Heft</h1>
+    <div class="heftseite"><div class="heft-kopf"><span class="heft-titel">Wiederholung: Ladung und Felder</span><span class="heft-datum">Datum: </span></div><p class="heft-frage"><span>Stundenfrage:</span> Magnet und geriebener Ballon: Was ist gleich, was ist anders?</p><div class="heft-block"><h3>Wiederholung: die beiden Felder</h3><table class="mini tafel-tab"><tr><th></th><th>magnetisch</th><th>elektrisch</th></tr><tr><td>Ursache</td><td><span class="gefuellt">Magnetpole</span></td><td><span class="gefuellt">elektrische Ladungen</span></td></tr><tr><td>zwei Sorten</td><td><span class="gefuellt">Nord und Süd</span></td><td><span class="gefuellt">positiv und negativ</span></td></tr><tr><td>gleichnamig</td><td><span class="gefuellt">stoßen sich ab</span></td><td><span class="gefuellt">stoßen sich ab</span></td></tr><tr><td>ungleichnamig</td><td><span class="gefuellt">ziehen sich an</span></td><td><span class="gefuellt">ziehen sich an</span></td></tr><tr><td>Feldlinien von</td><td><span class="gefuellt">N nach S</span></td><td><span class="gefuellt">Plus nach Minus</span></td></tr></table></div></div>
+</section>
+
+<section class="slide" data-type="uebung">
+    <div class="tag">Übung · mündlich</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Atom beschriften</h1>
+    <div class="cols"><div class="bild"><img src="../../bilder/fb-w13-aufgabe-atom.png" alt=""></div><div><div class="box uebung"><p>Benenne 1 bis 3 und gib jeweils die Ladung an.</p></div></div></div>
+</section>
+
+<section class="slide" data-type="auswertung">
+    <div class="tag">Übung · Lösung</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Lösung: Atom beschriften</h1>
+    <div class="cols"><div class="bild"><img src="../../bilder/fb-w13-aufgabe-atom.png" alt=""></div><div><div class="box beispiel"><ul class="plain"><li><strong>1 Hülle</strong> — hier befinden sich die Elektronen.</li><li><strong>2 Kern</strong> — positiv geladen.</li><li><strong>3 Elektron</strong> — negativ geladen.</li><li>Sind gleich viele positive und negative Ladungen vorhanden, ist das Atom nach außen neutral.</li></ul></div></div></div>
+</section>
+
+<section class="slide dense" data-type="zusammenfassung">
+    <div class="tag">Check-out</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Check-out</h1>
+    <div class="box auftrag"><ol><li>Erkläre in eigenen Worten, warum beim Reiben immer beide Körper geladen werden.</li><li>Welche Stufe hast du bei den meisten Aufgaben geschafft?</li></ol></div><p class="center">Wie sicher bist du?</p><div class="daumen"><span>👍 sicher</span><span>👌 mit Hilfe</span><span>👎 noch nicht</span></div>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Puffer · falls Zeit bleibt</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Reihen-Duell: Fenster, Mitte, Tür</h1>
+    <div class="box auftrag"><ol><li>Jede Reihe ist ein Team. Bei jeder Frage steht aus jeder Reihe ein <strong>anderes</strong> Kind auf.</li><li>Die Reihe darf 20 Sekunden flüstern.</li><li>Bei „3, 2, 1“ antworten die drei mit dem Körper.</li><li>Jede richtige Antwort: ein Strich an der Tafel.</li></ol></div><div class="quiz-optionen n3"><div class="quiz-opt"><span class="z">1</span><span>Arme hoch</span></div><div class="quiz-opt"><span class="z">2</span><span>Hände auf den Kopf</span></div><div class="quiz-opt"><span class="z">3</span><span>Arme verschränkt</span></div></div><p class="center">richtig oder falsch: <strong>richtig</strong> = aufstehen, <strong>falsch</strong> = sitzen bleiben</p>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Puffer · Duell · Atom · 1 von 5</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Frage 1</h1>
+    <div class="box frage"><p>Wo befinden sich im Kern-Hülle-Modell die Elektronen?</p></div><div class="quiz-optionen n3"><div class="quiz-opt"><span class="z">1</span><span>im Kern<span class="koerper">Arme hoch</span></span></div><div class="quiz-opt"><span class="z">2</span><span>in der Hülle<span class="koerper">Hände auf den Kopf</span></span></div><div class="quiz-opt"><span class="z">3</span><span>zwischen zwei Atomen<span class="koerper">Arme verschränkt</span></span></div></div>
+</section>
+
+<section class="slide dense" data-type="auswertung">
+    <div class="tag">Puffer · Duell · Atom · 1 von 5</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Frage 1: Auflösung</h1>
+    <div class="box frage"><p>Wo befinden sich im Kern-Hülle-Modell die Elektronen?</p></div><div class="quiz-optionen n3"><div class="quiz-opt daneben"><span class="z">1</span><span>im Kern<span class="koerper">Arme hoch</span></span></div><div class="quiz-opt richtig"><span class="z">2</span><span>in der Hülle<span class="koerper">Hände auf den Kopf</span></span></div><div class="quiz-opt daneben"><span class="z">3</span><span>zwischen zwei Atomen<span class="koerper">Arme verschränkt</span></span></div></div><div class="box beispiel"><p>Der <strong>Kern</strong> ist positiv, die <strong>Elektronen</strong> in der <strong>Hülle</strong> sind negativ.</p></div>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Puffer · Duell · Ladung · 2 von 5</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Frage 2</h1>
+    <div class="box frage"><p>Beim Reiben entsteht neue Ladung.</p></div><div class="quiz-optionen n2"><div class="quiz-opt"><span><strong>richtig</strong>: aufstehen</span></div><div class="quiz-opt"><span><strong>falsch</strong>: sitzen bleiben</span></div></div>
+</section>
+
+<section class="slide dense" data-type="auswertung">
+    <div class="tag">Puffer · Duell · Ladung · 2 von 5</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Frage 2: Auflösung</h1>
+    <div class="box frage"><p>Beim Reiben entsteht neue Ladung.</p></div><div class="quiz-optionen n2"><div class="quiz-opt daneben"><span><strong>richtig</strong>: aufstehen</span></div><div class="quiz-opt richtig"><span><strong>falsch</strong>: sitzen bleiben</span></div></div><div class="box beispiel"><p>Ladung wird nur <strong>getrennt</strong>: <strong>Elektronen</strong> wechseln von einem Körper auf den anderen.</p></div>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Puffer · Duell · Ladung · 3 von 5</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Frage 3</h1>
+    <div class="box frage"><p>Ein Ballon nimmt beim Reiben Elektronen vom Pulli auf. Wie ist der Ballon danach geladen?</p></div><div class="quiz-optionen n3"><div class="quiz-opt"><span class="z">1</span><span>positiv<span class="koerper">Arme hoch</span></span></div><div class="quiz-opt"><span class="z">2</span><span>negativ<span class="koerper">Hände auf den Kopf</span></span></div><div class="quiz-opt"><span class="z">3</span><span>gar nicht<span class="koerper">Arme verschränkt</span></span></div></div>
+</section>
+
+<section class="slide dense" data-type="auswertung">
+    <div class="tag">Puffer · Duell · Ladung · 3 von 5</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Frage 3: Auflösung</h1>
+    <div class="box frage"><p>Ein Ballon nimmt beim Reiben Elektronen vom Pulli auf. Wie ist der Ballon danach geladen?</p></div><div class="quiz-optionen n3"><div class="quiz-opt daneben"><span class="z">1</span><span>positiv<span class="koerper">Arme hoch</span></span></div><div class="quiz-opt richtig"><span class="z">2</span><span>negativ<span class="koerper">Hände auf den Kopf</span></span></div><div class="quiz-opt daneben"><span class="z">3</span><span>gar nicht<span class="koerper">Arme verschränkt</span></span></div></div><div class="box beispiel"><p>Wer Elektronen <strong>aufnimmt</strong>, wird <strong>negativ</strong>. Der Pulli hat welche abgegeben und ist positiv — <strong>beide</strong> sind geladen.</p></div>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Puffer · Duell · Wiederholung · 4 von 5</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Frage 4</h1>
+    <div class="box frage"><p>Wie verlaufen die Feldlinien des elektrischen Feldes?</p></div><div class="quiz-optionen n3"><div class="quiz-opt"><span class="z">1</span><span>von der negativen zur positiven Ladung<span class="koerper">Arme hoch</span></span></div><div class="quiz-opt"><span class="z">2</span><span>von der positiven zur negativen Ladung<span class="koerper">Hände auf den Kopf</span></span></div><div class="quiz-opt"><span class="z">3</span><span>es gibt beim elektrischen Feld keine Feldlinien<span class="koerper">Arme verschränkt</span></span></div></div>
+</section>
+
+<section class="slide dense" data-type="auswertung">
+    <div class="tag">Puffer · Duell · Wiederholung · 4 von 5</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Frage 4: Auflösung</h1>
+    <div class="box frage"><p>Wie verlaufen die Feldlinien des elektrischen Feldes?</p></div><div class="quiz-optionen n3"><div class="quiz-opt daneben"><span class="z">1</span><span>von der negativen zur positiven Ladung<span class="koerper">Arme hoch</span></span></div><div class="quiz-opt richtig"><span class="z">2</span><span>von der positiven zur negativen Ladung<span class="koerper">Hände auf den Kopf</span></span></div><div class="quiz-opt daneben"><span class="z">3</span><span>es gibt beim elektrischen Feld keine Feldlinien<span class="koerper">Arme verschränkt</span></span></div></div><div class="box beispiel"><p>Von <strong>plus nach minus</strong> — so wie beim Magneten vom Nord- zum Südpol.</p></div>
+</section>
+
+<section class="slide dense" data-type="uebung">
+    <div class="tag">Puffer · Duell · Wiederholung · 5 von 5</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Frage 5</h1>
+    <div class="box frage"><p>Warum zeigt eine Kompassnadel nach Norden?</p></div><div class="quiz-optionen n3"><div class="quiz-opt"><span class="z">1</span><span>weil die Erde ein magnetisches Feld hat<span class="koerper">Arme hoch</span></span></div><div class="quiz-opt"><span class="z">2</span><span>weil dort die Sonne steht<span class="koerper">Hände auf den Kopf</span></span></div><div class="quiz-opt"><span class="z">3</span><span>weil die Nadel aus Kupfer ist<span class="koerper">Arme verschränkt</span></span></div></div>
+</section>
+
+<section class="slide dense" data-type="auswertung">
+    <div class="tag">Puffer · Duell · Wiederholung · 5 von 5</div><div class="topic-badge">Übungsstunde: Lerntheke Hebel bis Elektrostatik</div>
+    <h1>Frage 5: Auflösung</h1>
+    <div class="box frage"><p>Warum zeigt eine Kompassnadel nach Norden?</p></div><div class="quiz-optionen n3"><div class="quiz-opt richtig"><span class="z">1</span><span>weil die Erde ein magnetisches Feld hat<span class="koerper">Arme hoch</span></span></div><div class="quiz-opt daneben"><span class="z">2</span><span>weil dort die Sonne steht<span class="koerper">Hände auf den Kopf</span></span></div><div class="quiz-opt daneben"><span class="z">3</span><span>weil die Nadel aus Kupfer ist<span class="koerper">Arme verschränkt</span></span></div></div><div class="box beispiel"><p>Die <strong>Erde</strong> hat ein magnetisches <strong>Feld</strong>, und die Nadel richtet sich darin aus.</p></div>
+</section>
+
+</div>
+<div class="clickzone" id="zone-prev"></div>
+<div class="clickzone" id="zone-next"></div>
+<div id="navbar"><div id="progress"></div></div>
+<div id="navbtns"><button id="btn-prev">◀ zurück</button><button id="btn-next">weiter ▶</button></div>
+<div id="counter"></div>
+<script src="folien.js"></script>
+</body>
+</html>

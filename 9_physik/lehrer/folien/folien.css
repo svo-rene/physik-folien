@@ -1,0 +1,462 @@
+/* Foliensätze Physik Klasse 7 (Beamer) — nach dem Muster der LK-Informatik-Folien */
+
+* { box-sizing: border-box; }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #eef1f5;
+    font-family: "Segoe UI", Calibri, Arial, sans-serif;
+    overflow: hidden;
+}
+
+:root {
+    --c-einstieg: #ffcf6b;
+    --c-motivation: #cdb4f9;
+    --c-erarbeitung: #a9d4ff;
+    --c-merke: #ffa0a0;
+    --c-experiment: #ffb27a;
+    --c-auswertung: #8fe3d0;
+    --c-uebung: #fdfda5;
+    --c-zusammenfassung: #adfb95;
+    --c-hilfe: #9fe0f0;
+    --dodger: #1e78dc;
+}
+
+#deck {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    padding: 3.5em 5em 4.5em 5em;
+    flex-direction: column;
+    justify-content: center;
+    background: #ffffff;
+    color: #1a1a1a;
+    font-size: 1.15em;
+}
+.slide.active { display: flex; }
+
+.tag {
+    position: absolute;
+    top: 1.4em;
+    left: 5em;
+    font-size: 0.62em;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.35em 1em;
+    border-radius: 999px;
+    background: #ddd;
+    color: #222;
+}
+.topic-badge {
+    position: absolute;
+    top: 1.4em;
+    right: 30em;
+    font-size: 0.62em;
+    font-weight: 700;
+    color: #8a94a3;
+    letter-spacing: 0.05em;
+}
+
+.slide[data-type="titel"] .tag { display: none; }
+.slide[data-type="einstieg"] .tag { background: var(--c-einstieg); }
+.slide[data-type="motivation"] .tag { background: var(--c-motivation); }
+.slide[data-type="erarbeitung"] .tag { background: var(--c-erarbeitung); }
+.slide[data-type="merke"] .tag { background: var(--c-merke); }
+.slide[data-type="experiment"] .tag { background: var(--c-experiment); }
+.slide[data-type="auswertung"] .tag { background: var(--c-auswertung); }
+.slide[data-type="uebung"] .tag { background: var(--c-uebung); }
+.slide[data-type="zusammenfassung"] .tag { background: var(--c-zusammenfassung); }
+.slide[data-type="hilfe"] .tag { background: var(--c-hilfe); }
+
+/* Hilfen zum Rechnen */
+.box.hilfe { background: #e8f8fc; border-color: var(--c-hilfe); }
+.slide ol.schema li { margin: 0.15em 0; }
+table.schritte th { width: 16%; background: #e8f8fc; }
+table.schritte td { font-family: "Segoe UI", Calibri, Arial, sans-serif; }
+.ergebnis { font-weight: 700; border-bottom: 3px double #0a3d67; }
+.schema-zeile { margin-top: 0.6em !important; color: #0a5aa8 !important; }
+
+.slide h1 {
+    font-size: 2.4em;
+    color: var(--dodger);
+    margin: 0 0 0.5em 0;
+    line-height: 1.15;
+}
+.slide h2 {
+    font-size: 1.4em;
+    color: var(--dodger);
+    margin: 0.2em 0 0.4em 0;
+}
+.slide p, .slide li, .slide td, .slide th {
+    font-size: 1.35em;
+    line-height: 1.45;
+    margin: 0.3em 0;
+}
+.slide li p, .slide li li, .slide td p { font-size: 1em; }
+.slide ul, .slide ol { margin: 0.3em 0; padding-left: 1.2em; }
+.slide ul.plain { list-style: none; padding-left: 0; }
+.slide strong { color: #0a3d67; }
+.slide .small { font-size: 0.95em; color: #444; }
+
+.box {
+    border-radius: 10px;
+    padding: 0.8em 1.2em;
+    margin: 0.5em 0;
+    border: 2px solid rgba(0,0,0,0.15);
+}
+.box > :first-child { margin-top: 0; }
+.box > :last-child { margin-bottom: 0; }
+.box.merke { background: #ffe3e3; border-color: var(--c-merke); }
+.box.beispiel { background: #e2f8f2; border-color: var(--c-auswertung); }
+.box.uebung { background: #fefed8; border-color: #e0e070; }
+.box.hinweis { background: #eaf7ff; border-color: #9cc9e8; }
+.box.auftrag { background: #fff2e6; border-color: var(--c-experiment); }
+.box.frage { background: #f4edff; border-color: var(--c-motivation); }
+.box.frage p { font-size: 1.6em; font-weight: 700; color: #3d1f7a; }
+
+.cols { display: flex; gap: 2em; align-items: center; }
+.cols > div { flex: 1; min-width: 0; }
+.cols > div.bild { flex: 1.2; text-align: center; }
+
+/* Bilder: Tafelbilder groß, Szenen und Fotos neben dem Text */
+.bild img {
+    max-width: 100%;
+    max-height: 62vh;
+    object-fit: contain;
+    border-radius: 8px;
+}
+.tafel {
+    flex: 1;
+    min-height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tafel img {
+    max-width: 100%;
+    max-height: 72vh;
+    object-fit: contain;
+    border: 2px solid #d5dbe3;
+    border-radius: 6px;
+    background: white;
+}
+.nachweis { font-size: 0.75em !important; color: #777 !important; }
+
+/* Tafelbild, Stück für Stück (statt der PDF-Vorlage) */
+.tafel-kopf {
+    font-size: 1.15em;
+    border-bottom: 3px solid #1a1a1a;
+    padding-bottom: 0.3em;
+    margin-bottom: 0.6em;
+}
+.tafel-kopf span { color: #8a94a3; font-size: 0.85em; margin-right: 0.4em; }
+.tafel-gitter { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8em; }
+.tafel-leer {
+    border: 2px dashed #b9c3cf; border-radius: 8px; padding: 1.4em 1em;
+    font-size: 1.2em; font-weight: 700; color: #0a3d67;
+}
+.tafel-block { position: relative; border: 2px solid #d5dbe3; border-radius: 10px;
+    padding: 0.8em 1.2em; background: #fcfcfa; }
+.tafel-block .wie { position: absolute; top: -0.9em; right: 1em; font-size: 0.8em;
+    background: #fff2e6; border: 1px solid var(--c-experiment); border-radius: 999px;
+    padding: 0.1em 0.8em; color: #8a4b12; }
+.slide:has(.tafel-block) { justify-content: flex-start; padding-top: 3em; }
+.tafel-block svg.skizze { max-height: 34vh; }
+.tafel-block table.tafel-tab td, .tafel-block table.tafel-tab th { font-size: 1.05em; padding: 0.15em 0.5em; }
+.tafel-text { list-style: none; padding-left: 0 !important; }
+.tafel-text li { margin: 0.35em 0; }
+table.tafel-tab th { width: auto; white-space: normal; }
+.luecke {
+    display: inline-block;
+    min-width: 4.5em;
+    border-bottom: 2px dashed #0a5aa8;
+    cursor: pointer;
+    text-align: center;
+}
+.luecke > span { visibility: hidden; }
+.luecke.offen > span { visibility: visible; color: #0a5aa8; font-weight: 700; }
+.gefuellt { color: #0a5aa8; font-weight: 700; }
+details.aufloesung { margin: 0.4em 0; font-size: 0.95em; }
+details.aufloesung summary { cursor: pointer; color: #0a5aa8; font-weight: 600; }
+details.aufloesung p { color: #0a5aa8; margin: 0.2em 0 0 !important; }
+/* Das komplette Tafelbild muss auf eine Folie: oben beginnen, alles kleiner */
+.slide:has(.tafel-komplett) { justify-content: flex-start; padding-top: 2.6em; }
+.slide:has(.tafel-komplett) h1 { font-size: 1.55em !important; margin-bottom: 0.2em !important; }
+.slide:has(.tafel-komplett) .tafel-kopf { font-size: 0.95em; margin-bottom: 0.3em; }
+.tafel-komplett { display: grid; grid-template-columns: 1fr 1fr; gap: 0.3em 1.4em; font-size: 0.8em; }
+.tafel-komplett.n1 { grid-template-columns: 1fr; }
+.tafel-komplett.eng { font-size: 0.7em; }
+.tafel-komplett.eng svg.skizze { max-height: 14vh; }
+.tafel-teil h2 { font-size: 1.2em !important; margin: 0 0 0.1em !important; }
+.tafel-teil .tafel-text li { margin: 0.1em 0; }
+.tafel-teil table.mini td, .tafel-teil table.mini th { padding: 0.1em 0.4em; }
+.tafel-teil .skizzen { margin: 0.1em 0; }
+.tafel-teil svg.skizze { max-height: 17vh; }
+.tafel-teil .tafel-cols { gap: 0.6em; align-items: flex-start; }
+.tafel-teil table.mini td, .tafel-teil table.mini th { font-size: 0.95em; }
+.tafel-komplett.n1 svg.skizze, .tafel-komplett.n2 svg.skizze { max-height: 30vh; }
+
+/* Schlagzeile als Einstieg: wie ein Zeitungsausschnitt */
+.schlagzeile {
+    border: 1px solid #d5dbe3;
+    border-top: 6px solid #1a1a1a;
+    background: #fbfaf6;
+    padding: 0.7em 1.2em 0.6em;
+    margin: 0.3em 0 0.6em;
+    font-family: Georgia, "Times New Roman", serif;
+}
+.schlagzeile .quelle { font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 0.8em !important; color: #6b7280; text-transform: uppercase;
+    letter-spacing: 0.06em; margin: 0 0 0.2em !important; }
+.schlagzeile .kopf { font-size: 1.9em !important; font-weight: 700;
+    line-height: 1.2 !important; margin: 0 0 0.3em !important; }
+.schlagzeile .kopf a { color: #1a1a1a; text-decoration: none; }
+.schlagzeile .kopf a:hover { text-decoration: underline; }
+.schlagzeile li { font-family: "Segoe UI", Arial, sans-serif; }
+
+/* Selbst gezeichnete Skizzen (Schaltpläne, Energieketten) */
+.skizzen {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    margin: 0.4em 0;
+}
+/* Breite aus dem Container, Höhe aus dem viewBox-Seitenverhältnis */
+svg.skizze {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 46vh;
+    flex: 1 1 0;
+    min-width: 0;
+}
+.cols .skizzen svg.skizze { max-height: 52vh; }
+
+table.mini {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0.4em 0;
+}
+table.mini th, table.mini td {
+    border: 2px solid #333;
+    padding: 0.3em 0.6em;
+    text-align: left;
+    vertical-align: top;
+}
+table.mini th { background: #f2f2f2; width: 28%; white-space: nowrap; }
+
+.timer { font-size: 1.1em; color: #b3541e; font-weight: 700; }
+
+/* Daumenprobe im Check-out */
+.daumen { display: flex; gap: 1.5em; justify-content: center; margin-top: 0.8em; }
+.daumen span {
+    font-size: 1.3em;
+    padding: 0.3em 1em;
+    border-radius: 999px;
+    border: 2px solid #ccc;
+}
+
+/* Inhaltsdichte Folien: alles eine Stufe kleiner */
+.slide.dense p, .slide.dense li, .slide.dense td, .slide.dense th { font-size: 1.12em; }
+.slide.dense h1 { font-size: 2em; margin-bottom: 0.35em; }
+.slide.dense .box.frage p { font-size: 1.3em; }
+
+.slide[data-type="titel"] {
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(160deg, #0a3d67 0%, #1e78dc 60%, #4fa3f7 100%);
+    color: white;
+}
+.slide[data-type="titel"] h1 { color: white; font-size: 3em; }
+.slide[data-type="titel"] .sub { font-size: 1.5em; opacity: 0.95; max-width: 30em; }
+.slide[data-type="titel"] .ablauf {
+    display: flex; flex-wrap: wrap; gap: 0.6em; justify-content: center;
+    list-style: none; padding: 0; margin-top: 1.5em;
+}
+.slide[data-type="titel"] .ablauf li {
+    font-size: 1.05em;
+    background: rgba(255,255,255,0.18);
+    border-radius: 999px;
+    padding: 0.25em 0.9em;
+}
+
+.slide[data-type="titel"] .stunden { list-style: none; padding: 0; margin-top: 1em; }
+.slide[data-type="titel"] .stunden li { font-size: 1.3em; margin: 0.35em 0; }
+.slide[data-type="titel"] .stunden a { color: white; text-decoration: none; border-bottom: 2px solid rgba(255,255,255,0.4); }
+.slide[data-type="titel"] .stunden a:hover { border-bottom-color: white; }
+
+.slide[data-type="titel"] .ablauf a { color: white; text-decoration: none; }
+.slide[data-type="titel"] .ablauf li:hover { background: rgba(255,255,255,0.32); }
+
+/* Übersicht: erste Folie und Overlay (O, Esc, ☰) - nach dem Muster der
+   Foliensatz-Engine im Informatik-LK: eine Karte je Stunde */
+.slide[data-type="uebersicht"] { justify-content: flex-start; padding-top: 2.6em; }
+.slide[data-type="uebersicht"] h1 { margin-bottom: 0.3em; }
+.slide[data-type="uebersicht"] .sub { margin: 0; color: #8a94a3; font-size: 1em; }
+.gitter {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 0.7em;
+    margin-top: 0.6em;
+}
+.karte {
+    border: 1px solid #dde3ea;
+    border-left: 5px solid var(--akzent, var(--dodger));
+    border-radius: 9px;
+    padding: 0.55em 0.8em;
+    background: #f8fafc;
+}
+.karte .n { font-size: 0.7em; font-weight: 800; letter-spacing: 0.06em;
+    text-transform: uppercase; color: #8a94a3; }
+.karte a.t { display: block; font-size: 1.05em; font-weight: 700;
+    color: #0a3d67; text-decoration: none; margin: 0.15em 0 0.35em; }
+.karte a.t:hover { text-decoration: underline; }
+.chips { display: flex; flex-wrap: wrap; gap: 0.3em; }
+.chips a {
+    font-size: 0.72em; padding: 0.15em 0.6em; border-radius: 999px;
+    background: #e6eef8; color: #0a3d67; text-decoration: none;
+}
+.chips a:hover { background: var(--dodger); color: white; }
+.chips.liste a { font-size: 0.85em; }
+.ue-hilfe { font-size: 0.8em !important; color: #8a94a3 !important; margin-top: 0.8em !important; }
+
+#uebersicht-overlay {
+    display: none;
+    position: fixed; inset: 0; z-index: 60;
+    overflow: auto;
+    background: #ffffff;
+    padding: 1.4em 2em 3em;
+    font-size: 18px;
+}
+body.zeige-uebersicht #uebersicht-overlay { display: block; }
+.ue-kopf { display: flex; align-items: baseline; gap: 1.5em; }
+.ue-kopf h2 { color: var(--dodger); margin: 0; }
+.ue-kopf a { color: var(--dodger); font-weight: 600; text-decoration: none; }
+kbd { background: #eef1f5; border: 1px solid #ccd3dc; border-radius: 4px; padding: 0 0.35em; }
+
+/* Navigations-Leiste unten */
+#navbar {
+    position: fixed;
+    left: 0; right: 0; bottom: 0;
+    height: 6px;
+    background: #dde3ea;
+    z-index: 50;
+}
+#progress {
+    height: 100%;
+    width: 0%;
+    background: var(--dodger);
+    transition: width 0.15s ease;
+}
+#counter {
+    position: fixed;
+    bottom: 12px;
+    right: 18px;
+    font-size: 14px;
+    color: #8a94a3;
+    z-index: 50;
+    background: rgba(255,255,255,0.85);
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+#navbtns {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 50;
+    display: flex;
+    gap: 10px;
+}
+#navbtns button {
+    font-size: 14px;
+    border: none;
+    background: var(--dodger);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+#navbtns button:hover { background: #0a5aa8; }
+#navbtns button:disabled { background: #c7d2de; cursor: default; box-shadow: none; }
+
+#overview-link {
+    position: fixed;
+    top: 10px;
+    right: 18px;
+    z-index: 50;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--dodger);
+    background: rgba(255,255,255,0.9);
+    padding: 4px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid rgba(30,120,220,0.3);
+}
+#overview-link:hover { background: rgba(30,120,220,0.12); }
+#index-link {
+    position: fixed;
+    top: 10px;
+    right: 130px;
+    z-index: 61;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--dodger);
+    background: rgba(255,255,255,0.9);
+    padding: 4px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid rgba(30,120,220,0.3);
+}
+#index-link:hover { background: rgba(30,120,220,0.12); }
+#overview-link { z-index: 61; }
+
+.clickzone {
+    position: fixed;
+    top: 0; bottom: 0;
+    width: 12%;
+    z-index: 40;
+    cursor: pointer;
+}
+#zone-prev { left: 0; }
+body.ohne-zonen .clickzone { display: none; }
+#zone-next { right: 0; }
+
+/* Übersichtsseite */
+body.uebersicht { overflow: auto; background: #f6f8fb; }
+.uebersicht main { max-width: 900px; margin: 0 auto; padding: 2em 1em; }
+.uebersicht h1 { color: var(--dodger); }
+.uebersicht ol { padding-left: 0; list-style: none; }
+.uebersicht li {
+    background: white; border: 1px solid #dde3ea; border-radius: 10px;
+    margin: 0.5em 0; padding: 0.7em 1em; display: flex; gap: 1em; align-items: baseline;
+}
+.uebersicht li a { color: #0a3d67; font-weight: 600; text-decoration: none; font-size: 1.1em; }
+.uebersicht li a:hover { text-decoration: underline; }
+.uebersicht .typ { font-size: 0.8em; color: #8a94a3; margin-left: auto; white-space: nowrap; font-weight: 400; }
+.uebersicht h2 { color: #0a3d67; margin-top: 1.6em; border-bottom: 2px solid #dde3ea; padding-bottom: 0.2em; }
+.uebersicht h3 { margin: 1em 0 0.2em 0; display: flex; align-items: baseline; gap: 1em; }
+.uebersicht h3 a { color: var(--dodger); text-decoration: none; }
+.uebersicht .sp li a { font-weight: 500; font-size: 1em; }
+
+@media print {
+    html, body { overflow: visible; }
+    .slide { position: relative; display: flex !important; page-break-after: always; height: 100vh; }
+    #navbar, #counter, #navbtns, #overview-link, .clickzone { display: none; }
+}
